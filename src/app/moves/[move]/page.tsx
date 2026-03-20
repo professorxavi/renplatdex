@@ -16,7 +16,7 @@ const CATEGORY_STYLES: Record<string, string> = {
 
 export default async function MovePage({ params }: Props) {
   const { move: slug } = await params;
-  const moveName = decodeURIComponent(slug).replace(/-/g, " ");
+  const moveName = decodeURIComponent(slug);
   const move = getMove(moveName);
   if (!move) notFound();
 
@@ -52,16 +52,6 @@ export default async function MovePage({ params }: Props) {
           ))}
         </div>
 
-        {/* Flags */}
-        {move.flags && move.flags.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-2">
-            {move.flags.map((f, i) => (
-              <span key={`${f}-${i}`} className="rounded-full border border-[var(--border)] px-2.5 py-0.5 text-xs text-[var(--text-secondary)]">
-                {f}
-              </span>
-            ))}
-          </div>
-        )}
       </div>
 
       {/* Description */}
