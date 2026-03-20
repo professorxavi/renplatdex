@@ -11,8 +11,7 @@ interface Props {
 
 export default async function LocationPage({ params }: Props) {
   const { location: slug } = await params;
-  const locationName = decodeURIComponent(slug).replace(/-/g, " ");
-  const location = getLocation(locationName);
+  const location = getLocation(decodeURIComponent(slug));
   if (!location) notFound();
 
   const encounterTypes = sortEncounterTypes(Object.keys(location.encounters));

@@ -852,7 +852,7 @@
     }
   },
   {
-    "name": "Route 204 ~ South",
+    "name": "Route 204 - South",
     "encounters": {
       "morning": [
         {
@@ -1388,7 +1388,7 @@
     }
   },
   {
-    "name": "Route 204 ~ North",
+    "name": "Route 204 - North",
     "encounters": {
       "morning": [
         {
@@ -1862,7 +1862,7 @@
     }
   },
   {
-    "name": "Oreburgh Gate ~ 1F",
+    "name": "Oreburgh Gate - 1F",
     "encounters": {
       "morning": [
         {
@@ -1969,7 +1969,7 @@
     }
   },
   {
-    "name": "Oreburgh Gate ~ B1F",
+    "name": "Oreburgh Gate - B1F",
     "encounters": {
       "morning": [
         {
@@ -2187,7 +2187,7 @@
     }
   },
   {
-    "name": "Oreburgh Mine ~ 1F",
+    "name": "Oreburgh Mine - 1F",
     "encounters": {
       "morning": [
         {
@@ -2342,7 +2342,7 @@
     }
   },
   {
-    "name": "Oreburgh Mine ~ B1F",
+    "name": "Oreburgh Mine - B1F",
     "encounters": {
       "morning": [
         {
@@ -3537,7 +3537,7 @@
     }
   },
   {
-    "name": "Route 205 ~ South",
+    "name": "Route 205 - South",
     "encounters": {
       "morning": [
         {
@@ -3840,7 +3840,7 @@
     }
   },
   {
-    "name": "Route 205 ~ North",
+    "name": "Route 205 - North",
     "encounters": {
       "morning": [
         {
@@ -4684,7 +4684,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ Route 211 Entrance",
+    "name": "Mt. Coronet - Route 211 Entrance",
     "encounters": {
       "morning": [
         {
@@ -4911,7 +4911,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ Tunnel to Route 211 Entrance",
+    "name": "Mt. Coronet - Tunnel to Route 211 Entrance",
     "encounters": {
       "morning": [
         {
@@ -5138,7 +5138,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ B1F",
+    "name": "Mt. Coronet - B1F",
     "encounters": {
       "morning": [
         {
@@ -5421,7 +5421,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ Route 207 Entrance",
+    "name": "Mt. Coronet - Route 207 Entrance",
     "encounters": {
       "morning": [
         {
@@ -5720,7 +5720,7 @@
     }
   },
   {
-    "name": "Route 211 ~ West",
+    "name": "Route 211 - West",
     "encounters": {
       "morning": [
         {
@@ -5885,7 +5885,7 @@
     }
   },
   {
-    "name": "Route 211 ~ East",
+    "name": "Route 211 - East",
     "encounters": {
       "morning": [
         {
@@ -7197,7 +7197,7 @@
     }
   },
   {
-    "name": "Route 210 ~ South",
+    "name": "Route 210 - South",
     "encounters": {
       "morning": [
         {
@@ -8557,7 +8557,7 @@
     }
   },
   {
-    "name": "Great Marsh ~ Area 1/2",
+    "name": "Great Marsh - Area 1/2",
     "encounters": {
       "morning": [
         {
@@ -8784,7 +8784,7 @@
     }
   },
   {
-    "name": "Great Marsh ~ Area 3/4",
+    "name": "Great Marsh - Area 3/4",
     "encounters": {
       "morning": [
         {
@@ -9035,7 +9035,7 @@
     }
   },
   {
-    "name": "Great Marsh ~ Area 5/6",
+    "name": "Great Marsh - Area 5/6",
     "encounters": {
       "morning": [
         {
@@ -9286,7 +9286,7 @@
     }
   },
   {
-    "name": "Route 212 ~ South",
+    "name": "Route 212 - South",
     "encounters": {
       "morning": [
         {
@@ -9661,7 +9661,7 @@
     }
   },
   {
-    "name": "Route 212 ~ North",
+    "name": "Route 212 - North",
     "encounters": {
       "morning": [
         {
@@ -10254,7 +10254,7 @@
     }
   },
   {
-    "name": "Route 210 ~ North",
+    "name": "Route 210 - North",
     "encounters": {
       "morning": [
         {
@@ -10605,7 +10605,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ Route 216 Entrance",
+    "name": "Mt. Coronet - Route 216 Entrance",
     "encounters": {
       "morning": [
         {
@@ -11751,7 +11751,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ 2F",
+    "name": "Mt. Coronet - 2F",
     "encounters": {
       "morning": [
         {
@@ -11978,7 +11978,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ 3F",
+    "name": "Mt. Coronet - 3F",
     "encounters": {
       "morning": [
         {
@@ -12205,7 +12205,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ 4F",
+    "name": "Mt. Coronet - 4F",
     "encounters": {
       "morning": [
         {
@@ -12528,7 +12528,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ Snow Area",
+    "name": "Mt. Coronet - Snow Area",
     "encounters": {
       "morning": [
         {
@@ -12693,7 +12693,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ Summit",
+    "name": "Mt. Coronet - Summit",
     "encounters": {
       "morning": [
         {
@@ -12858,7 +12858,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ 5F",
+    "name": "Mt. Coronet - 5F",
     "encounters": {
       "morning": [
         {
@@ -13085,7 +13085,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ 6F",
+    "name": "Mt. Coronet - 6F",
     "encounters": {
       "morning": [
         {
@@ -13312,7 +13312,7 @@
     }
   },
   {
-    "name": "Mt. Coronet ~ 7F",
+    "name": "Mt. Coronet - 7F",
     "encounters": {
       "morning": [
         {
@@ -14830,7 +14830,7 @@
     }
   },
   {
-    "name": "Victory Road ~ 1F",
+    "name": "Victory Road - 1F",
     "encounters": {
       "morning": [
         {
@@ -15033,7 +15033,7 @@
     }
   },
   {
-    "name": "Victory Road ~ 2F",
+    "name": "Victory Road - 2F",
     "encounters": {
       "morning": [
         {
@@ -15236,7 +15236,7 @@
     }
   },
   {
-    "name": "Victory Road ~ B1F",
+    "name": "Victory Road - B1F",
     "encounters": {
       "morning": [
         {
@@ -15487,7 +15487,7 @@
     }
   },
   {
-    "name": "Victory Road ~ 1F Back 1",
+    "name": "Victory Road - 1F Back 1",
     "encounters": {
       "morning": [
         {
@@ -15690,7 +15690,7 @@
     }
   },
   {
-    "name": "Victory Road ~ 1F Back 2",
+    "name": "Victory Road - 1F Back 2",
     "encounters": {
       "morning": [
         {
@@ -15949,7 +15949,7 @@
     }
   },
   {
-    "name": "Victory Road ~ 1F Back 3",
+    "name": "Victory Road - 1F Back 3",
     "encounters": {
       "morning": [
         {
@@ -16642,7 +16642,7 @@
     }
   },
   {
-    "name": "Iron Island ~ Outside",
+    "name": "Iron Island - Outside",
     "encounters": {
       "surf": [
         {
@@ -16759,7 +16759,7 @@
     }
   },
   {
-    "name": "Iron Island ~ Inside ~ 1F, B1F",
+    "name": "Iron Island - Inside - 1F, B1F",
     "encounters": {
       "morning": [
         {
@@ -16962,7 +16962,7 @@
     }
   },
   {
-    "name": "Iron Island ~ Inside ~ B2F, B3F",
+    "name": "Iron Island - Inside - B2F, B3F",
     "encounters": {
       "morning": [
         {

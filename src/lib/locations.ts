@@ -40,6 +40,41 @@ export function getAllLocations(): Location[] {
   return LOCATIONS;
 }
 
-export function getLocation(name: string): Location | undefined {
-  return LOCATIONS.find((l) => l.name.toLowerCase() === name.toLowerCase());
+export function toLocationSlug(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+export function getLocation(nameOrSlug: string): Location | undefined {
+  return LOCATIONS.find(
+    (l) => l.name.toLowerCase() === nameOrSlug.toLowerCase() || toLocationSlug(l.name) === toLocationSlug(nameOrSlug)
+  );
+}
+
+export interface PokemonEncounter {
+  location: string;
+  method: string;
+  levels: [number, number];
+  rate: number | "-";
+}
+
+export function getPokemonLocations(pokemonName: string): PokemonEncounter[] {
+  const name = pokemonName.toLowerCase();
+  const results: PokemonEncounter[] = [];
+
+  for (const loc of LOCATIONS) {
+    for (const [type, entries] of Object.entries(loc.encounters)) {
+      for (const entry of entries) {
+        if (entry.pokemon.toLowerCase() === name) {
+          results.push({
+            location: loc.name,
+            method: ENCOUNTER_TYPE_LABELS[type] ?? type,
+            levels: entry.levels,
+            rate: entry.rate,
+          });
+        }
+      }
+    }
+  }
+
+  return results;
 }
