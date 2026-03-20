@@ -20,9 +20,10 @@ function statColor(value: number) {
 interface StatBarProps {
   statKey: string;
   value: number;
+  delta?: number;
 }
 
-export default function StatBar({ statKey, value }: StatBarProps) {
+export default function StatBar({ statKey, value, delta }: StatBarProps) {
   const pct = Math.min((value / 255) * 100, 100);
   return (
     <div className="flex items-center gap-3 py-1">
@@ -36,6 +37,13 @@ export default function StatBar({ statKey, value }: StatBarProps) {
           style={{ width: `${pct}%` }}
         />
       </div>
+      <span className="w-5 text-right text-xs font-semibold tabular-nums">
+        {delta !== undefined
+          ? <span className={delta > 0 ? "text-emerald-400" : "text-red-400"}>
+              {delta > 0 ? `+${delta}` : delta}
+            </span>
+          : null}
+      </span>
     </div>
   );
 }
