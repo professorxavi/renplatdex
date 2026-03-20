@@ -3,15 +3,21 @@ import { Generations } from "@pkmn/data";
 import _GEN7_OVERRIDES from "./gen7-overrides.json";
 import _RP_POKEMON_OVERRIDES from "./rp-pokemon-overrides.json";
 import _MOVELIST from "./movelist.json";
+import _EVOLUTIONS from "./evolutions.json";
 type Gen7Override = { types?: string[]; stats?: Record<string, number> };
 type RpPokemonOverride = { types?: string[]; stats?: Record<string, number>; abilities?: string[]; learnset?: Record<string, string[]> };
 const GEN7_OVERRIDES = _GEN7_OVERRIDES as Record<string, Gen7Override>;
 const RP_POKEMON_OVERRIDES = _RP_POKEMON_OVERRIDES as Record<string, RpPokemonOverride>;
 const MOVELIST = _MOVELIST as Move[];
 const MOVE_BY_ID = new Map(MOVELIST.map((m) => [m.name.toLowerCase().replace(/ /g, ""), m]));
+const EVOLUTIONS = _EVOLUTIONS as Record<string, { name: string; method: string }[]>;
 
 const gens = new Generations(Dex);
-export const gen4 = gens.get(4);
+const gen4 = gens.get(4);
+
+export function getPokemonPrevo(name: string): string | undefined {
+  return gen4.species.get(name)?.prevo || undefined;
+}
 
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -71,27 +77,6 @@ function formatGenderRatio(ratio: { M: number; F: number } | undefined): string 
   return `${ratio.M * 100}% M / ${ratio.F * 100}% F`;
 }
 
-function formatEvoMethod(evoName: string): string {
-  const raw = Dex.species.get(evoName);
-  const parts: string[] = [];
-
-  if (!raw.evoType && raw.evoLevel) {
-    parts.push(`Level ${raw.evoLevel}`);
-  } else {
-    switch (raw.evoType) {
-      case "useItem":   parts.push(raw.evoItem ?? "Item"); break;
-      case "trade":     parts.push(raw.evoItem ? `Trade (${raw.evoItem})` : "Trade"); break;
-      case "levelFriendship": parts.push("Friendship"); break;
-      case "levelMove": parts.push(`Know ${raw.evoMove}`); break;
-      case "levelHold": parts.push(raw.evoItem ? `Level up holding ${raw.evoItem}` : "Level up"); break;
-      case "levelExtra": parts.push("Level up"); break;
-      default:          if (raw.evoLevel) parts.push(`Level ${raw.evoLevel}`);
-    }
-  }
-
-  if (raw.evoCondition) parts.push(raw.evoCondition);
-  return parts.join(", ") || "Level up";
-}
 
 type Gen4Species = NonNullable<ReturnType<typeof gen4.species.get>>;
 
@@ -112,7 +97,7 @@ function mapSpecies(s: Gen4Species, forms: FormVariant[]): Pokemon {
     weight: s.weightkg,
     eggGroups: s.eggGroups,
     genderRatio: formatGenderRatio(s.genderRatio as { M: number; F: number } | undefined),
-    evolutions: s.evos?.map((evo) => ({ name: evo, method: formatEvoMethod(evo) })),
+    evolutions: EVOLUTIONS[s.name] ?? undefined,
     forms,
   };
 }
@@ -147,6 +132,34 @@ export function getPokemon(name: string): Pokemon | undefined {
     }
   }
   return mapSpecies(s, forms);
+}
+
+// ─── Evolution chain ──────────────────────────────────────────────────────────
+
+export interface EvoChainNode {
+  name: string;
+  evolutions: { method: string; into: EvoChainNode }[];
+}
+
+function buildEvoNode(name: string): EvoChainNode {
+  return {
+    name,
+    evolutions: (EVOLUTIONS[name] ?? []).map((evo) => ({
+      method: evo.method,
+      into: buildEvoNode(evo.name),
+    })),
+  };
+}
+
+export function getEvolutionChain(pokemonName: string): EvoChainNode {
+  // Walk up prevo chain to find the root
+  let root = pokemonName;
+  let current = gen4.species.get(pokemonName);
+  while (current?.prevo) {
+    root = current.prevo;
+    current = gen4.species.get(current.prevo);
+  }
+  return buildEvoNode(root);
 }
 
 // ─── Moves ────────────────────────────────────────────────────────────────────
