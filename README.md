@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RenPlat Dex
+
+A Pokédex for Pokémon Renegade Platinum — a romhack of Pokémon Platinum by Drayano.
+
+Covers all Gen 4 Pokémon and moves updated to reflect Gen 7 values, with Renegade Platinum-specific overrides applied on top (stat changes, type changes, ability changes, evolution method changes, move replacements, and custom learnsets).
+
+## Features
+
+- **Pokémon** — stats, types, abilities, evolution chains, forms, learnsets, and wild encounter locations
+- **Moves** — full move data with learner list
+- **Abilities** — descriptions with Pokémon that have the ability
+- **Locations** — wild encounter tables by method (morning/day/night/surf/fishing/etc.)
+- **Search** — searches across Pokémon, moves, abilities, and locations
+- **Responsive** — split-panel layout on desktop, drawer navigation on mobile
+
+## Data Pipeline
+
+Static JSON files are pre-generated from `@pkmn/dex` and `@pkmn/data` and committed to the repo. Run these scripts when source data changes:
+
+```bash
+node scripts/gen-gen7-overrides.mjs       # Gen 4 → Gen 7 Pokémon stat/type diffs
+node scripts/gen-gen7-move-overrides.mjs  # Gen 4 → Gen 7 move diffs
+node scripts/gen-movelist.mjs             # Final move list with RP overrides applied
+node scripts/gen-evolutions.mjs           # Evolution chains with RP method overrides
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org) 15 (App Router)
+- [Tailwind CSS](https://tailwindcss.com) v4
+- [@pkmn/dex](https://github.com/pkmn/ps) + [@pkmn/data](https://github.com/pkmn/ps) for Pokémon data
+- [Ubuntu](https://fonts.google.com/specimen/Ubuntu) font via `next/font/google`
