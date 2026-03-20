@@ -1,7 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { usePathname } from "next/navigation";
+import { useRef, useState, useEffect } from "react";
+import { ArrowUp } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
+import { ChevronLeft } from "lucide-react";
 import Topbar from "@/components/Topbar";
 import SearchBox from "@/components/SearchBox";
 import BrowseTabs from "@/components/BrowseTabs";
@@ -26,24 +29,45 @@ export default function SplitLayout({
   const pathname = usePathname();
   const isDetail = pathname !== "/";
   const browseRef = useRef<HTMLDivElement>(null);
+  const detailRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+  const [scrollPct, setScrollPct] = useState(0);
+  const [detailScrollPct, setDetailScrollPct] = useState(0);
 
   useEffect(() => {
-    if (!isDetail) browseRef.current?.scrollTo({ top: 0, behavior: "smooth" });
-  }, [isDetail]);
+    const el = browseRef.current;
+    if (!el) return;
+    const onScroll = () => setScrollPct(el.scrollTop / (el.scrollHeight - el.clientHeight));
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const el = detailRef.current;
+    if (!el) return;
+    const onScroll = () => setDetailScrollPct(el.scrollTop / (el.scrollHeight - el.clientHeight));
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, []);
+
+const showScrollTop = scrollPct > 0.01;
+  const showTopbarTitle = isDetail || scrollPct > 0.001;
+  const showStickyBack = isDetail && detailScrollPct > 0.15;
 
   return (
     <div className="flex flex-col h-full min-h-screen">
-      <Topbar />
+      <Topbar showTitle={showTopbarTitle} />
 
-      <div className="flex flex-1 overflow-hidden">
-        {/* Left browse panel — full screen on mobile, half on tablet+ */}
+      <div className="relative flex-1 overflow-hidden lg:flex">
+        {/* Browse panel — stays in place on mobile (drawer overlays it), fills remaining space on desktop */}
         <div
           ref={browseRef}
-          className={`overflow-y-auto shrink-0
-            ${isDetail ? "hidden md:block md:w-1/2 md:border-r md:border-[var(--border)]" : "w-full"}
-            md:transition-[width] md:duration-300 md:ease-in-out`}
+          onClick={isDetail ? () => router.push("/") : undefined}
+          className={`absolute inset-0 overflow-y-auto
+            lg:relative lg:inset-auto lg:flex-1 lg:min-w-0
+            ${isDetail ? "lg:border-r lg:border-[var(--border)] lg:cursor-pointer" : ""}`}
         >
-          <div className="mx-auto max-w-2xl px-4 py-6 flex flex-col gap-6">
+          <div className="mx-auto max-w-2xl px-4 py-6 flex flex-col gap-6" onClick={(e) => e.stopPropagation()}>
             {!isDetail && (
               <div className="text-center">
                 <h1 className="text-2xl font-bold text-[var(--text-primary)]">RenPlat Dex</h1>
@@ -60,14 +84,51 @@ export default function SplitLayout({
               locations={locations}
             />
           </div>
+          <div
+            className={`sticky bottom-6 flex justify-end pr-4 pointer-events-none transition-opacity duration-200 ${showScrollTop ? "opacity-100" : "opacity-0"}`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="pointer-events-auto flex h-8 w-8 items-center justify-center rounded-full bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-secondary)] shadow-lg hover:text-[var(--text-primary)] hover:border-[var(--accent)] transition-colors"
+              onClick={() => browseRef.current?.scrollTo({ top: 0, behavior: "smooth" })}
+              aria-label="Scroll to top"
+            >
+              <ArrowUp size={14} />
+            </button>
+          </div>
         </div>
 
-        {/* Right detail panel — full screen on mobile, half on tablet+ */}
+        {/* Overlay — dims browse panel on mobile when drawer is open */}
         <div
-          className={`overflow-y-auto
-            ${isDetail ? "w-full md:w-1/2 md:opacity-100" : "hidden md:block md:w-0 md:opacity-0 md:pointer-events-none"}
-            md:transition-[width,opacity] md:duration-300 md:ease-in-out`}
+          className={`absolute top-0 bottom-0 left-0 right-2/3 z-10 bg-black/50 transition-opacity duration-300 lg:hidden ${
+            isDetail ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => router.push("/")}
+        />
+
+        {/* Detail panel — 2/3 width drawer on mobile, fixed width on desktop */}
+        <div
+          ref={detailRef}
+          className={`absolute top-0 bottom-0 right-0 w-2/3 overflow-y-auto bg-[var(--background)] transition-transform duration-300 ease-in-out
+            ${isDetail ? "translate-x-0 shadow-[-12px_0_32px_rgba(0,0,0,0.6)]" : "translate-x-full"}
+            lg:relative lg:inset-auto lg:translate-x-0 lg:shadow-none lg:shrink-0 lg:transition-[width,opacity] lg:duration-300 lg:ease-in-out
+            ${isDetail ? "lg:w-[640px] lg:opacity-100" : "lg:w-0 lg:opacity-0 lg:pointer-events-none"}`}
         >
+          {isDetail && (
+            <div className="sticky top-4 z-10 px-4 pt-4">
+              <Link
+                href="/"
+                className={`transition-all duration-200 ${
+                  showStickyBack
+                    ? "inline-flex h-8 w-8 items-center justify-center rounded-full bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-secondary)] shadow-lg hover:text-[var(--text-primary)] hover:border-[var(--accent)]"
+                    : "inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm text-[var(--text-secondary)] hover:bg-[var(--surface-elevated)] hover:text-[var(--text-primary)]"
+                }`}
+              >
+                <ChevronLeft size={16} />
+                {!showStickyBack && "Back"}
+              </Link>
+            </div>
+          )}
           {children}
         </div>
       </div>

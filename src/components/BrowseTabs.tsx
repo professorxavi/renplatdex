@@ -5,8 +5,10 @@ import { cn } from "@/lib/cn";
 import Link from "next/link";
 import { Zap, Wind, Shield, MapPin } from "lucide-react";
 import PokemonCard from "@/components/PokemonCard";
+import TypeBadge from "@/components/TypeBadge";
 import type { Pokemon, Move, Ability } from "@/lib/dex";
 import type { Location } from "@/lib/locations";
+import { toLocationSlug } from "@/lib/locations";
 
 type Tab = "pokemon" | "moves" | "abilities" | "locations";
 
@@ -60,12 +62,15 @@ export default function BrowseTabs({ pokemon, moves, abilities, locations }: Pro
           {moves.map((m) => (
             <Link
               key={m.name}
-              href={`/moves/${m.name.toLowerCase().replace(/ /g, "-")}`}
+              href={`/moves/${encodeURIComponent(m.name.toLowerCase())}`}
               className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
             >
               <div>
                 <p className="font-semibold text-[var(--text-primary)]">{m.name}</p>
-                <p className="text-xs text-[var(--text-secondary)]">{m.type} · {m.category}</p>
+                <div className="flex items-center gap-1.5 mt-0.5">
+                  <TypeBadge type={m.type} asLink={false} />
+                  <span className="text-xs text-[var(--text-secondary)]">{m.category}</span>
+                </div>
               </div>
               <div className="text-right text-sm">
                 <p className="font-bold text-[var(--text-primary)]">{m.power ?? "—"}</p>
@@ -99,7 +104,7 @@ export default function BrowseTabs({ pokemon, moves, abilities, locations }: Pro
             return (
               <Link
                 key={loc.name}
-                href={`/locations/${loc.name.toLowerCase().replace(/ /g, "-")}`}
+                href={`/locations/${toLocationSlug(loc.name)}`}
                 className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
               >
                 <p className="font-semibold text-[var(--text-primary)]">{loc.name}</p>

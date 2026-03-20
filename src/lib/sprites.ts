@@ -1,4 +1,4 @@
-const BASE = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon";
+const BASE = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iv/platinum/";
 
 /**
  * Some alternate forms are stored under a dedicated PokeAPI ID rather than
