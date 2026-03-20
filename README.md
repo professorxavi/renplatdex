@@ -4,6 +4,8 @@ A Pokédex for Pokémon Renegade Platinum — a romhack of Pokémon Platinum by 
 
 Covers all Gen 4 Pokémon and moves updated to reflect Gen 7 values, with Renegade Platinum-specific overrides applied on top (stat changes, type changes, ability changes, evolution method changes, move replacements, and custom learnsets).
 
+All data for Renegade Platinum was generated using Documentation provided with the Rom patches.
+
 ## Features
 
 - **Pokémon** — stats, types, abilities, evolution chains, forms, learnsets, and wild encounter locations
