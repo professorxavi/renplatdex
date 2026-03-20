@@ -1,0 +1,79 @@
+{
+  "Aurora Beam": {
+    "basePower": 75,
+    "pp": 15
+  },
+  "Blaze Kick": {
+    "basePower": 90,
+    "accuracy": 100
+  },
+  "Bubble Beam": {
+    "basePower": 75,
+    "pp": 15
+  },
+  "Chatter": {
+    "basePower": 90,
+    "pp": 15
+  },
+  "Cross Poison": {
+    "basePower": 90,
+    "pp": 15
+  },
+  "Cut": {
+    "type": "Grass",
+    "basePower": 60,
+    "accuracy": 100,
+    "pp": 25
+  },
+  "Disarming Voice": {
+    "basePower": 50
+  },
+  "Draining Kiss": {
+    "basePower": 75
+  },
+  "Flame Wheel": {
+    "basePower": 75,
+    "pp": 15
+  },
+  "Fly": {
+    "basePower": 100,
+    "accuracy": 100
+  },
+  "Needle Arm": {
+    "basePower": 90
+  },
+  "Poison Fang": {
+    "basePower": 65,
+    "accuracy": 95
+  },
+  "Poison Tail": {
+    "basePower": 90,
+    "pp": 15
+  },
+  "Rock Climb": {
+    "type": "Rock",
+    "basePower": 80,
+    "accuracy": 95,
+    "pp": 10
+  },
+  "Rock Smash": {
+    "basePower": 60
+  },
+  "Shadow Claw": {
+    "basePower": 80
+  },
+  "Shadow Punch": {
+    "basePower": 80,
+    "pp": 15
+  },
+  "Sludge": {
+    "basePower": 75,
+    "pp": 15
+  },
+  "Strength": {
+    "basePower": 100
+  },
+  "Wild Charge": {
+    "basePower": 100
+  }
+}

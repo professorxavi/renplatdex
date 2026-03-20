@@ -1,0 +1,366 @@
+{
+  "Beat Up": {
+    "basePower": 0
+  },
+  "Bind": {
+    "accuracy": 85
+  },
+  "Bone Rush": {
+    "accuracy": 90
+  },
+  "Bullet Seed": {
+    "basePower": 25
+  },
+  "Chatter": {
+    "basePower": 65
+  },
+  "Clamp": {
+    "accuracy": 85,
+    "pp": 15
+  },
+  "Cotton Spore": {
+    "accuracy": 100
+  },
+  "Covet": {
+    "basePower": 60,
+    "pp": 25
+  },
+  "Crabhammer": {
+    "basePower": 100,
+    "accuracy": 90
+  },
+  "Curse": {
+    "type": "Ghost"
+  },
+  "Disable": {
+    "accuracy": 100
+  },
+  "Doom Desire": {
+    "basePower": 140,
+    "accuracy": 100
+  },
+  "Drain Punch": {
+    "basePower": 75,
+    "pp": 10
+  },
+  "Feint": {
+    "basePower": 30
+  },
+  "Fire Spin": {
+    "basePower": 35,
+    "accuracy": 85
+  },
+  "Fury Cutter": {
+    "basePower": 40
+  },
+  "Future Sight": {
+    "basePower": 120,
+    "accuracy": 100,
+    "pp": 10
+  },
+  "Giga Drain": {
+    "basePower": 75
+  },
+  "Glare": {
+    "accuracy": 100
+  },
+  "Growth": {
+    "pp": 20
+  },
+  "High Jump Kick": {
+    "basePower": 130,
+    "pp": 10
+  },
+  "Icicle Spear": {
+    "basePower": 25
+  },
+  "Jump Kick": {
+    "basePower": 100,
+    "pp": 10
+  },
+  "Knock Off": {
+    "basePower": 65
+  },
+  "Last Resort": {
+    "basePower": 140
+  },
+  "Magma Storm": {
+    "basePower": 100,
+    "accuracy": 75
+  },
+  "Minimize": {
+    "pp": 10
+  },
+  "Moonlight": {
+    "type": "Fairy"
+  },
+  "Outrage": {
+    "pp": 10
+  },
+  "Petal Dance": {
+    "basePower": 120,
+    "pp": 10
+  },
+  "Poison Gas": {
+    "accuracy": 90
+  },
+  "Roar": {
+    "accuracy": true
+  },
+  "Rock Blast": {
+    "accuracy": 90
+  },
+  "Sand Tomb": {
+    "basePower": 35,
+    "accuracy": 85
+  },
+  "Scary Face": {
+    "accuracy": 100
+  },
+  "Snore": {
+    "basePower": 50
+  },
+  "Sucker Punch": {
+    "basePower": 70
+  },
+  "Tackle": {
+    "basePower": 40,
+    "accuracy": 100
+  },
+  "Tailwind": {
+    "pp": 15
+  },
+  "Thrash": {
+    "basePower": 120,
+    "pp": 10
+  },
+  "Toxic": {
+    "accuracy": 90
+  },
+  "Uproar": {
+    "basePower": 90
+  },
+  "Whirlpool": {
+    "basePower": 35,
+    "accuracy": 85
+  },
+  "Whirlwind": {
+    "accuracy": true
+  },
+  "Wrap": {
+    "accuracy": 90
+  },
+  "Assurance": {
+    "basePower": 60
+  },
+  "Leech Life": {
+    "basePower": 80,
+    "pp": 10
+  },
+  "Pin Missile": {
+    "basePower": 25,
+    "accuracy": 95
+  },
+  "Psywave": {
+    "accuracy": 100
+  },
+  "Smelling Salts": {
+    "basePower": 70
+  },
+  "Submission": {
+    "pp": 20
+  },
+  "Surf": {
+    "basePower": 90
+  },
+  "Thief": {
+    "basePower": 60,
+    "pp": 25
+  },
+  "Thunder": {
+    "basePower": 110
+  },
+  "Wake-Up Slap": {
+    "basePower": 70
+  },
+  "Acid Armor": {
+    "pp": 20
+  },
+  "Air Cutter": {
+    "basePower": 60
+  },
+  "Air Slash": {
+    "pp": 15
+  },
+  "Aura Sphere": {
+    "basePower": 80
+  },
+  "Barrier": {
+    "pp": 20
+  },
+  "Blizzard": {
+    "basePower": 110
+  },
+  "Bubble": {
+    "basePower": 40
+  },
+  "Charm": {
+    "type": "Fairy"
+  },
+  "Draco Meteor": {
+    "basePower": 130
+  },
+  "Dragon Pulse": {
+    "basePower": 85
+  },
+  "Energy Ball": {
+    "basePower": 90
+  },
+  "Extrasensory": {
+    "pp": 20
+  },
+  "Fire Blast": {
+    "basePower": 110
+  },
+  "Flamethrower": {
+    "basePower": 90
+  },
+  "Gunk Shot": {
+    "accuracy": 80
+  },
+  "Heat Wave": {
+    "basePower": 95
+  },
+  "Hidden Power": {
+    "basePower": 60
+  },
+  "Hidden Power Bug": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Dark": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Dragon": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Electric": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Fighting": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Fire": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Flying": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Ghost": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Grass": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Ground": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Ice": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Poison": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Psychic": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Rock": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Steel": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hidden Power Water": {
+    "type": "Normal",
+    "basePower": 60
+  },
+  "Hydro Pump": {
+    "basePower": 110
+  },
+  "Ice Beam": {
+    "basePower": 90
+  },
+  "Leaf Storm": {
+    "basePower": 130
+  },
+  "Lick": {
+    "basePower": 30
+  },
+  "Meteor Mash": {
+    "basePower": 90,
+    "accuracy": 90
+  },
+  "Muddy Water": {
+    "basePower": 90
+  },
+  "Overheat": {
+    "basePower": 130
+  },
+  "Power Gem": {
+    "basePower": 80
+  },
+  "Psycho Shift": {
+    "accuracy": 100
+  },
+  "Rock Tomb": {
+    "basePower": 60,
+    "accuracy": 95,
+    "pp": 15
+  },
+  "Skull Bash": {
+    "basePower": 130,
+    "pp": 10
+  },
+  "Smog": {
+    "basePower": 30
+  },
+  "Sweet Kiss": {
+    "type": "Fairy"
+  },
+  "Swords Dance": {
+    "pp": 20
+  },
+  "Thunderbolt": {
+    "basePower": 90
+  },
+  "Vine Whip": {
+    "basePower": 45,
+    "pp": 25
+  },
+  "Will-O-Wisp": {
+    "accuracy": 85
+  },
+  "Dark Void": {
+    "accuracy": 50
+  },
+  "Swagger": {
+    "accuracy": 85
+  },
+  "Thunder Wave": {
+    "accuracy": 90
+  }
+}

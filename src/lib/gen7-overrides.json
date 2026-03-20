@@ -1,0 +1,364 @@
+{
+  "Rotom-Heat": {
+    "types": [
+      "Electric",
+      "Fire"
+    ]
+  },
+  "Rotom-Wash": {
+    "types": [
+      "Electric",
+      "Water"
+    ]
+  },
+  "Rotom-Frost": {
+    "types": [
+      "Electric",
+      "Ice"
+    ]
+  },
+  "Rotom-Fan": {
+    "types": [
+      "Electric",
+      "Flying"
+    ]
+  },
+  "Rotom-Mow": {
+    "types": [
+      "Electric",
+      "Grass"
+    ]
+  },
+  "Butterfree": {
+    "stats": {
+      "spa": 90
+    }
+  },
+  "Beedrill": {
+    "stats": {
+      "atk": 90
+    }
+  },
+  "Pidgeot": {
+    "stats": {
+      "spe": 101
+    }
+  },
+  "Pikachu": {
+    "stats": {
+      "def": 40,
+      "spd": 50
+    }
+  },
+  "Raichu": {
+    "stats": {
+      "spe": 110
+    }
+  },
+  "Nidoqueen": {
+    "stats": {
+      "atk": 92
+    }
+  },
+  "Nidoking": {
+    "stats": {
+      "atk": 102
+    }
+  },
+  "Clefairy": {
+    "types": [
+      "Fairy"
+    ]
+  },
+  "Clefable": {
+    "types": [
+      "Fairy"
+    ],
+    "stats": {
+      "spa": 95
+    }
+  },
+  "Jigglypuff": {
+    "types": [
+      "Normal",
+      "Fairy"
+    ]
+  },
+  "Wigglytuff": {
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "stats": {
+      "spa": 85
+    }
+  },
+  "Vileplume": {
+    "stats": {
+      "spa": 110
+    }
+  },
+  "Poliwrath": {
+    "stats": {
+      "atk": 95
+    }
+  },
+  "Alakazam": {
+    "stats": {
+      "spd": 95
+    }
+  },
+  "Victreebel": {
+    "stats": {
+      "spd": 70
+    }
+  },
+  "Golem": {
+    "stats": {
+      "atk": 120
+    }
+  },
+  "Mr. Mime": {
+    "types": [
+      "Psychic",
+      "Fairy"
+    ]
+  },
+  "Igglybuff": {
+    "types": [
+      "Normal",
+      "Fairy"
+    ]
+  },
+  "Togepi": {
+    "types": [
+      "Fairy"
+    ]
+  },
+  "Togetic": {
+    "types": [
+      "Fairy",
+      "Flying"
+    ]
+  },
+  "Cleffa": {
+    "types": [
+      "Fairy"
+    ]
+  },
+  "Ampharos": {
+    "stats": {
+      "def": 85
+    }
+  },
+  "Bellossom": {
+    "stats": {
+      "def": 95
+    }
+  },
+  "Marill": {
+    "types": [
+      "Water",
+      "Fairy"
+    ]
+  },
+  "Azumarill": {
+    "types": [
+      "Water",
+      "Fairy"
+    ],
+    "stats": {
+      "spa": 60
+    }
+  },
+  "Jumpluff": {
+    "stats": {
+      "spd": 95
+    }
+  },
+  "Snubbull": {
+    "types": [
+      "Fairy"
+    ]
+  },
+  "Granbull": {
+    "types": [
+      "Fairy"
+    ]
+  },
+  "Beautifly": {
+    "stats": {
+      "spa": 100
+    }
+  },
+  "Ralts": {
+    "types": [
+      "Psychic",
+      "Fairy"
+    ]
+  },
+  "Kirlia": {
+    "types": [
+      "Psychic",
+      "Fairy"
+    ]
+  },
+  "Gardevoir": {
+    "types": [
+      "Psychic",
+      "Fairy"
+    ]
+  },
+  "Exploud": {
+    "stats": {
+      "spd": 73
+    }
+  },
+  "Azurill": {
+    "types": [
+      "Normal",
+      "Fairy"
+    ]
+  },
+  "Mawile": {
+    "types": [
+      "Steel",
+      "Fairy"
+    ]
+  },
+  "Staraptor": {
+    "stats": {
+      "spd": 60
+    }
+  },
+  "Roserade": {
+    "stats": {
+      "def": 65
+    }
+  },
+  "Mime Jr.": {
+    "types": [
+      "Psychic",
+      "Fairy"
+    ]
+  },
+  "Togekiss": {
+    "types": [
+      "Fairy",
+      "Flying"
+    ]
+  },
+  "Arbok": {
+    "stats": {
+      "atk": 95
+    }
+  },
+  "Dugtrio": {
+    "stats": {
+      "atk": 100
+    }
+  },
+  "Farfetch’d": {
+    "stats": {
+      "atk": 90
+    }
+  },
+  "Dodrio": {
+    "stats": {
+      "spe": 110
+    }
+  },
+  "Electrode": {
+    "stats": {
+      "spe": 150
+    }
+  },
+  "Exeggutor": {
+    "stats": {
+      "spd": 75
+    }
+  },
+  "Noctowl": {
+    "stats": {
+      "spa": 86
+    }
+  },
+  "Ariados": {
+    "stats": {
+      "spd": 70
+    }
+  },
+  "Qwilfish": {
+    "stats": {
+      "def": 85
+    }
+  },
+  "Magcargo": {
+    "stats": {
+      "hp": 60,
+      "spa": 90
+    }
+  },
+  "Corsola": {
+    "stats": {
+      "hp": 65,
+      "def": 95,
+      "spd": 95
+    }
+  },
+  "Mantine": {
+    "stats": {
+      "hp": 85
+    }
+  },
+  "Swellow": {
+    "stats": {
+      "spa": 75
+    }
+  },
+  "Pelipper": {
+    "stats": {
+      "spa": 95
+    }
+  },
+  "Masquerain": {
+    "stats": {
+      "spa": 100,
+      "spe": 80
+    }
+  },
+  "Delcatty": {
+    "stats": {
+      "spe": 90
+    }
+  },
+  "Volbeat": {
+    "stats": {
+      "def": 75,
+      "spd": 85
+    }
+  },
+  "Illumise": {
+    "stats": {
+      "def": 75,
+      "spd": 85
+    }
+  },
+  "Lunatone": {
+    "stats": {
+      "hp": 90
+    }
+  },
+  "Solrock": {
+    "stats": {
+      "hp": 90
+    }
+  },
+  "Chimecho": {
+    "stats": {
+      "hp": 75,
+      "def": 80,
+      "spd": 90
+    }
+  }
+}
