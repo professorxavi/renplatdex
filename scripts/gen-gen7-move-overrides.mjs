@@ -41,7 +41,7 @@ for (const m4 of gen4.moves) {
   }
 }
 
-const outPath = resolve(__dirname, "../src/lib/gen7-move-overrides.json");
+const outPath = resolve(__dirname, "../src/lib/data/gen7-move-overrides.json");
 writeFileSync(outPath, JSON.stringify(overrides, null, 2) + "\n");
 
 const total = Object.keys(overrides).length;

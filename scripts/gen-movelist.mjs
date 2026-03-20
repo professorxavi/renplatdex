@@ -17,15 +17,15 @@ import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const srcLib = resolve(__dirname, "../src/lib");
+const srcData = resolve(__dirname, "../src/lib/data");
 
 const gens = new Generations(Dex);
 const gen4 = gens.get(4);
 const gen7 = gens.get(7);
 
-const GEN7_MOVE_OVERRIDES  = JSON.parse(readFileSync(resolve(srcLib, "gen7-move-overrides.json"),  "utf-8"));
-const RP_MOVE_OVERRIDES    = JSON.parse(readFileSync(resolve(srcLib, "rp-move-overrides.json"),    "utf-8"));
-const RP_MOVE_REPLACEMENTS = JSON.parse(readFileSync(resolve(srcLib, "rp-move-replacements.json"), "utf-8"));
+const GEN7_MOVE_OVERRIDES  = JSON.parse(readFileSync(resolve(srcData, "gen7-move-overrides.json"),  "utf-8"));
+const RP_MOVE_OVERRIDES    = JSON.parse(readFileSync(resolve(srcData, "rp-move-overrides.json"),    "utf-8"));
+const RP_MOVE_REPLACEMENTS = JSON.parse(readFileSync(resolve(srcData, "rp-move-replacements.json"), "utf-8"));
 
 function mapRaw(m) {
   return {
@@ -52,7 +52,7 @@ function applyOverride(move, o) {
   };
 }
 
-const RP_POKEMON_OVERRIDES = JSON.parse(readFileSync(resolve(srcLib, "rp-pokemon-overrides.json"), "utf-8"));
+const RP_POKEMON_OVERRIDES = JSON.parse(readFileSync(resolve(srcData, "rp-pokemon-overrides.json"), "utf-8"));
 
 // Build reverse map: toID(newName) → toID(oldGen4Name)
 // Used to match replaced moves back to the old IDs that appear in gen4 learnsets.
@@ -115,7 +115,7 @@ for (const m of gen4.moves) {
   moves.push(move);
 }
 
-const outPath = resolve(srcLib, "movelist.json");
+const outPath = resolve(srcData, "movelist.json");
 writeFileSync(outPath, JSON.stringify(moves, null, 2) + "\n");
 console.log(
   `Written ${outPath}\n` +

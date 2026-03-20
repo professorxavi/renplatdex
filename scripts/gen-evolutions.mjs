@@ -17,7 +17,7 @@ import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const out = resolve(__dirname, "../src/lib/evolutions.json");
+const out = resolve(__dirname, "../src/lib/data/evolutions.json");
 
 const gens = new Generations(Dex);
 const gen4 = gens.get(4);

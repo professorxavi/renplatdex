@@ -51,7 +51,7 @@ for (const s4 of gen4.species) {
   }
 }
 
-const outPath = resolve(__dirname, "../src/lib/gen7-overrides.json");
+const outPath = resolve(__dirname, "../src/lib/data/gen7-overrides.json");
 writeFileSync(outPath, JSON.stringify(overrides, null, 2) + "\n");
 
 const pokemonCount = Object.keys(overrides).length;

@@ -22,13 +22,13 @@ import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const srcLib = resolve(__dirname, "../src/lib");
+const srcData = resolve(__dirname, "../src/lib/data");
 
 const gens = new Generations(Dex);
 const gen4 = gens.get(4);
 
-const GEN7_OVERRIDES    = JSON.parse(readFileSync(resolve(srcLib, "gen7-overrides.json"), "utf8"));
-const RP_OVERRIDES      = JSON.parse(readFileSync(resolve(srcLib, "rp-pokemon-overrides.json"), "utf8"));
+const GEN7_OVERRIDES    = JSON.parse(readFileSync(resolve(srcData, "gen7-overrides.json"), "utf8"));
+const RP_OVERRIDES      = JSON.parse(readFileSync(resolve(srcData, "rp-pokemon-overrides.json"), "utf8"));
 
 const result = {};
 
@@ -53,7 +53,7 @@ for (const s4 of gen4.species) {
   }
 }
 
-const outPath = resolve(srcLib, "statChanges.json");
+const outPath = resolve(srcData, "statChanges.json");
 writeFileSync(outPath, JSON.stringify(result, null, 2) + "\n");
 
 const count = Object.keys(result).length;

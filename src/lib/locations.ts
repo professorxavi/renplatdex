@@ -1,4 +1,4 @@
-import LOCATIONS_DATA from "./locations.json";
+import LOCATIONS_DATA from "./data/locations.json";
 
 export interface EncounterEntry {
   pokemon: string;
@@ -34,7 +34,7 @@ export function sortEncounterTypes(types: string[]): string[] {
   );
 }
 
-const LOCATIONS = LOCATIONS_DATA as Location[];
+const LOCATIONS = LOCATIONS_DATA as unknown as Location[];
 
 export function getAllLocations(): Location[] {
   return LOCATIONS;

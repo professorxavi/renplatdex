@@ -1,5 +1,5 @@
 import { getPokemon, getLearnset, getEvolutionChain, getPokemonPrevo } from "@/lib/dex";
-import STAT_CHANGES from "@/lib/statChanges.json";
+import STAT_CHANGES from "@/lib/data/statChanges.json";
 import type { EvoChainNode } from "@/lib/dex";
 import { getSpriteUrl } from "@/lib/sprites";
 import { getPokemonLocations, toLocationSlug } from "@/lib/locations";

@@ -1,9 +1,9 @@
 import { Dex } from "@pkmn/dex";
 import { Generations } from "@pkmn/data";
-import _GEN7_OVERRIDES from "./gen7-overrides.json";
-import _RP_POKEMON_OVERRIDES from "./rp-pokemon-overrides.json";
-import _MOVELIST from "./movelist.json";
-import _EVOLUTIONS from "./evolutions.json";
+import _GEN7_OVERRIDES from "./data/gen7-overrides.json";
+import _RP_POKEMON_OVERRIDES from "./data/rp-pokemon-overrides.json";
+import _MOVELIST from "./data/movelist.json";
+import _EVOLUTIONS from "./data/evolutions.json";
 type Gen7Override = { types?: string[]; stats?: Record<string, number> };
 type RpPokemonOverride = { types?: string[]; stats?: Record<string, number>; abilities?: string[]; learnset?: Record<string, string[]> };
 const GEN7_OVERRIDES = _GEN7_OVERRIDES as Record<string, Gen7Override>;
