@@ -3,20 +3,23 @@
 import { useState } from "react";
 import { cn } from "@/lib/cn";
 import Link from "next/link";
-import { Zap, Wind, Shield, MapPin } from "lucide-react";
+import { Zap, Wind, Shield, MapPin, Package } from "lucide-react";
 import PokemonCard from "@/components/PokemonCard";
 import TypeBadge from "@/components/TypeBadge";
 import type { Pokemon, Move, Ability } from "@/lib/dex";
 import type { Location } from "@/lib/locations";
 import { toLocationSlug } from "@/lib/locations";
+import type { ItemsData, ItemCategory } from "@/lib/items";
+import { ITEM_CATEGORY_LABELS } from "@/lib/items";
 
-type Tab = "pokemon" | "moves" | "abilities" | "locations";
+type Tab = "pokemon" | "moves" | "abilities" | "locations" | "items";
 
 const TABS: { id: Tab; label: string; icon: React.ReactNode }[] = [
   { id: "pokemon",   label: "Pokémon",   icon: <Zap size={14} /> },
   { id: "moves",     label: "Moves",     icon: <Wind size={14} /> },
   { id: "abilities", label: "Abilities", icon: <Shield size={14} /> },
   { id: "locations", label: "Locations", icon: <MapPin size={14} /> },
+  { id: "items",     label: "Items",     icon: <Package size={14} /> },
 ];
 
 interface Props {
@@ -24,9 +27,10 @@ interface Props {
   moves: Move[];
   abilities: Ability[];
   locations: Location[];
+  items: ItemsData;
 }
 
-export default function BrowseTabs({ pokemon, moves, abilities, locations }: Props) {
+export default function BrowseTabs({ pokemon, moves, abilities, locations, items }: Props) {
   const [activeTab, setActiveTab] = useState<Tab>("pokemon");
 
   return (
@@ -112,6 +116,21 @@ export default function BrowseTabs({ pokemon, moves, abilities, locations }: Pro
               </Link>
             );
           })}
+        </div>
+      )}
+
+      {activeTab === "items" && (
+        <div className="flex flex-col gap-2">
+          {(Object.keys(ITEM_CATEGORY_LABELS) as ItemCategory[]).map((cat) => (
+            <Link
+              key={cat}
+              href={`/items/${cat}`}
+              className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
+            >
+              <p className="font-semibold text-[var(--text-primary)]">{ITEM_CATEGORY_LABELS[cat]}</p>
+              <p className="text-xs text-[var(--text-secondary)] shrink-0">{items[cat].length} items</p>
+            </Link>
+          ))}
         </div>
       )}
     </section>

@@ -4,6 +4,7 @@ import "./globals.css";
 import SplitLayout from "./SplitLayout";
 import { getAllPokemon, getAllMoves, getAllAbilities } from "@/lib/dex";
 import { getAllLocations } from "@/lib/locations";
+import { getAllItems } from "@/lib/items";
 
 const ubuntu = Ubuntu({
   variable: "--font-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
   const moves = getAllMoves();
   const abilities = getAllAbilities();
   const locations = getAllLocations();
+  const items = getAllItems();
 
   return (
     <html lang="en" className={`${ubuntu.variable} ${ubuntuMono.variable} h-full antialiased`}>
@@ -38,6 +40,7 @@ export default function RootLayout({
           moves={moves}
           abilities={abilities}
           locations={locations}
+          items={items}
         >
           {children}
         </SplitLayout>

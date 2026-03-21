@@ -10,12 +10,14 @@ import SearchBox from "@/components/SearchBox";
 import BrowseTabs from "@/components/BrowseTabs";
 import type { Pokemon, Move, Ability } from "@/lib/dex";
 import type { Location } from "@/lib/locations";
+import type { ItemsData } from "@/lib/items";
 
 interface Props {
   pokemon: Pokemon[];
   moves: Move[];
   abilities: Ability[];
   locations: Location[];
+  items: ItemsData;
   children: React.ReactNode;
 }
 
@@ -24,6 +26,7 @@ export default function SplitLayout({
   moves,
   abilities,
   locations,
+  items,
   children,
 }: Props) {
   const pathname = usePathname();
@@ -82,6 +85,7 @@ const showScrollTop = scrollPct > 0.01;
               moves={moves}
               abilities={abilities}
               locations={locations}
+              items={items}
             />
           </div>
           <div
