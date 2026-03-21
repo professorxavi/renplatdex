@@ -4,12 +4,20 @@ import _GEN7_OVERRIDES from "./data/gen7-overrides.json";
 import _RP_POKEMON_OVERRIDES from "./data/rp-pokemon-overrides.json";
 import _MOVELIST from "./data/movelist.json";
 import _EVOLUTIONS from "./data/evolutions.json";
+import _TM_REPLACEMENTS from "./data/tm-replacements.json";
+const TM_REPLACEMENTS = _TM_REPLACEMENTS as Record<string, string>;
 type Gen7Override = { types?: string[]; stats?: Record<string, number> };
 type RpPokemonOverride = { types?: string[]; stats?: Record<string, number>; abilities?: string[]; learnset?: Record<string, string[]> };
 const GEN7_OVERRIDES = _GEN7_OVERRIDES as Record<string, Gen7Override>;
 const RP_POKEMON_OVERRIDES = _RP_POKEMON_OVERRIDES as Record<string, RpPokemonOverride>;
 const MOVELIST = _MOVELIST as Move[];
-const MOVE_BY_ID = new Map(MOVELIST.map((m) => [m.name.toLowerCase().replace(/ /g, ""), m]));
+const MOVE_BY_ID = new Map(MOVELIST.map((m) => [m.name.toLowerCase().replace(/[^a-z0-9]/g, ""), m]));
+
+// Move IDs that differ between @pkmn/data learnset keys and the current @pkmn/dex move names.
+const LEARNSET_ID_ALIASES: Record<string, string> = {
+  "vicegrip":  "visegrip",   // Gen4 learnsets use "vicegrip"; dex yields "Vise Grip" → key "visegrip"
+  "twineedle": "twinneedle", // Gen4 learnsets use "Twineedle"; display name is "Twin Needle"
+};
 const EVOLUTIONS = _EVOLUTIONS as Record<string, { name: string; method: string }[]>;
 
 const gens = new Generations(Dex);
@@ -82,7 +90,7 @@ type Gen4Species = NonNullable<ReturnType<typeof gen4.species.get>>;
 
 function mapSpecies(s: Gen4Species, forms: FormVariant[]): Pokemon {
   const g7 = GEN7_OVERRIDES[s.name as keyof typeof GEN7_OVERRIDES];
-  const rp = RP_POKEMON_OVERRIDES[s.name.toLowerCase() as keyof typeof RP_POKEMON_OVERRIDES];
+  const rp = RP_POKEMON_OVERRIDES[s.name.toLowerCase().replace(/[^a-z0-9]/g, "") as keyof typeof RP_POKEMON_OVERRIDES];
   return {
     id: s.num,
     name: s.name,
@@ -166,7 +174,7 @@ export function getEvolutionChain(pokemonName: string): EvoChainNode {
 
 /** Looks up a move from the pre-built movelist by its lowercase ID (e.g. "vinewhip"). */
 function resolveMoveById(moveId: string): Move | null {
-  return MOVE_BY_ID.get(moveId) ?? null;
+  return MOVE_BY_ID.get(moveId) ?? MOVE_BY_ID.get(LEARNSET_ID_ALIASES[moveId] ?? "") ?? null;
 }
 
 export function getAllMoves(): Move[] {
@@ -174,7 +182,7 @@ export function getAllMoves(): Move[] {
 }
 
 export function getMove(name: string): Move | undefined {
-  return MOVE_BY_ID.get(name.toLowerCase().replace(/ /g, ""));
+  return MOVE_BY_ID.get(name.toLowerCase().replace(/[^a-z0-9]/g, ""));
 }
 
 // ─── Abilities ────────────────────────────────────────────────────────────────
@@ -231,6 +239,26 @@ function parseSource(src: string): { method: LearnsetMove["method"]; level?: num
   if (code === "T") return { method: "tutor" };
   if (code === "E") return { method: "egg" };
   return null;
+}
+
+/**
+ * Re-keys TM entries in a learnset record according to TM_REPLACEMENTS.
+ * e.g. dreameater:["4M","4L34"] → dreameater:["4L34"], dazzlinggleam:["4M"]
+ */
+function applyTmReplacements(record: Record<string, string[]>): Record<string, string[]> {
+  const result: Record<string, string[]> = {};
+  for (const [moveId, sources] of Object.entries(record)) {
+    const tmSources = sources.filter((s) => parseSource(s)?.method === "tm");
+    const nonTmSources = sources.filter((s) => parseSource(s)?.method !== "tm");
+    if (tmSources.length > 0 && moveId in TM_REPLACEMENTS) {
+      const replacementId = TM_REPLACEMENTS[moveId];
+      if (nonTmSources.length > 0) result[moveId] = nonTmSources;
+      result[replacementId] = [...(result[replacementId] ?? []), ...tmSources];
+    } else {
+      result[moveId] = sources;
+    }
+  }
+  return result;
 }
 
 function buildLearnset(learnsetRecord: Record<string, string[]>): Learnset {
@@ -300,23 +328,36 @@ async function getGen4EggMoves(pokemonName: string): Promise<LearnsetMove[]> {
 }
 
 export async function getLearnset(pokemonName: string): Promise<Learnset> {
-  const rpData = RP_POKEMON_OVERRIDES[pokemonName.toLowerCase() as keyof typeof RP_POKEMON_OVERRIDES];
+  const rpData = RP_POKEMON_OVERRIDES[pokemonName.toLowerCase().replace(/[^a-z0-9]/g, "") as keyof typeof RP_POKEMON_OVERRIDES];
+  const gen4Data = await gen4.learnsets.get(pokemonName);
+
+  // Step 1: Gen4 TM/tutor base — drop level-up and egg (egg handled separately)
+  const gen4Base: Record<string, string[]> = {};
+  if (gen4Data?.learnset) {
+    for (const [moveId, sources] of Object.entries(gen4Data.learnset)) {
+      const relevant = sources.filter((s) => s === "4M" || s === "4T");
+      if (relevant.length > 0) gen4Base[moveId] = relevant;
+    }
+  }
+
+  // Step 2: Apply TM replacements to Gen4 base
+  const gen4WithReplacements = applyTmReplacements(gen4Base);
+
+  // Step 3: Merge RP override on top (provides level-up set + any new TMs/tutors)
+  const merged: Record<string, string[]> = { ...gen4WithReplacements };
   if (rpData?.learnset) {
-    const result = buildLearnset(rpData.learnset);
-    result.egg = await getGen4EggMoves(pokemonName);
-    return result;
+    for (const [moveId, sources] of Object.entries(rpData.learnset)) {
+      merged[moveId] = [...(merged[moveId] ?? []), ...sources];
+    }
   }
 
-  const learnsetData = await gen4.learnsets.get(pokemonName);
-  if (!learnsetData?.learnset) return { levelUp: [], tm: [], tutor: [], egg: [] };
+  // Step 4: Build learnset
+  const result = buildLearnset(merged);
 
-  // Filter to gen4 sources only when falling back to @pkmn/data
-  const filtered: Record<string, string[]> = {};
-  for (const [moveId, sources] of Object.entries(learnsetData.learnset)) {
-    const gen4Sources = sources.filter((s) => s.startsWith("4"));
-    if (gen4Sources.length > 0) filtered[moveId] = gen4Sources;
-  }
-  return buildLearnset(filtered);
+  // Step 5: Egg moves (walks prevo chain)
+  result.egg = await getGen4EggMoves(pokemonName);
+
+  return result;
 }
 
 // ─── Move learners ────────────────────────────────────────────────────────────
@@ -337,18 +378,41 @@ function formatLearnMethod(src: string): string | null {
 }
 
 export async function getPokemonByMove(moveName: string): Promise<MoveLearner[]> {
-  const moveId = moveName.toLowerCase().replace(/ /g, "");
+  const moveId = moveName.toLowerCase().replace(/ /g, "").replace(/-/g, "");
   const allPokemon = getAllPokemon();
 
   const results = await Promise.all(
     allPokemon.map(async (pokemon) => {
-      const rpData = RP_POKEMON_OVERRIDES[pokemon.name.toLowerCase() as keyof typeof RP_POKEMON_OVERRIDES];
+      const rpData = RP_POKEMON_OVERRIDES[pokemon.name.toLowerCase().replace(/[^a-z0-9]/g, "") as keyof typeof RP_POKEMON_OVERRIDES];
       const gen4Data = await gen4.learnsets.get(pokemon.name);
 
-      // Collect sources: RP learnset for non-egg methods, gen4 for egg moves
-      const rpSources = rpData?.learnset?.[moveId] ?? [];
-      const gen4Sources = (gen4Data?.learnset?.[moveId] ?? []).filter((s) => s === "4E");
-      const allSources = [...rpSources.filter((s) => parseSource(s)?.method !== "egg"), ...gen4Sources];
+      // Step 1: Gen4 TM/tutor base (drop level-up and egg)
+      const gen4Base: Record<string, string[]> = {};
+      if (gen4Data?.learnset) {
+        for (const [id, sources] of Object.entries(gen4Data.learnset)) {
+          const relevant = sources.filter((s) => s === "4M" || s === "4T");
+          if (relevant.length > 0) gen4Base[id] = relevant;
+        }
+      }
+
+      // Step 2: Apply TM replacements
+      const gen4WithReplacements = applyTmReplacements(gen4Base);
+
+      // Step 3: Merge RP override
+      const merged: Record<string, string[]> = { ...gen4WithReplacements };
+      if (rpData?.learnset) {
+        for (const [id, sources] of Object.entries(rpData.learnset)) {
+          merged[id] = [...(merged[id] ?? []), ...sources];
+        }
+      }
+
+      // Step 4: Check if the queried move appears in the merged record
+      const moveSources = (merged[moveId] ?? []).filter((s) => parseSource(s)?.method !== "egg");
+
+      // Step 5: Egg moves — check Gen4 data for this Pokémon directly
+      const eggSources = (gen4Data?.learnset?.[moveId] ?? []).filter((s) => s === "4E");
+
+      const allSources = [...moveSources, ...eggSources];
       if (allSources.length === 0) return null;
 
       const seen = new Set<string>();

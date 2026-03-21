@@ -1,6 +1,6 @@
 /**
  * Builds the final Renegade Platinum move list and writes it to
- * src/lib/movelist.json. Order follows gen4 num, with each replaced move
+ * src/lib/data/movelist.json. Order follows gen4 num, with each replaced move
  * sitting in the same position as the move it replaces.
  *
  * Pipeline per move:
@@ -10,7 +10,7 @@
  *   node scripts/gen-movelist.mjs
  */
 
-import { Dex, toID } from "@pkmn/dex";
+import { Dex } from "@pkmn/dex";
 import { Generations } from "@pkmn/data";
 import { writeFileSync, readFileSync } from "fs";
 import { fileURLToPath } from "url";
@@ -52,38 +52,20 @@ function applyOverride(move, o) {
   };
 }
 
-const RP_POKEMON_OVERRIDES = JSON.parse(readFileSync(resolve(srcData, "rp-pokemon-overrides.json"), "utf-8"));
+// Moves whose Gen4 display name should be overridden in the output.
+const MOVE_NAME_OVERRIDES = {
+  "Vise Grip": "Vicegrip",
+  "Twineedle": "Twin Needle",
+};
 
-// Build reverse map: toID(newName) → toID(oldGen4Name)
-// Used to match replaced moves back to the old IDs that appear in gen4 learnsets.
-const replacedFromId = new Map();
-for (const [oldName, newName] of Object.entries(RP_MOVE_REPLACEMENTS)) {
-  replacedFromId.set(toID(newName), toID(oldName));
-}
-
-// Collect every move ID that at least one Pokémon can learn (RP or gen4 native).
-const learnableIds = new Set();
-for (const species of gen4.species) {
-  if (!species || !species.exists || species.isNonstandard || species.num <= 0) continue;
-  const rpData = RP_POKEMON_OVERRIDES[species.name.toLowerCase()];
-  if (rpData?.learnset) {
-    for (const moveId of Object.keys(rpData.learnset)) learnableIds.add(moveId);
-  } else {
-    const learnsetData = await gen4.learnsets.get(species.name);
-    if (learnsetData?.learnset) {
-      for (const [moveId, sources] of Object.entries(learnsetData.learnset)) {
-        if (sources.some((s) => s.startsWith("4"))) learnableIds.add(moveId);
-      }
-    }
-  }
-}
 
 const moves = [];
 let replacedCount = 0;
-let skippedCount = 0;
 
 for (const m of gen4.moves) {
   if (!m || !m.exists || m.isNonstandard || m.num <= 0) continue;
+  // Skip Hidden Power type variants (Hidden Power Fire, etc.) — keep only base Hidden Power
+  if (m.name.startsWith("Hidden Power ")) continue;
 
   let move;
   if (m.name in RP_MOVE_REPLACEMENTS) {
@@ -100,16 +82,9 @@ for (const m of gen4.moves) {
   } else {
     // Regular gen4 move — apply gen7 overrides then RP overrides
     move = mapRaw(m);
+    if (move.name in MOVE_NAME_OVERRIDES) move = { ...move, name: MOVE_NAME_OVERRIDES[move.name] };
     if (move.name in GEN7_MOVE_OVERRIDES) move = applyOverride(move, GEN7_MOVE_OVERRIDES[move.name]);
     if (move.name in RP_MOVE_OVERRIDES)   move = applyOverride(move, RP_MOVE_OVERRIDES[move.name]);
-  }
-
-  // Drop moves no Pokémon can learn
-  const id = toID(move.name);
-  const oldId = replacedFromId.get(id);
-  if (!learnableIds.has(id) && !(oldId && learnableIds.has(oldId))) {
-    skippedCount++;
-    continue;
   }
 
   moves.push(move);
@@ -117,7 +92,8 @@ for (const m of gen4.moves) {
 
 const outPath = resolve(srcData, "movelist.json");
 writeFileSync(outPath, JSON.stringify(moves, null, 2) + "\n");
+
 console.log(
   `Written ${outPath}\n` +
-  `  ${moves.length} moves total (${replacedCount} replaced from gen7, ${skippedCount} unlearnable removed)`
+  `  ${moves.length} moves total (${replacedCount} replaced from gen7)`
 );
