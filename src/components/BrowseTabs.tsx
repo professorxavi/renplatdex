@@ -5,8 +5,8 @@ import { cn } from "@/lib/cn";
 import Link from "next/link";
 import { Zap, Wind, Shield, MapPin, Package } from "lucide-react";
 import PokemonCard from "@/components/PokemonCard";
-import TypeBadge from "@/components/TypeBadge";
 import type { Pokemon, Move, Ability } from "@/lib/dex";
+import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import type { Location } from "@/lib/locations";
 import { toLocationSlug } from "@/lib/locations";
 import type { ItemsData, ItemCategory } from "@/lib/items";
@@ -73,8 +73,8 @@ export default function BrowseTabs({ pokemon, moves, abilities, locations, items
               <div>
                 <p className="font-semibold text-[var(--text-primary)]">{m.name}</p>
                 <div className="flex items-center gap-1.5 mt-0.5">
-                  <TypeBadge type={m.type} asLink={false} />
-                  <span className="text-xs text-[var(--text-secondary)]">{m.category}</span>
+                  <span className={`text-xs font-semibold ${TYPE_TEXT_COLORS[m.type]}`}>{m.type}</span>
+                  <span className="text-xs text-[var(--text-secondary)]">· {m.category}</span>
                 </div>
               </div>
               <div className="text-right text-sm">
