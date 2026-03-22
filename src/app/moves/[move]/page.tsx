@@ -1,4 +1,4 @@
-import { getMove, getPokemonByMove } from "@/lib/dex";
+import { getMove, getPokemonByMove, getAllMoves } from "@/lib/dex";
 import TypeBadge from "@/components/TypeBadge";
 import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { notFound } from "next/navigation";
@@ -6,7 +6,6 @@ import Link from "next/link";
 import { cn } from "@/lib/cn";
 
 export async function generateStaticParams() {
-  const { getAllMoves } = await import("@/lib/dex");
   return getAllMoves().map((m) => ({ move: encodeURIComponent(m.name.toLowerCase()) }));
 }
 

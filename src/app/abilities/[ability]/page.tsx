@@ -1,11 +1,10 @@
-import { getAbility, getAllPokemon } from "@/lib/dex";
+import { getAbility, getAllPokemon, getAllAbilities } from "@/lib/dex";
 import TypeBadge from "@/components/TypeBadge";
 import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
 export async function generateStaticParams() {
-  const { getAllAbilities } = await import("@/lib/dex");
   return getAllAbilities().map((a) => ({ ability: a.name.toLowerCase().replace(/ /g, "-") }));
 }
 

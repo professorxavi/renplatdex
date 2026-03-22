@@ -1,4 +1,4 @@
-import { getPokemon, getLearnset, getEvolutionChain, getPokemonPrevo } from "@/lib/dex";
+import { getPokemon, getLearnset, getEvolutionChain, getPokemonPrevo, getAllPokemon } from "@/lib/dex";
 import STAT_CHANGES from "@/lib/data/statChanges.json";
 import type { EvoChainNode } from "@/lib/dex";
 import { getSpriteUrl } from "@/lib/sprites";
@@ -12,7 +12,6 @@ import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 
 export async function generateStaticParams() {
-  const { getAllPokemon } = await import("@/lib/dex");
   return getAllPokemon().map((p) => ({ name: encodeURIComponent(p.name.toLowerCase()) }));
 }
 

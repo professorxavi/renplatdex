@@ -1,4 +1,4 @@
-import { getLocation, ENCOUNTER_TYPE_LABELS, sortEncounterTypes } from "@/lib/locations";
+import { getLocation, getAllLocations, toLocationSlug, ENCOUNTER_TYPE_LABELS, sortEncounterTypes } from "@/lib/locations";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
@@ -7,7 +7,6 @@ import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { getPokemon } from "@/lib/dex";
 
 export async function generateStaticParams() {
-  const { getAllLocations, toLocationSlug } = await import("@/lib/locations");
   return getAllLocations().map((l) => ({ location: toLocationSlug(l.name) }));
 }
 
