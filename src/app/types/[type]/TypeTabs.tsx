@@ -5,7 +5,7 @@ import { cn } from "@/lib/cn";
 import Link from "next/link";
 import TypeBadge from "@/components/TypeBadge";
 import type { Pokemon, Move, PokemonType } from "@/lib/dex";
-import { TYPE_COLORS } from "@/lib/type-colors";
+import { TYPE_COLORS, TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { toPokemonSlug } from "@/lib/slugs";
 
 const TYPE_CHART: Partial<Record<PokemonType, {
@@ -123,49 +123,74 @@ export default function TypeTabs({ typeName, pokemon, moves }: Props) {
       </div>
 
       {tab === "pokemon" && (
-        <div className="flex flex-col gap-2">
+        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-x-auto">
           {pokemon.length === 0 ? (
             <p className="text-center text-sm text-[var(--text-secondary)] py-8">No Pokémon of this type.</p>
           ) : (
-            pokemon.map((p) => (
-              <Link
-                key={p.name}
-                href={`/pokemon/${toPokemonSlug(p.name)}`}
-                className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-xs font-mono text-[var(--text-secondary)]">#{String(p.id).padStart(3, "0")}</span>
-                  <span className="font-semibold text-[var(--text-primary)]">{p.name}</span>
-                </div>
-                <div className="flex gap-1">
-                  {p.types.map((t) => <TypeBadge key={t} type={t} asLink={false} />)}
-                </div>
-              </Link>
-            ))
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-[var(--border)] text-left">
+                  <th className="w-px whitespace-nowrap px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">#</th>
+                  <th className="px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Pokémon</th>
+                  <th className="px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                {pokemon.map((p) => (
+                  <tr key={p.name} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
+                    <td className="w-px whitespace-nowrap px-2 sm:px-3 py-1.5 text-xs font-mono text-[var(--text-secondary)]">
+                      {String(p.id).padStart(3, "0")}
+                    </td>
+                    <td className="px-2 sm:px-3 py-1.5">
+                      <Link href={`/pokemon/${toPokemonSlug(p.name)}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
+                        {p.name}
+                      </Link>
+                    </td>
+                    <td className="whitespace-nowrap px-2 sm:px-3 py-1.5">
+                      <span className="sm:hidden flex gap-2">
+                        {p.types.map((t) => <span key={t} className={`text-xs font-semibold ${TYPE_TEXT_COLORS[t]}`}>{t}</span>)}
+                      </span>
+                      <span className="hidden sm:flex gap-1">
+                        {p.types.map((t) => <TypeBadge key={t} type={t} asLink={false} />)}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           )}
         </div>
       )}
 
       {tab === "moves" && (
-        <div className="flex flex-col gap-2">
+        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-x-auto">
           {moves.length === 0 ? (
             <p className="text-center text-sm text-[var(--text-secondary)] py-8">No moves of this type.</p>
           ) : (
-            moves.map((m) => (
-              <Link
-                key={m.name}
-                href={`/moves/${m.name.toLowerCase().replace(/ /g, "-")}`}
-                className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
-              >
-                <div>
-                  <p className="font-semibold text-[var(--text-primary)]">{m.name}</p>
-                  <p className="text-xs text-[var(--text-secondary)]">{m.category}</p>
-                </div>
-                <p className="font-bold text-[var(--text-primary)]">
-                  {m.power ?? "—"} <span className="text-xs font-normal text-[var(--text-secondary)]">BP</span>
-                </p>
-              </Link>
-            ))
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-[var(--border)] text-left">
+                  <th className="px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Move</th>
+                  <th className="px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Cat</th>
+                  <th className="px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Pwr</th>
+                  <th className="px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Acc</th>
+                </tr>
+              </thead>
+              <tbody>
+                {moves.map((m) => (
+                  <tr key={m.name} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
+                    <td className="px-2 sm:px-3 py-1.5">
+                      <Link href={`/moves/${m.name.toLowerCase().replace(/ /g, "-")}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
+                        {m.name}
+                      </Link>
+                    </td>
+                    <td className="px-2 sm:px-3 py-1.5 text-xs text-[var(--text-secondary)]">{m.category}</td>
+                    <td className="px-2 sm:px-3 py-1.5 text-xs text-right tabular-nums">{m.power ?? "—"}</td>
+                    <td className="px-2 sm:px-3 py-1.5 text-xs text-right tabular-nums">{m.accuracy ?? "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           )}
         </div>
       )}
