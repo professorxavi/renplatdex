@@ -25,11 +25,11 @@ export default async function ItemCategoryPage({ params }: Props) {
   // Determine columns based on category
   const columns: { label: string; mobileHidden?: boolean }[] =
     category === "items"
-      ? [{ label: "Item" }, { label: "Name" }, { label: "Locations", mobileHidden: true }]
+      ? [{ label: "Item" }, { label: "Name" }, { label: "Locations" }]
       : category === "tms"
       ? [{ label: "TM" }, { label: "Move" }, { label: "Location" }, { label: "Obtained", mobileHidden: true }]
       : category === "plates"
-      ? [{ label: "Item" }, { label: "Name" }, { label: "Location", mobileHidden: true }]
+      ? [{ label: "Item" }, { label: "Name" }, { label: "Location" }]
       : [{ label: "Item" }, { label: "Name" }, { label: "Location" }, { label: "Obtained", mobileHidden: true }];
 
   return (
@@ -65,7 +65,7 @@ export default async function ItemCategoryPage({ params }: Props) {
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${item.item}.png`} alt={item.name} width={24} height={24} />
                   </td>
                   <td className="px-2 sm:px-4 py-2.5 text-xs sm:text-sm font-medium text-[var(--text-primary)]">{item.name}</td>
-                  <td className="hidden sm:table-cell px-4 py-2.5 text-xs text-[var(--text-secondary)]">{item.locations.join(", ")}</td>
+                  <td className="px-2 sm:px-4 py-2.5 text-xs text-[var(--text-secondary)]">{item.locations.join(", ")}</td>
                 </tr>
               ))}
             {category === "tms" &&
@@ -89,7 +89,7 @@ export default async function ItemCategoryPage({ params }: Props) {
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${plate.item}.png`} alt={plate.name} width={24} height={24} />
                   </td>
                   <td className="px-2 sm:px-4 py-2.5 text-xs sm:text-sm font-medium text-[var(--text-primary)]">{plate.name}</td>
-                  <td className="hidden sm:table-cell px-4 py-2.5 text-xs text-[var(--text-secondary)]">{plate["trainer-location"]}</td>
+                  <td className="px-2 sm:px-4 py-2.5 text-xs text-[var(--text-secondary)]">{plate["trainer-location"]}</td>
                 </tr>
               ))}
             {category === "key-items" &&
