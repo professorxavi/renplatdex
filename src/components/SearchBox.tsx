@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { Search, X } from "lucide-react";
-import type { SearchResult } from "@/lib/dex";
+import { search, type SearchResult } from "@/lib/dex";
 import { cn } from "@/lib/cn";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -108,10 +108,8 @@ export default function SearchBox() {
   const runSearch = useCallback((q: string) => {
     if (!q.trim()) { setResults([]); setActiveIndex(-1); return; }
     if (debounceRef.current) clearTimeout(debounceRef.current);
-    debounceRef.current = setTimeout(async () => {
-      const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
-      const data = await res.json();
-      setResults(data);
+    debounceRef.current = setTimeout(() => {
+      setResults(search(q));
       setActiveIndex(-1);
     }, 150);
   }, []);

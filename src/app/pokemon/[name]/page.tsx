@@ -22,8 +22,9 @@ interface Props {
 
 export default async function PokemonPage({ params }: Props) {
   const { name } = await params;
-  const pokemon = getPokemon(decodeURIComponent(name));
-  if (!pokemon) notFound();
+  const maybePokemon = getPokemon(decodeURIComponent(name));
+  if (!maybePokemon) return notFound();
+  const pokemon = maybePokemon;
 
   const bst = Object.values(pokemon.stats).reduce((a, b) => a + b, 0);
   const learnset = await getLearnset(pokemon.name);
