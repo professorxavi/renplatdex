@@ -11,6 +11,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 
+export async function generateStaticParams() {
+  const { getAllPokemon } = await import("@/lib/dex");
+  return getAllPokemon().map((p) => ({ name: encodeURIComponent(p.name.toLowerCase()) }));
+}
+
 interface Props {
   params: Promise<{ name: string }>;
 }

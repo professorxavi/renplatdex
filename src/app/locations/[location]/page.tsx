@@ -6,6 +6,11 @@ import TypeBadge from "@/components/TypeBadge";
 import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { getPokemon } from "@/lib/dex";
 
+export async function generateStaticParams() {
+  const { getAllLocations, toLocationSlug } = await import("@/lib/locations");
+  return getAllLocations().map((l) => ({ location: toLocationSlug(l.name) }));
+}
+
 interface Props {
   params: Promise<{ location: string }>;
 }
