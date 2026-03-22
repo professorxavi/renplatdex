@@ -67,7 +67,7 @@ export default function BrowseTabs({ pokemon, moves, abilities, locations, items
           {moves.map((m) => (
             <Link
               key={m.name}
-              href={`/moves/${encodeURIComponent(m.name.toLowerCase())}`}
+              href={`/moves/${m.name.toLowerCase().replace(/ /g, "-")}`}
               className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
             >
               <div>

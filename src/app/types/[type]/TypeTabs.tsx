@@ -6,6 +6,7 @@ import Link from "next/link";
 import TypeBadge from "@/components/TypeBadge";
 import type { Pokemon, Move, PokemonType } from "@/lib/dex";
 import { TYPE_COLORS } from "@/lib/type-colors";
+import { toPokemonSlug } from "@/lib/slugs";
 
 const TYPE_CHART: Partial<Record<PokemonType, {
   attack: { strong: PokemonType[]; weak: PokemonType[]; immune: PokemonType[] };
@@ -129,7 +130,7 @@ export default function TypeTabs({ typeName, pokemon, moves }: Props) {
             pokemon.map((p) => (
               <Link
                 key={p.name}
-                href={`/pokemon/${p.name.toLowerCase()}`}
+                href={`/pokemon/${toPokemonSlug(p.name)}`}
                 className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
               >
                 <div className="flex items-center gap-3">
@@ -153,7 +154,7 @@ export default function TypeTabs({ typeName, pokemon, moves }: Props) {
             moves.map((m) => (
               <Link
                 key={m.name}
-                href={`/moves/${encodeURIComponent(m.name.toLowerCase())}`}
+                href={`/moves/${m.name.toLowerCase().replace(/ /g, "-")}`}
                 className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
               >
                 <div>

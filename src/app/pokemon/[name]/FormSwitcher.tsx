@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import type { FormVariant } from "@/lib/dex";
 import { cn } from "@/lib/cn";
+import { toPokemonSlug } from "@/lib/slugs";
 
 interface Props {
   currentName: string;
@@ -13,7 +14,7 @@ interface Props {
 export default function FormSwitcher({ currentName, baseName, forms }: Props) {
   const router = useRouter();
 
-  const navigate = (name: string) => router.push(`/pokemon/${name.toLowerCase()}`);
+  const navigate = (name: string) => router.push(`/pokemon/${toPokemonSlug(name)}`);
 
   return (
     <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5">

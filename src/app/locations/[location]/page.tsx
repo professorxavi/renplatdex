@@ -1,4 +1,5 @@
 import { getLocation, getAllLocations, toLocationSlug, ENCOUNTER_TYPE_LABELS, sortEncounterTypes } from "@/lib/locations";
+import { toPokemonSlug } from "@/lib/slugs";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
@@ -64,7 +65,7 @@ export default async function LocationPage({ params }: Props) {
                     <tr key={`${enc.pokemon}-${i}`} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)] transition-colors">
                       <td className="px-2 sm:px-4 py-2">
                         <Link
-                          href={`/pokemon/${enc.pokemon.toLowerCase()}`}
+                          href={`/pokemon/${toPokemonSlug(enc.pokemon)}`}
                           className="text-xs sm:text-sm font-medium text-red-400 hover:underline"
                         >
                           {enc.pokemon}

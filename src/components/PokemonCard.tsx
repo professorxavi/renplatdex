@@ -3,6 +3,7 @@ import TypeBadge from "@/components/TypeBadge";
 import Link from "next/link";
 import { cn } from "@/lib/cn";
 import { getSpriteUrl } from "@/lib/sprites";
+import { toPokemonSlug } from "@/lib/slugs";
 
 interface PokemonCardProps {
   pokemon: Pokemon;
@@ -14,7 +15,7 @@ export default function PokemonCard({ pokemon, className }: PokemonCardProps) {
 
   return (
     <Link
-      href={`/pokemon/${pokemon.name.toLowerCase()}`}
+      href={`/pokemon/${toPokemonSlug(pokemon.name)}`}
       className={cn(
         "group relative flex flex-col gap-3 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-4 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)] hover:shadow-lg hover:shadow-red-500/5",
         className

@@ -1,4 +1,5 @@
 import { getAbility, getAllPokemon, getAllAbilities } from "@/lib/dex";
+import { toPokemonSlug } from "@/lib/slugs";
 import TypeBadge from "@/components/TypeBadge";
 import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { notFound } from "next/navigation";
@@ -61,7 +62,7 @@ export default async function AbilityPage({ params }: Props) {
                         {String(p.id).padStart(3, "0")}
                       </td>
                       <td className="px-2 sm:px-3 py-1.5">
-                        <Link href={`/pokemon/${p.name.toLowerCase()}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
+                        <Link href={`/pokemon/${toPokemonSlug(p.name)}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
                           {p.name}
                         </Link>
                       </td>

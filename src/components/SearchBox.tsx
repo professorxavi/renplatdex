@@ -7,6 +7,7 @@ import { cn } from "@/lib/cn";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toLocationSlug } from "@/lib/locations";
+import { toPokemonSlug } from "@/lib/slugs";
 
 interface Filter {
   label: string;
@@ -15,8 +16,8 @@ interface Filter {
 
 function resultHref(r: SearchResult): string {
   switch (r.kind) {
-    case "pokemon":  return `/pokemon/${r.data.name.toLowerCase()}`;
-    case "move":     return `/moves/${encodeURIComponent(r.data.name.toLowerCase())}`;
+    case "pokemon":  return `/pokemon/${toPokemonSlug(r.data.name)}`;
+    case "move":     return `/moves/${r.data.name.toLowerCase().replace(/ /g, "-")}`;
     case "ability":  return `/abilities/${r.data.name.toLowerCase().replace(/ /g, "-")}`;
     case "location": return `/locations/${toLocationSlug(r.data.name)}`;
   }

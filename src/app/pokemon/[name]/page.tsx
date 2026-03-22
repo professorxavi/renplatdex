@@ -1,4 +1,5 @@
-import { getPokemon, getLearnset, getEvolutionChain, getPokemonPrevo, getAllPokemon } from "@/lib/dex";
+import { getLearnset, getEvolutionChain, getPokemonPrevo, getAllPokemon } from "@/lib/dex";
+import { toPokemonSlug } from "@/lib/slugs";
 import STAT_CHANGES from "@/lib/data/statChanges.json";
 import type { EvoChainNode } from "@/lib/dex";
 import { getSpriteUrl } from "@/lib/sprites";
@@ -12,7 +13,7 @@ import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 
 export async function generateStaticParams() {
-  return getAllPokemon().map((p) => ({ name: encodeURIComponent(p.name.toLowerCase()) }));
+  return getAllPokemon().map((p) => ({ name: toPokemonSlug(p.name) }));
 }
 
 interface Props {
@@ -20,8 +21,8 @@ interface Props {
 }
 
 export default async function PokemonPage({ params }: Props) {
-  const { name } = await params;
-  const maybePokemon = getPokemon(decodeURIComponent(name));
+  const { name: slug } = await params;
+  const maybePokemon = getAllPokemon().find((p) => toPokemonSlug(p.name) === slug);
   if (!maybePokemon) return notFound();
   const pokemon = maybePokemon;
 
@@ -49,7 +50,7 @@ export default async function PokemonPage({ params }: Props) {
               <tr key={`${m.name}-${i}`} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
                 {showLevel && <td className="px-3 py-1.5 text-xs text-[var(--text-secondary)] tabular-nums">{m.level}</td>}
                 <td className="px-3 py-1.5">
-                  <Link href={`/moves/${encodeURIComponent(m.name.toLowerCase())}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
+                  <Link href={`/moves/${m.name.toLowerCase().replace(/ /g, "-")}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
                     {m.name}
                   </Link>
                 </td>
@@ -88,7 +89,7 @@ export default async function PokemonPage({ params }: Props) {
 
     const nameLink = (
       <Link
-        href={`/pokemon/${node.name.toLowerCase()}`}
+        href={`/pokemon/${toPokemonSlug(node.name)}`}
         className={`text-xs sm:text-sm font-semibold whitespace-nowrap transition-colors ${
           isCurrent
             ? "text-red-400"

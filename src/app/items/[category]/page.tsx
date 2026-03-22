@@ -73,7 +73,7 @@ export default async function ItemCategoryPage({ params }: Props) {
                 <tr key={tm.tm} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
                   <td className="w-px whitespace-nowrap px-2 sm:px-4 py-2.5 font-mono text-xs text-[var(--text-secondary)]">{tm.tm}</td>
                   <td className="px-2 sm:px-4 py-2.5">
-                    <Link href={`/moves/${encodeURIComponent(tm.name.toLowerCase())}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
+                    <Link href={`/moves/${tm.name.toLowerCase().replace(/ /g, "-")}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
                       {tm.name}
                     </Link>
                   </td>

@@ -1,12 +1,17 @@
-import { getMove, getPokemonByMove, getAllMoves } from "@/lib/dex";
+import { getPokemonByMove, getAllMoves } from "@/lib/dex";
+import { toPokemonSlug } from "@/lib/slugs";
 import TypeBadge from "@/components/TypeBadge";
 import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/cn";
 
+export function toMoveSlug(name: string) {
+  return name.toLowerCase().replace(/ /g, "-");
+}
+
 export async function generateStaticParams() {
-  return getAllMoves().map((m) => ({ move: encodeURIComponent(m.name.toLowerCase()) }));
+  return getAllMoves().map((m) => ({ move: toMoveSlug(m.name) }));
 }
 
 interface Props {
@@ -21,8 +26,8 @@ const CATEGORY_STYLES: Record<string, string> = {
 
 export default async function MovePage({ params }: Props) {
   const { move: slug } = await params;
-  const moveName = decodeURIComponent(slug);
-  const move = getMove(moveName);
+  const move = getAllMoves().find((m) => toMoveSlug(m.name) === slug);
+  if (!move) return notFound();
   if (!move) notFound();
 
   const learners = await getPokemonByMove(move.name);
@@ -92,7 +97,7 @@ export default async function MovePage({ params }: Props) {
                     </td>
                     <td className="px-2 sm:px-3 py-1.5">
                       <Link
-                        href={`/pokemon/${p.name.toLowerCase()}`}
+                        href={`/pokemon/${toPokemonSlug(p.name)}`}
                         className="text-xs sm:text-sm font-medium text-red-400 hover:underline"
                       >
                         {p.name}
