@@ -1,5 +1,6 @@
 import { getAbility, getAllPokemon } from "@/lib/dex";
 import TypeBadge from "@/components/TypeBadge";
+import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
@@ -32,32 +33,50 @@ export default async function AbilityPage({ params }: Props) {
       <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5">
         <h2 className="mb-3 text-sm font-bold uppercase tracking-widest text-[var(--text-secondary)]">
           Pokémon with this ability
+          <span className="ml-2 font-normal opacity-60">({withAbility.length})</span>
         </h2>
         {withAbility.length === 0 ? (
           <p className="text-sm text-[var(--text-secondary)]">No Pokémon found in mock data.</p>
         ) : (
-          <div className="flex flex-col gap-1">
-            {withAbility.map((p) => {
-              const isHidden = p.hiddenAbility?.toLowerCase() === ability.name.toLowerCase();
-              return (
-                <Link
-                  key={p.name}
-                  href={`/pokemon/${p.name.toLowerCase()}`}
-                  className="flex items-center justify-between rounded-lg px-3 py-2 transition-colors hover:bg-[var(--surface-elevated)]"
-                >
-                  <div className="flex items-center gap-3">
-                    <span className="text-xs font-mono text-[var(--text-secondary)]">#{String(p.id).padStart(3, "0")}</span>
-                    <span className="font-medium text-[var(--text-primary)]">{p.name}</span>
-                    {isHidden && (
-                      <span className="text-[10px] text-[var(--text-secondary)] border border-dashed border-[var(--border)] rounded px-1">H</span>
-                    )}
-                  </div>
-                  <div className="flex gap-1">
-                    {p.types.map((t, i) => <TypeBadge key={`${t}-${i}`} type={t} asLink={false} />)}
-                  </div>
-                </Link>
-              );
-            })}
+          <div className="rounded-xl border border-[var(--border)] overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-[var(--border)] text-left">
+                  <th className="w-px whitespace-nowrap px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">#</th>
+                  <th className="px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Pokémon</th>
+                  <th className="whitespace-nowrap px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Type</th>
+                  <th className="hidden sm:table-cell w-px whitespace-nowrap px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Slot</th>
+                </tr>
+              </thead>
+              <tbody>
+                {withAbility.map((p) => {
+                  const isHidden = p.hiddenAbility?.toLowerCase() === ability.name.toLowerCase();
+                  return (
+                    <tr key={p.name} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
+                      <td className="w-px whitespace-nowrap px-2 sm:px-3 py-1.5 text-xs font-mono text-[var(--text-secondary)]">
+                        {String(p.id).padStart(3, "0")}
+                      </td>
+                      <td className="px-2 sm:px-3 py-1.5">
+                        <Link href={`/pokemon/${p.name.toLowerCase()}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
+                          {p.name}
+                        </Link>
+                      </td>
+                      <td className="whitespace-nowrap px-2 sm:px-3 py-1.5">
+                        <span className="sm:hidden flex gap-2">
+                          {p.types.map((t, i) => <span key={`${t}-${i}`} className={`text-xs font-semibold ${TYPE_TEXT_COLORS[t]}`}>{t}</span>)}
+                        </span>
+                        <span className="hidden sm:flex gap-1">
+                          {p.types.map((t, i) => <TypeBadge key={`${t}-${i}`} type={t} asLink={false} />)}
+                        </span>
+                      </td>
+                      <td className="hidden sm:table-cell w-px whitespace-nowrap px-3 py-1.5 text-xs text-[var(--text-secondary)]">
+                        {isHidden ? "Hidden" : "Normal"}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
           </div>
         )}
       </div>

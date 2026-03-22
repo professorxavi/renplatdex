@@ -19,14 +19,14 @@ export default async function ItemCategoryPage({ params }: Props) {
   const label = ITEM_CATEGORY_LABELS[category];
 
   // Determine columns based on category
-  const columns =
+  const columns: { label: string; mobileHidden?: boolean }[] =
     category === "items"
-      ? ["Item", "Name", "Locations"]
+      ? [{ label: "Item" }, { label: "Name" }, { label: "Locations", mobileHidden: true }]
       : category === "tms"
-      ? ["TM", "Move", "Location", "Obtained"]
+      ? [{ label: "TM" }, { label: "Move" }, { label: "Location" }, { label: "Obtained", mobileHidden: true }]
       : category === "plates"
-      ? ["Item", "Name", "Location"]
-      : ["Item", "Name", "Location", "Obtained"];
+      ? [{ label: "Item" }, { label: "Name" }, { label: "Location", mobileHidden: true }]
+      : [{ label: "Item" }, { label: "Name" }, { label: "Location" }, { label: "Obtained", mobileHidden: true }];
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 flex flex-col gap-6">
@@ -41,13 +41,13 @@ export default async function ItemCategoryPage({ params }: Props) {
       </div>
 
       {/* Table */}
-      <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
+      <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-[var(--border)] text-left">
               {columns.map((col) => (
-                <th key={col} className="px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">
-                  {col}
+                <th key={col.label} className={`px-2 sm:px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase${col.mobileHidden ? " hidden sm:table-cell" : ""}`}>
+                  {col.label}
                 </th>
               ))}
             </tr>
@@ -56,48 +56,48 @@ export default async function ItemCategoryPage({ params }: Props) {
             {category === "items" &&
               allItems.items.map((item) => (
                 <tr key={item.item} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
-                  <td className="px-4 py-2.5">
+                  <td className="w-px px-2 sm:px-4 py-2.5">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${item.item}.png`} alt={item.name} width={24} height={24} />
                   </td>
-                  <td className="px-4 py-2.5 font-medium text-[var(--text-primary)]">{item.name}</td>
-                  <td className="px-4 py-2.5 text-[var(--text-secondary)]">{item.locations.join(", ")}</td>
+                  <td className="px-2 sm:px-4 py-2.5 text-xs sm:text-sm font-medium text-[var(--text-primary)]">{item.name}</td>
+                  <td className="hidden sm:table-cell px-4 py-2.5 text-xs text-[var(--text-secondary)]">{item.locations.join(", ")}</td>
                 </tr>
               ))}
             {category === "tms" &&
               allItems.tms.map((tm) => (
                 <tr key={tm.tm} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
-                  <td className="px-4 py-2.5 font-mono text-xs text-[var(--text-secondary)]">{tm.tm}</td>
-                  <td className="px-4 py-2.5 font-medium">
-                    <Link href={`/moves/${encodeURIComponent(tm.name.toLowerCase())}`} className="text-[var(--accent)] hover:underline">
+                  <td className="w-px whitespace-nowrap px-2 sm:px-4 py-2.5 font-mono text-xs text-[var(--text-secondary)]">{tm.tm}</td>
+                  <td className="px-2 sm:px-4 py-2.5">
+                    <Link href={`/moves/${encodeURIComponent(tm.name.toLowerCase())}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
                       {tm.name}
                     </Link>
                   </td>
-                  <td className="px-4 py-2.5 text-[var(--text-secondary)]">{tm.location}</td>
-                  <td className="px-4 py-2.5 text-[var(--text-secondary)]">{tm.obtained}</td>
+                  <td className="px-2 sm:px-4 py-2.5 text-xs text-[var(--text-secondary)]">{tm.location}</td>
+                  <td className="hidden sm:table-cell px-4 py-2.5 text-xs text-[var(--text-secondary)]">{tm.obtained}</td>
                 </tr>
               ))}
             {category === "plates" &&
               allItems.plates.map((plate) => (
                 <tr key={plate.item} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
-                  <td className="px-4 py-2.5">
+                  <td className="w-px px-2 sm:px-4 py-2.5">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${plate.item}.png`} alt={plate.name} width={24} height={24} />
                   </td>
-                  <td className="px-4 py-2.5 font-medium text-[var(--text-primary)]">{plate.name}</td>
-                  <td className="px-4 py-2.5 text-[var(--text-secondary)]">{plate["trainer-location"]}</td>
+                  <td className="px-2 sm:px-4 py-2.5 text-xs sm:text-sm font-medium text-[var(--text-primary)]">{plate.name}</td>
+                  <td className="hidden sm:table-cell px-4 py-2.5 text-xs text-[var(--text-secondary)]">{plate["trainer-location"]}</td>
                 </tr>
               ))}
             {category === "key-items" &&
               allItems["key-items"].map((item) => (
                 <tr key={item.item} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
-                  <td className="px-4 py-2.5">
+                  <td className="w-px px-2 sm:px-4 py-2.5">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${item.item}.png`} alt={item.name} width={24} height={24} />
                   </td>
-                  <td className="px-4 py-2.5 font-medium text-[var(--text-primary)]">{item.name}</td>
-                  <td className="px-4 py-2.5 text-[var(--text-secondary)]">{item.location}</td>
-                  <td className="px-4 py-2.5 text-[var(--text-secondary)]">{item.obtained}</td>
+                  <td className="px-2 sm:px-4 py-2.5 text-xs sm:text-sm font-medium text-[var(--text-primary)]">{item.name}</td>
+                  <td className="px-2 sm:px-4 py-2.5 text-xs text-[var(--text-secondary)]">{item.location}</td>
+                  <td className="hidden sm:table-cell px-4 py-2.5 text-xs text-[var(--text-secondary)]">{item.obtained}</td>
                 </tr>
               ))}
           </tbody>

@@ -1,5 +1,26 @@
 import type { PokemonType } from "./dex";
 
+export const TYPE_TEXT_COLORS: Record<PokemonType, string> = {
+  Normal:   "text-stone-400",
+  Fire:     "text-orange-400",
+  Water:    "text-blue-400",
+  Electric: "text-yellow-300",
+  Grass:    "text-green-400",
+  Ice:      "text-cyan-300",
+  Fighting: "text-red-500",
+  Poison:   "text-purple-400",
+  Ground:   "text-amber-500",
+  Flying:   "text-indigo-400",
+  Psychic:  "text-pink-400",
+  Bug:      "text-lime-400",
+  Rock:     "text-yellow-600",
+  Ghost:    "text-purple-500",
+  Dragon:   "text-blue-600",
+  Dark:     "text-neutral-400",
+  Steel:    "text-slate-400",
+  Fairy:    "text-pink-300",
+};
+
 export const TYPE_COLORS: Record<PokemonType, string> = {
   Normal:   "bg-gradient-to-b from-stone-300 to-stone-500 text-white",
   Fire:     "bg-gradient-to-b from-orange-400 to-red-600 text-white",

@@ -4,6 +4,7 @@ import type { EvoChainNode } from "@/lib/dex";
 import { getSpriteUrl } from "@/lib/sprites";
 import { getPokemonLocations, toLocationSlug } from "@/lib/locations";
 import TypeBadge from "@/components/TypeBadge";
+import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import StatBar from "@/components/StatBar";
 import FormSwitcher from "./FormSwitcher";
 import Link from "next/link";
@@ -26,16 +27,16 @@ export default async function PokemonPage({ params }: Props) {
 
   function MoveTable({ moves, showLevel }: { moves: typeof learnset.levelUp; showLevel?: boolean }) {
     return (
-      <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
+      <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-[var(--border)] text-left">
               {showLevel && <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase w-12">Lv</th>}
               <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Move</th>
               <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Type</th>
-              <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Cat</th>
-              <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Pwr</th>
-              <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Acc</th>
+              <th className="hidden sm:table-cell px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Cat</th>
+              <th className="hidden sm:table-cell px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Pwr</th>
+              <th className="hidden sm:table-cell px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Acc</th>
             </tr>
           </thead>
           <tbody>
@@ -43,14 +44,17 @@ export default async function PokemonPage({ params }: Props) {
               <tr key={`${m.name}-${i}`} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
                 {showLevel && <td className="px-3 py-1.5 text-xs text-[var(--text-secondary)] tabular-nums">{m.level}</td>}
                 <td className="px-3 py-1.5">
-                  <Link href={`/moves/${encodeURIComponent(m.name.toLowerCase())}`} className="font-medium text-red-400 hover:underline">
+                  <Link href={`/moves/${encodeURIComponent(m.name.toLowerCase())}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
                     {m.name}
                   </Link>
                 </td>
-                <td className="px-3 py-1.5"><TypeBadge type={m.type} asLink={false} /></td>
-                <td className="px-3 py-1.5 text-xs text-[var(--text-secondary)]">{m.category}</td>
-                <td className="px-3 py-1.5 text-xs text-right tabular-nums">{m.power ?? "—"}</td>
-                <td className="px-3 py-1.5 text-xs text-right tabular-nums">{m.accuracy ?? "—"}</td>
+                <td className="px-3 py-1.5">
+                  <span className={`sm:hidden text-xs font-semibold ${TYPE_TEXT_COLORS[m.type]}`}>{m.type}</span>
+                  <span className="hidden sm:inline"><TypeBadge type={m.type} asLink={false} /></span>
+                </td>
+                <td className="hidden sm:table-cell px-3 py-1.5 text-xs text-[var(--text-secondary)]">{m.category}</td>
+                <td className="hidden sm:table-cell px-3 py-1.5 text-xs text-right tabular-nums">{m.power ?? "—"}</td>
+                <td className="hidden sm:table-cell px-3 py-1.5 text-xs text-right tabular-nums">{m.accuracy ?? "—"}</td>
               </tr>
             ))}
           </tbody>
@@ -59,45 +63,66 @@ export default async function PokemonPage({ params }: Props) {
     );
   }
 
+  // Collect all unique methods from the chain that are too long to display inline
+  const SYMBOLS = ["①","②","③","④","⑤","⑥","⑦","⑧","⑨"];
+  const METHOD_THRESHOLD = 14;
+
+  function collectMethods(node: EvoChainNode, acc: string[] = []): string[] {
+    for (const evo of node.evolutions) {
+      acc.push(evo.method);
+      collectMethods(evo.into, acc);
+    }
+    return acc;
+  }
+
+  const longMethods = [...new Set(collectMethods(evoChain).filter(m => m.length > METHOD_THRESHOLD))];
+  const methodSymbols = new Map(longMethods.map((m, i) => [m, SYMBOLS[i]]));
+
   function EvoNode({ node }: { node: EvoChainNode }) {
     const isCurrent = node.name === pokemon.name;
 
-    const pill = (
+    const nameLink = (
       <Link
         href={`/pokemon/${node.name.toLowerCase()}`}
-        className={`rounded-lg px-3 py-1.5 text-sm font-bold transition-colors whitespace-nowrap ${
+        className={`text-xs sm:text-sm font-semibold whitespace-nowrap transition-colors ${
           isCurrent
-            ? "bg-[var(--surface-elevated)] border border-[var(--border)] text-red-400"
-            : "border border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--accent)]"
+            ? "text-red-400"
+            : "text-[var(--text-primary)] hover:text-red-400"
         }`}
       >
         {node.name}
       </Link>
     );
 
-    if (node.evolutions.length === 0) return pill;
+    if (node.evolutions.length === 0) return nameLink;
 
-    const methodConnector = (method: string) => (
-      <div className="flex flex-col items-center w-16 shrink-0 mx-3">
-        <ArrowRight size={14} className="text-[var(--text-secondary)]" />
-        <span className="text-[10px] text-[var(--text-secondary)] text-center leading-tight">{method}</span>
-      </div>
-    );
+    const methodConnector = (method: string) => {
+      const symbol = methodSymbols.get(method);
+      return (
+        <div className="flex flex-col items-center w-8 sm:w-20 shrink-0 mx-1 sm:mx-3 mt-3 sm:mt-0">
+          <ArrowRight size={10} className="text-[var(--text-secondary)] sm:hidden" />
+          <ArrowRight size={14} className="text-[var(--text-secondary)] hidden sm:block" />
+          <span className="text-[10px] text-[var(--text-secondary)] text-center whitespace-nowrap mt-1 sm:mt-0">
+            {symbol ?? method}
+          </span>
+        </div>
+      );
+    };
 
     if (node.evolutions.length === 1) {
       return (
         <div className="flex items-center">
-          {pill}
+          {nameLink}
           {methodConnector(node.evolutions[0].method)}
           <EvoNode node={node.evolutions[0].into} />
         </div>
       );
     }
 
-    // Branched evolutions: pill on left, stacked branches on right
+    // Branched evolutions: name on left, stacked branches on right
     return (
       <div className="flex items-center">
-        {pill}
+        {nameLink}
         <div className="flex flex-col gap-2">
           {node.evolutions.map((evo, i) => (
             <div key={`${evo.into.name}-${i}`} className="flex items-center">
@@ -155,45 +180,41 @@ export default async function PokemonPage({ params }: Props) {
     <div className="mx-auto max-w-3xl px-4 py-8 flex flex-col gap-6">
       {/* Header card */}
       <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6">
-        <div className="flex items-start gap-6">
-          {/* Sprite */}
-          <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-xl bg-[var(--surface-elevated)]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={getSpriteUrl(pokemon.id, pokemon.name, pokemon.baseSpecies)}
-              alt={pokemon.name}
-              className="h-24 w-24 object-contain"
-            />
+        <div className="flex flex-col gap-4">
+          {/* Sprite + identity */}
+          <div className="flex items-start gap-4">
+            <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-xl bg-[var(--surface-elevated)]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={getSpriteUrl(pokemon.id, pokemon.name, pokemon.baseSpecies)}
+                alt={pokemon.name}
+                className="h-24 w-24 object-contain"
+              />
+            </div>
+            <div className="min-w-0">
+              <p className="text-xs font-mono text-[var(--text-secondary)]">#{String(pokemon.id).padStart(3, "0")}</p>
+              <h1 className="text-2xl font-bold text-[var(--text-primary)]">{pokemon.name}</h1>
+              <div className="flex gap-1.5 mt-2">
+                {pokemon.types.map((t, i) => (
+                  <TypeBadge key={`${t}-${i}`} type={t} size="md" />
+                ))}
+              </div>
+            </div>
           </div>
 
-          {/* Info */}
-          <div className="flex-1 min-w-0">
-            <div className="flex items-start justify-between gap-2 mb-1">
-              <div>
-                <p className="text-xs font-mono text-[var(--text-secondary)]">#{String(pokemon.id).padStart(3, "0")}</p>
-                <h1 className="text-2xl font-bold text-[var(--text-primary)]">{pokemon.name}</h1>
-              </div>
+          {/* Extra info */}
+          <div className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+            <div className="flex flex-col gap-0.5">
+              <span className="text-xs text-[var(--text-secondary)]">Weight</span>
+              <span className="font-medium">{pokemon.weight}kg</span>
             </div>
-
-            <div className="flex gap-1.5 mb-4">
-              {pokemon.types.map((t, i) => (
-                <TypeBadge key={`${t}-${i}`} type={t} size="md" />
-              ))}
+            <div className="flex flex-col gap-0.5">
+              <span className="text-xs text-[var(--text-secondary)]">Gender</span>
+              <span className="font-medium">{pokemon.genderRatio ?? "Genderless"}</span>
             </div>
-
-            <div className="grid grid-cols-2 gap-x-8 gap-y-1 text-sm">
-              <div className="flex justify-between">
-                <span className="text-[var(--text-secondary)]">Weight</span>
-                <span className="font-medium">{pokemon.weight}kg</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[var(--text-secondary)]">Gender</span>
-                <span className="font-medium">{pokemon.genderRatio ?? "Genderless"}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-[var(--text-secondary)]">Egg Groups</span>
-                <span className="font-medium">{pokemon.eggGroups.join(", ")}</span>
-              </div>
+            <div className="flex flex-col gap-0.5">
+              <span className="text-xs text-[var(--text-secondary)]">Egg Groups</span>
+              <span className="font-medium">{pokemon.eggGroups.join(", ")}</span>
             </div>
           </div>
         </div>
@@ -240,7 +261,18 @@ export default async function PokemonPage({ params }: Props) {
       {(evoChain.evolutions.length > 0 || getPokemonPrevo(pokemon.name)) && (
         <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5">
           <h2 className="mb-3 text-sm font-bold uppercase tracking-widest text-[var(--text-secondary)]">Evolution</h2>
-          <EvoNode node={evoChain} />
+          <div className="flex justify-center">
+            <EvoNode node={evoChain} />
+          </div>
+          {longMethods.length > 0 && (
+            <div className="mt-3 pt-3 border-t border-[var(--border)] flex flex-col gap-1">
+              {longMethods.map((m) => (
+                <p key={m} className="text-[10px] text-[var(--text-secondary)]">
+                  <span className="mr-1">{methodSymbols.get(m)}</span>{m}
+                </p>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
@@ -263,14 +295,14 @@ export default async function PokemonPage({ params }: Props) {
               : "Not available in the wild."}
           </p>
         ) : (
-          <div className="rounded-xl border border-[var(--border)] overflow-hidden">
+          <div className="rounded-xl border border-[var(--border)] overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[var(--border)] text-left">
-                  <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Location</th>
-                  <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Method</th>
-                  <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-center">Level</th>
-                  <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Rate</th>
+                  <th className="px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Location</th>
+                  <th className="whitespace-nowrap px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Method</th>
+                  <th className="hidden sm:table-cell w-px whitespace-nowrap px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-center">Level</th>
+                  <th className="w-px whitespace-nowrap px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Rate</th>
                 </tr>
               </thead>
               <tbody>
@@ -278,16 +310,16 @@ export default async function PokemonPage({ params }: Props) {
                   const [min, max] = enc.levels;
                   return (
                     <tr key={i} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
-                      <td className="px-3 py-1.5">
-                        <Link href={`/locations/${toLocationSlug(enc.location)}`} className="font-medium text-red-400 hover:underline">
+                      <td className="px-2 sm:px-3 py-1.5">
+                        <Link href={`/locations/${toLocationSlug(enc.location)}`} className="text-xs sm:text-sm font-medium text-red-400 hover:underline">
                           {enc.location}
                         </Link>
                       </td>
-                      <td className="px-3 py-1.5 text-xs text-[var(--text-secondary)]">{enc.method}</td>
-                      <td className="px-3 py-1.5 text-xs text-center tabular-nums text-[var(--text-secondary)]">
+                      <td className="whitespace-nowrap px-2 sm:px-3 py-1.5 text-xs text-[var(--text-secondary)]">{enc.method.charAt(0).toUpperCase() + enc.method.slice(1)}</td>
+                      <td className="hidden sm:table-cell px-3 py-1.5 text-xs text-center tabular-nums text-[var(--text-secondary)]">
                         {min === max ? min : `${min}–${max}`}
                       </td>
-                      <td className="px-3 py-1.5 text-xs text-right tabular-nums font-medium text-[var(--text-primary)]">
+                      <td className="w-px whitespace-nowrap px-2 sm:px-3 py-1.5 text-xs text-right tabular-nums font-medium text-[var(--text-primary)]">
                         {enc.rate === "-" ? "—" : `${enc.rate}%`}
                       </td>
                     </tr>

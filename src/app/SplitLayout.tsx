@@ -93,14 +93,14 @@ export default function SplitLayout({
         {/* Overlay — dims browse panel on mobile when drawer is open */}
         <div
           onClick={() => router.push("/")}
-          className={`absolute top-0 bottom-0 left-0 right-2/3 z-10 bg-black/50 transition-opacity duration-300 lg:hidden ${
+          className={`absolute top-0 bottom-0 left-0 right-[92%] z-10 bg-black/50 transition-opacity duration-300 lg:hidden ${
             isDetail ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
         />
 
-        {/* Detail panel — 2/3 width drawer on mobile, fixed width on desktop */}
+        {/* Detail panel — full-width drawer on mobile, fixed width on desktop */}
         <div
-          className={`absolute top-0 bottom-0 right-0 w-2/3 transition-transform duration-300 ease-in-out
+          className={`absolute top-0 bottom-0 right-0 w-[92%] z-20 transition-transform duration-300 ease-in-out
             ${isDetail ? "translate-x-0 shadow-[-12px_0_32px_rgba(0,0,0,0.6)]" : "translate-x-full"}
             lg:relative lg:inset-auto lg:translate-x-0 lg:shadow-none lg:shrink-0 lg:transition-[width,opacity] lg:duration-300 lg:ease-in-out
             ${isDetail ? "lg:w-[640px] lg:opacity-100" : "lg:w-0 lg:opacity-0 lg:pointer-events-none"}`}
@@ -108,7 +108,7 @@ export default function SplitLayout({
           {isDetail && (
             <button
               onClick={() => router.push("/")}
-              className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden lg:flex h-7 w-7 items-center justify-center rounded-full bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-secondary)] shadow-lg hover:text-[var(--text-primary)] hover:border-[var(--accent)] transition-colors"
+              className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex h-7 w-7 items-center justify-center rounded-full bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-secondary)] shadow-lg hover:text-[var(--text-primary)] hover:border-[var(--accent)] transition-colors"
               aria-label="Close"
             >
               <ChevronRight size={13} />

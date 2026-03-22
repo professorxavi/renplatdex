@@ -14,10 +14,10 @@ import { ITEM_CATEGORY_LABELS } from "@/lib/items";
 
 type Tab = "pokemon" | "moves" | "abilities" | "locations" | "items";
 
-const TABS: { id: Tab; label: string; icon: React.ReactNode }[] = [
+const TABS: { id: Tab; label: string; icon: React.ReactNode; mobileHidden?: boolean }[] = [
   { id: "pokemon",   label: "Pokémon",   icon: <Zap size={14} /> },
   { id: "moves",     label: "Moves",     icon: <Wind size={14} /> },
-  { id: "abilities", label: "Abilities", icon: <Shield size={14} /> },
+  { id: "abilities", label: "Abilities", icon: <Shield size={14} />, mobileHidden: true },
   { id: "locations", label: "Locations", icon: <MapPin size={14} /> },
   { id: "items",     label: "Items",     icon: <Package size={14} /> },
 ];
@@ -42,6 +42,7 @@ export default function BrowseTabs({ pokemon, moves, abilities, locations, items
             onClick={() => setActiveTab(tab.id)}
             className={cn(
               "flex flex-1 items-center justify-center gap-1.5 rounded-lg py-2 text-xs font-medium whitespace-nowrap transition-all",
+              tab.mobileHidden && "hidden sm:flex",
               activeTab === tab.id
                 ? "bg-[var(--accent)] text-white shadow"
                 : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"

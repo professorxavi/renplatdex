@@ -1,5 +1,6 @@
 import { getMove, getPokemonByMove } from "@/lib/dex";
 import TypeBadge from "@/components/TypeBadge";
+import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/cn";
@@ -69,36 +70,41 @@ export default async function MovePage({ params }: Props) {
         {learners.length === 0 ? (
           <p className="text-sm text-[var(--text-secondary)]">No Pokémon learn this move in Gen 4.</p>
         ) : (
-          <div className="rounded-xl border border-[var(--border)] overflow-hidden">
+          <div className="rounded-xl border border-[var(--border)] overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[var(--border)] text-left">
-                  <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase w-12">#</th>
-                  <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Pokémon</th>
-                  <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Type</th>
-                  <th className="px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Method</th>
+                  <th className="w-px whitespace-nowrap px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">#</th>
+                  <th className="px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Pokémon</th>
+                  <th className="w-px whitespace-nowrap px-2 sm:px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Type</th>
+                  <th className="hidden sm:table-cell w-px whitespace-nowrap px-3 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Method</th>
                 </tr>
               </thead>
               <tbody>
                 {learners.map(({ pokemon: p, methods }) => (
                   <tr key={p.name} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
-                    <td className="px-3 py-1.5 text-xs font-mono text-[var(--text-secondary)]">
+                    <td className="w-px whitespace-nowrap px-2 sm:px-3 py-1.5 text-xs font-mono text-[var(--text-secondary)]">
                       {String(p.id).padStart(3, "0")}
                     </td>
-                    <td className="px-3 py-1.5">
+                    <td className="px-2 sm:px-3 py-1.5">
                       <Link
                         href={`/pokemon/${p.name.toLowerCase()}`}
-                        className="font-medium text-red-400 hover:underline"
+                        className="text-xs sm:text-sm font-medium text-red-400 hover:underline"
                       >
                         {p.name}
                       </Link>
                     </td>
-                    <td className="px-3 py-1.5">
-                      <div className="flex gap-1">
-                        {p.types.map((t, i) => <TypeBadge key={`${t}-${i}`} type={t} asLink={false} />)}
-                      </div>
+                    <td className="w-px whitespace-nowrap px-2 sm:px-3 py-1.5">
+                      <span className="flex gap-1.5">
+                        <span className="sm:hidden flex gap-2">
+                          {p.types.map((t, i) => <span key={`${t}-${i}`} className={`text-xs font-semibold ${TYPE_TEXT_COLORS[t]}`}>{t}</span>)}
+                        </span>
+                        <span className="hidden sm:flex gap-1">
+                          {p.types.map((t, i) => <TypeBadge key={`${t}-${i}`} type={t} asLink={false} />)}
+                        </span>
+                      </span>
                     </td>
-                    <td className="px-3 py-1.5 text-xs text-[var(--text-secondary)]">
+                    <td className="hidden sm:table-cell w-px whitespace-nowrap px-3 py-1.5 text-xs text-[var(--text-secondary)]">
                       {methods.join(", ")}
                     </td>
                   </tr>

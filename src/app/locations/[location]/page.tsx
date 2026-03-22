@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import TypeBadge from "@/components/TypeBadge";
+import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import { getPokemon } from "@/lib/dex";
 
 interface Props {
@@ -36,7 +37,7 @@ export default async function LocationPage({ params }: Props) {
         const label = ENCOUNTER_TYPE_LABELS[type] ?? type;
 
         return (
-          <div key={type} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden">
+          <div key={type} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] overflow-x-auto">
             <div className="px-5 py-3 border-b border-[var(--border)] flex items-center justify-between">
               <h2 className="text-sm font-bold uppercase tracking-widest text-[var(--text-secondary)]">{label}</h2>
               <span className="text-xs text-[var(--text-secondary)] opacity-60">{entries.length} slot{entries.length !== 1 ? "s" : ""}</span>
@@ -44,10 +45,10 @@ export default async function LocationPage({ params }: Props) {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[var(--border)] text-left">
-                  <th className="px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Pokémon</th>
-                  <th className="px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Type</th>
-                  <th className="px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-center">Level</th>
-                  <th className="px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Rate</th>
+                  <th className="px-2 sm:px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Pokémon</th>
+                  <th className="whitespace-nowrap px-2 sm:px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase">Type</th>
+                  <th className="hidden sm:table-cell w-px whitespace-nowrap px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-center">Level</th>
+                  <th className="w-px whitespace-nowrap px-2 sm:px-4 py-2 text-xs font-semibold text-[var(--text-secondary)] uppercase text-right">Rate</th>
                 </tr>
               </thead>
               <tbody>
@@ -57,23 +58,28 @@ export default async function LocationPage({ params }: Props) {
                   const levelStr = minLv === maxLv ? `${minLv}` : `${minLv}–${maxLv}`;
                   return (
                     <tr key={`${enc.pokemon}-${i}`} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)] transition-colors">
-                      <td className="px-4 py-2">
+                      <td className="px-2 sm:px-4 py-2">
                         <Link
                           href={`/pokemon/${enc.pokemon.toLowerCase()}`}
-                          className="font-medium text-red-400 hover:underline"
+                          className="text-xs sm:text-sm font-medium text-red-400 hover:underline"
                         >
                           {enc.pokemon}
                         </Link>
                       </td>
-                      <td className="px-4 py-2">
-                        <div className="flex gap-1">
+                      <td className="whitespace-nowrap px-2 sm:px-4 py-2">
+                        <span className="sm:hidden flex gap-1.5">
+                          {pokemon?.types.map((t, i) => (
+                            <span key={`${t}-${i}`} className={`text-xs font-semibold ${TYPE_TEXT_COLORS[t]}`}>{t}</span>
+                          ))}
+                        </span>
+                        <span className="hidden sm:flex gap-1">
                           {pokemon?.types.map((t, i) => (
                             <TypeBadge key={`${t}-${i}`} type={t} asLink={false} />
                           ))}
-                        </div>
+                        </span>
                       </td>
-                      <td className="px-4 py-2 text-center tabular-nums text-[var(--text-secondary)]">{levelStr}</td>
-                      <td className="px-4 py-2 text-right tabular-nums font-medium text-[var(--text-primary)]">
+                      <td className="hidden sm:table-cell w-px whitespace-nowrap px-4 py-2 text-center tabular-nums text-[var(--text-secondary)]">{levelStr}</td>
+                      <td className="w-px whitespace-nowrap px-2 sm:px-4 py-2 text-xs text-right tabular-nums font-medium text-[var(--text-primary)]">
                         {enc.rate === "-" ? "—" : `${enc.rate}%`}
                       </td>
                     </tr>
