@@ -4,11 +4,6 @@ import { notFound } from "next/navigation";
 import { Package } from "lucide-react";
 import Link from "next/link";
 
-export async function generateStaticParams() {
-  const { ITEM_CATEGORY_LABELS } = await import("@/lib/items");
-  return Object.keys(ITEM_CATEGORY_LABELS).map((category) => ({ category }));
-}
-
 interface Props {
   params: Promise<{ category: string }>;
 }

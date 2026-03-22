@@ -5,11 +5,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/cn";
 
-export async function generateStaticParams() {
-  const { getAllMoves } = await import("@/lib/dex");
-  return getAllMoves().map((m) => ({ move: encodeURIComponent(m.name.toLowerCase()) }));
-}
-
 interface Props {
   params: Promise<{ move: string }>;
 }

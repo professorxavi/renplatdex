@@ -1,11 +1,6 @@
 import { getAllPokemon, getAllMoves, type PokemonType } from "@/lib/dex";
 import TypeTabs from "./TypeTabs";
 
-export async function generateStaticParams() {
-  const types = ["normal","fire","water","electric","grass","ice","fighting","poison","ground","flying","psychic","bug","rock","ghost","dragon","dark","steel","fairy"];
-  return types.map((type) => ({ type }));
-}
-
 interface Props {
   params: Promise<{ type: string }>;
 }
