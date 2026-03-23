@@ -10,3 +10,7 @@ export function toPokemonSlug(name: string): string {
 export function toMoveSlug(name: string): string {
   return name.toLowerCase().replace(/ /g, "-");
 }
+
+export function toLocationSlug(name: string): string {
+  return name.toLowerCase().replace(/ - /g, "-").replace(/ /g, "-").replace(/[.']/g, "");
+}

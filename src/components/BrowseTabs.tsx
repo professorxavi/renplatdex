@@ -11,6 +11,7 @@ import type { Location } from "@/lib/locations";
 import { toLocationSlug } from "@/lib/locations";
 import type { ItemsData, ItemCategory } from "@/lib/items";
 import { ITEM_CATEGORY_LABELS } from "@/lib/items";
+import TrainersBrowse from "@/app/trainers/TrainersBrowse";
 
 type Tab = "pokemon" | "moves" | "abilities" | "locations" | "items";
 
@@ -28,6 +29,54 @@ interface Props {
   abilities: Ability[];
   locations: Location[];
   items: ItemsData;
+}
+
+function LocationsList({ locations }: { locations: Location[] }) {
+  const [view, setView] = useState<"encounters" | "trainers">("encounters");
+
+  return (
+    <div className="flex flex-col gap-3">
+      <div className="flex gap-1 rounded-xl bg-[var(--surface)] border border-[var(--border)] p-1 w-fit mx-auto">
+        {(["encounters", "trainers"] as const).map((v) => (
+          <button
+            key={v}
+            onClick={() => setView(v)}
+            className={cn(
+              "rounded-lg px-4 py-1.5 text-xs font-medium capitalize transition-colors",
+              view === v
+                ? "bg-[var(--surface-elevated)] text-[var(--text-primary)]"
+                : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
+            )}
+          >
+            {v}
+          </button>
+        ))}
+      </div>
+
+      {view === "encounters" && (
+        <div className="flex flex-col gap-2">
+          {locations.map((loc) => {
+            const types = Object.keys(loc.encounters);
+            const uniquePokemon = new Set(types.flatMap((t) => loc.encounters[t].map((e) => e.pokemon))).size;
+            return (
+              <Link
+                key={loc.name}
+                href={`/locations/${toLocationSlug(loc.name)}`}
+                className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
+              >
+                <p className="font-semibold text-[var(--text-primary)]">{loc.name}</p>
+                <p className="text-xs text-[var(--text-secondary)] shrink-0">{uniquePokemon} Pokémon · {types.length} methods</p>
+              </Link>
+            );
+          })}
+        </div>
+      )}
+
+      {view === "trainers" && (
+        <TrainersBrowse />
+      )}
+    </div>
+  );
 }
 
 export default function BrowseTabs({ pokemon, moves, abilities, locations, items }: Props) {
@@ -102,22 +151,7 @@ export default function BrowseTabs({ pokemon, moves, abilities, locations, items
       )}
 
       {activeTab === "locations" && (
-        <div className="flex flex-col gap-2">
-          {locations.map((loc) => {
-            const types = Object.keys(loc.encounters);
-            const uniquePokemon = new Set(types.flatMap((t) => loc.encounters[t].map((e) => e.pokemon))).size;
-            return (
-              <Link
-                key={loc.name}
-                href={`/locations/${toLocationSlug(loc.name)}`}
-                className="flex items-center justify-between gap-4 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 transition-all hover:border-[var(--accent)] hover:bg-[var(--surface-elevated)]"
-              >
-                <p className="font-semibold text-[var(--text-primary)]">{loc.name}</p>
-                <p className="text-xs text-[var(--text-secondary)] shrink-0">{uniquePokemon} Pokémon · {types.length} methods</p>
-              </Link>
-            );
-          })}
-        </div>
+        <LocationsList locations={locations} />
       )}
 
       {activeTab === "items" && (

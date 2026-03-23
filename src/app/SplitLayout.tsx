@@ -50,7 +50,7 @@ export default function SplitLayout({
       <Topbar showTitle={showTopbarTitle} />
 
       <div className="relative flex-1 overflow-hidden lg:flex">
-        {/* Browse panel — stays in place on mobile (drawer overlays it), fills remaining space on desktop */}
+        {/* Browse panel */}
         <div
           ref={browseRef}
           className={`absolute inset-0 overflow-y-auto
