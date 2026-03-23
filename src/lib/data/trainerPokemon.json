@@ -12681,41 +12681,6 @@
       ]
     },
     {
-      "trainerName": "Leader Bryon",
-      "pokemon": [
-        {
-          "species": "Bronzong",
-          "lvl": 52,
-          "speciesId": 437
-        },
-        {
-          "species": "Magnezone",
-          "lvl": 52,
-          "speciesId": 462
-        },
-        {
-          "species": "Steelix",
-          "lvl": 52,
-          "speciesId": 208
-        },
-        {
-          "species": "Forretress",
-          "lvl": 52,
-          "speciesId": 205
-        },
-        {
-          "species": "Aggron",
-          "lvl": 52,
-          "speciesId": 306
-        },
-        {
-          "species": "Bastiodon",
-          "lvl": 53,
-          "speciesId": 411
-        }
-      ]
-    },
-    {
       "trainerName": "Leader Byron",
       "pokemon": [
         {
