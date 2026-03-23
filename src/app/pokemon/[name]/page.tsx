@@ -313,7 +313,7 @@ export default async function PokemonPage({ params }: Props) {
               </thead>
               <tbody>
                 {encounters.map((enc, i) => {
-                  const [min, max] = enc.levels;
+                  const levelStr = enc.levels.length === 1 ? `${enc.levels[0]}` : `${enc.levels[0]}–${enc.levels[enc.levels.length - 1]}`;
                   return (
                     <tr key={i} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)]">
                       <td className="px-2 sm:px-3 py-1.5">
@@ -323,7 +323,7 @@ export default async function PokemonPage({ params }: Props) {
                       </td>
                       <td className="whitespace-nowrap px-2 sm:px-3 py-1.5 text-xs text-[var(--text-secondary)]">{enc.method.charAt(0).toUpperCase() + enc.method.slice(1)}</td>
                       <td className="hidden sm:table-cell px-3 py-1.5 text-xs text-center tabular-nums text-[var(--text-secondary)]">
-                        {min === max ? min : `${min}–${max}`}
+                        {levelStr}
                       </td>
                       <td className="w-px whitespace-nowrap px-2 sm:px-3 py-1.5 text-xs text-right tabular-nums font-medium text-[var(--text-primary)]">
                         {enc.rate === "-" ? "—" : `${enc.rate}%`}

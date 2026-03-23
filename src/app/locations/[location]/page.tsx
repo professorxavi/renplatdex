@@ -59,8 +59,7 @@ export default async function LocationPage({ params }: Props) {
               <tbody>
                 {entries.map((enc, i) => {
                   const pokemon = getPokemon(enc.pokemon);
-                  const [minLv, maxLv] = enc.levels;
-                  const levelStr = minLv === maxLv ? `${minLv}` : `${minLv}–${maxLv}`;
+                  const levelStr = enc.levels.length === 1 ? `${enc.levels[0]}` : `${enc.levels[0]}–${enc.levels[enc.levels.length - 1]}`;
                   return (
                     <tr key={`${enc.pokemon}-${i}`} className="border-b border-[var(--border)] last:border-0 hover:bg-[var(--surface-elevated)] transition-colors">
                       <td className="px-2 sm:px-4 py-2">
