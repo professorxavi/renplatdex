@@ -11,8 +11,6 @@ interface PokemonCardProps {
 }
 
 export default function PokemonCard({ pokemon, className }: PokemonCardProps) {
-  const bst = Object.values(pokemon.stats).reduce((a, b) => a + b, 0);
-
   return (
     <Link
       href={`/pokemon/${toPokemonSlug(pokemon.name)}`}
@@ -43,10 +41,6 @@ export default function PokemonCard({ pokemon, className }: PokemonCardProps) {
         ))}
       </div>
 
-      <div className="flex items-center justify-between text-xs text-[var(--text-secondary)]">
-        <span>BST</span>
-        <span className="font-bold text-[var(--text-primary)]">{bst}</span>
-      </div>
     </Link>
   );
 }
