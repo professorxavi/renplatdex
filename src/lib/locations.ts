@@ -2,7 +2,7 @@ import LOCATIONS_DATA from "./data/locations.json";
 
 export interface EncounterEntry {
   pokemon: string;
-  rate: number | "-";
+  rate: number | string;
   levels: number[];
 }
 
@@ -19,13 +19,14 @@ export const ENCOUNTER_TYPE_LABELS: Record<string, string> = {
   oldrod:    "Old Rod",
   goodrod:   "Good Rod",
   superrod:  "Super Rod",
-  honeytree: "Honey Tree",
-  pokeradar: "Poké Radar",
+  honeytree:   "Honey Tree",
+  pokeradar:   "Poké Radar",
+  repelManip:  "Repel Manipulation",
 };
 
 // Preferred display order for encounter types
 const ENCOUNTER_TYPE_ORDER = [
-  "morning", "day", "night", "surf", "oldrod", "goodrod", "superrod", "honeytree", "pokeradar",
+  "repelManip", "morning", "day", "night", "surf", "oldrod", "goodrod", "superrod", "honeytree", "pokeradar",
 ];
 
 export function sortEncounterTypes(types: string[]): string[] {
@@ -54,7 +55,7 @@ export interface PokemonEncounter {
   location: string;
   method: string;
   levels: number[];
-  rate: number | "-";
+  rate: number | string;
 }
 
 export function getPokemonLocations(pokemonName: string): PokemonEncounter[] {

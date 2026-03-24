@@ -1,0 +1,1185 @@
+[
+  {
+    "name": "Route 201",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Starly",
+          "rate": 33,
+          "levels": [
+            5
+          ]
+        },
+        {
+          "pokemon": "Bidoof",
+          "rate": 33,
+          "levels": [
+            5
+          ]
+        },
+        {
+          "pokemon": "Nidoran M",
+          "rate": 16,
+          "levels": [
+            5
+          ]
+        },
+        {
+          "pokemon": "Nidoran F",
+          "rate": 16,
+          "levels": [
+            5
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Lake Verity",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Azurill",
+          "rate": 22,
+          "levels": [
+            5
+          ]
+        },
+        {
+          "pokemon": "Starly",
+          "rate": 22,
+          "levels": [
+            5
+          ]
+        },
+        {
+          "pokemon": "Surskit",
+          "rate": 22,
+          "levels": [
+            5
+          ]
+        },
+        {
+          "pokemon": "Wingull",
+          "rate": 12,
+          "levels": [
+            5
+          ]
+        },
+        {
+          "pokemon": "Psyduck",
+          "rate": 22,
+          "levels": [
+            5
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 202",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Poochyena",
+          "rate": 50,
+          "levels": [
+            6
+          ]
+        },
+        {
+          "pokemon": "Growlithe",
+          "rate": 50,
+          "levels": [
+            6
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 203",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Starly",
+          "rate": 33,
+          "levels": [
+            8
+          ]
+        },
+        {
+          "pokemon": "Spearow",
+          "rate": 33,
+          "levels": [
+            8
+          ]
+        },
+        {
+          "pokemon": "Abra",
+          "rate": 33,
+          "levels": [
+            8
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 204 - South",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Ralts",
+          "rate": 50,
+          "levels": [
+            7
+          ]
+        },
+        {
+          "pokemon": "Bellsprout",
+          "rate": 50,
+          "levels": [
+            7
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 204 - North",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Ralts",
+          "rate": 50,
+          "levels": [
+            12
+          ]
+        },
+        {
+          "pokemon": "Bellsprout",
+          "rate": 50,
+          "levels": [
+            12
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 207",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Ponyta",
+          "rate": 20,
+          "levels": [
+            10
+          ]
+        },
+        {
+          "pokemon": "Machop",
+          "rate": 40,
+          "levels": [
+            10
+          ]
+        },
+        {
+          "pokemon": "Rhyhorn",
+          "rate": 40,
+          "levels": [
+            10
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Ravaged Path",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Zubat",
+          "rate": 50,
+          "levels": [
+            7,
+            8
+          ]
+        },
+        {
+          "pokemon": "Geodude",
+          "rate": 50,
+          "levels": [
+            7,
+            8
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Oreburgh Gate - 1F",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Riolu",
+          "rate": 20,
+          "levels": [
+            8
+          ]
+        },
+        {
+          "pokemon": "Diglett",
+          "rate": 20,
+          "levels": [
+            8
+          ]
+        },
+        {
+          "pokemon": "Zubat",
+          "rate": 30,
+          "levels": [
+            8
+          ]
+        },
+        {
+          "pokemon": "Geodude",
+          "rate": 30,
+          "levels": [
+            8
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Oreburgh Gate - B1F",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Geodude",
+          "rate": 45,
+          "levels": [
+            9
+          ]
+        },
+        {
+          "pokemon": "Zubat",
+          "rate": 45,
+          "levels": [
+            9
+          ]
+        },
+        {
+          "pokemon": "Diglett",
+          "rate": 5,
+          "levels": [
+            9
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Oreburgh Mine - B1F",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Onix",
+          "rate": 25,
+          "levels": [
+            11
+          ]
+        },
+        {
+          "pokemon": "Whismur",
+          "rate": 25,
+          "levels": [
+            11
+          ]
+        },
+        {
+          "pokemon": "Zubat",
+          "rate": 25,
+          "levels": [
+            11
+          ]
+        },
+        {
+          "pokemon": "Trapinch",
+          "rate": 25,
+          "levels": [
+            11
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Oreburgh Mine - 1F",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Onix",
+          "rate": 29,
+          "levels": [
+            10
+          ]
+        },
+        {
+          "pokemon": "Whismur",
+          "rate": 29,
+          "levels": [
+            10
+          ]
+        },
+        {
+          "pokemon": "Zubat",
+          "rate": 29,
+          "levels": [
+            10
+          ]
+        },
+        {
+          "pokemon": "Geodude",
+          "rate": 14,
+          "levels": [
+            10
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 205 - South",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Pachirisu",
+          "rate": 8,
+          "levels": [
+            13
+          ]
+        },
+        {
+          "pokemon": "Mareep",
+          "rate": 20,
+          "levels": [
+            13
+          ]
+        },
+        {
+          "pokemon": "Hoppip/Venonat",
+          "rate": 36,
+          "levels": [
+            13
+          ]
+        },
+        {
+          "pokemon": "Shellos",
+          "rate": 36,
+          "levels": [
+            13
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 205 - North",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Illumise",
+          "rate": 50,
+          "levels": [
+            17
+          ]
+        },
+        {
+          "pokemon": "Volbeat",
+          "rate": 50,
+          "levels": [
+            17
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 211 - West",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Swablu",
+          "rate": 50,
+          "levels": [
+            18
+          ]
+        },
+        {
+          "pokemon": "Meditite",
+          "rate": 50,
+          "levels": [
+            18
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 211 - East",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Machop",
+          "rate": 50,
+          "levels": [
+            19
+          ]
+        },
+        {
+          "pokemon": "Meditite",
+          "rate": 50,
+          "levels": [
+            19
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 216",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Sneasel",
+          "rate": 100,
+          "levels": [
+            20
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Eterna Forest",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Paras/Misdreavus",
+          "rate": 83,
+          "levels": [
+            16
+          ]
+        },
+        {
+          "pokemon": "Buneary",
+          "rate": 8,
+          "levels": [
+            16
+          ]
+        },
+        {
+          "pokemon": "Taillow",
+          "rate": 8,
+          "levels": [
+            16
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Valley Windworks",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Drifloon",
+          "rate": 71,
+          "levels": [
+            13
+          ]
+        },
+        {
+          "pokemon": "Pachirisu",
+          "rate": 29,
+          "levels": [
+            13
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 206",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Gligar",
+          "rate": 100,
+          "levels": [
+            22
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 208",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Bibarel",
+          "rate": 66,
+          "levels": [
+            24
+          ]
+        },
+        {
+          "pokemon": "Seviper",
+          "rate": 16,
+          "levels": [
+            24
+          ]
+        },
+        {
+          "pokemon": "Zangoose",
+          "rate": 16,
+          "levels": [
+            24
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Wayward Cave (Both)",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Onix",
+          "rate": 45,
+          "levels": [
+            22
+          ]
+        },
+        {
+          "pokemon": "Sableye",
+          "rate": 23,
+          "levels": [
+            22
+          ]
+        },
+        {
+          "pokemon": "Mawile",
+          "rate": 23,
+          "levels": [
+            22
+          ]
+        },
+        {
+          "pokemon": "Gible",
+          "rate": 9,
+          "levels": [
+            22
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 212 - North",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Staravia",
+          "rate": "20/38",
+          "levels": [
+            26,
+            25
+          ]
+        },
+        {
+          "pokemon": "Gloom",
+          "rate": "40/12",
+          "levels": [
+            26,
+            25
+          ]
+        },
+        {
+          "pokemon": "Weepinbell",
+          "rate": "40/12",
+          "levels": [
+            26,
+            25
+          ]
+        },
+        {
+          "pokemon": "Roselia",
+          "rate": "—/12",
+          "levels": [
+            26,
+            25
+          ]
+        },
+        {
+          "pokemon": "Kirlia",
+          "rate": "—/12",
+          "levels": [
+            26,
+            25
+          ]
+        },
+        {
+          "pokemon": "Smeargle",
+          "rate": "—/12",
+          "levels": [
+            26,
+            25
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 209",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Chansey",
+          "rate": 33,
+          "levels": [
+            26
+          ]
+        },
+        {
+          "pokemon": "Staravia",
+          "rate": 66,
+          "levels": [
+            26
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 210 - South",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Scyther",
+          "rate": 29,
+          "levels": [
+            30
+          ]
+        },
+        {
+          "pokemon": "Rapidash",
+          "rate": 71,
+          "levels": [
+            30
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 215",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Kadabra",
+          "rate": 14,
+          "levels": [
+            30
+          ]
+        },
+        {
+          "pokemon": "Lickitung",
+          "rate": 14,
+          "levels": [
+            30
+          ]
+        },
+        {
+          "pokemon": "Hypno",
+          "rate": 72,
+          "levels": [
+            30
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Lost Tower",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Banette",
+          "rate": "50/25",
+          "levels": [
+            29,
+            28
+          ]
+        },
+        {
+          "pokemon": "Dusclops",
+          "rate": "50/25",
+          "levels": [
+            29,
+            28
+          ]
+        },
+        {
+          "pokemon": "Golbat",
+          "rate": "—/25",
+          "levels": [
+            29,
+            28
+          ]
+        },
+        {
+          "pokemon": "Haunter",
+          "rate": "—/25",
+          "levels": [
+            29,
+            28
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 214",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Graveler",
+          "rate": "100/66",
+          "levels": [
+            31,
+            29
+          ]
+        },
+        {
+          "pokemon": "Rhyhorn",
+          "rate": "—/33",
+          "levels": [
+            31,
+            29
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Trophy Garden",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Pikachu",
+          "rate": "80/50",
+          "levels": [
+            26,
+            25
+          ]
+        },
+        {
+          "pokemon": "Eevee",
+          "rate": "20/25",
+          "levels": [
+            26,
+            25
+          ]
+        },
+        {
+          "pokemon": "Porygon",
+          "rate": "—/25",
+          "levels": [
+            26,
+            25
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 213",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Swellow",
+          "rate": 29,
+          "levels": [
+            34
+          ]
+        },
+        {
+          "pokemon": "Gastrodon",
+          "rate": 71,
+          "levels": [
+            34
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 212 - South",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Weepinbell",
+          "rate": 33,
+          "levels": [
+            36
+          ]
+        },
+        {
+          "pokemon": "Lombre",
+          "rate": 33,
+          "levels": [
+            36
+          ]
+        },
+        {
+          "pokemon": "Toxicroak",
+          "rate": 16,
+          "levels": [
+            36
+          ]
+        },
+        {
+          "pokemon": "Arbok",
+          "rate": 16,
+          "levels": [
+            36
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Valor Lakefront",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Kricketune",
+          "rate": 45,
+          "levels": [
+            33
+          ]
+        },
+        {
+          "pokemon": "Girafarig",
+          "rate": 45,
+          "levels": [
+            33
+          ]
+        },
+        {
+          "pokemon": "Nidorino",
+          "rate": 5,
+          "levels": [
+            33
+          ]
+        },
+        {
+          "pokemon": "Nidorina",
+          "rate": 5,
+          "levels": [
+            33
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Great Marsh - Area 5/6",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Drapion",
+          "rate": 50,
+          "levels": [
+            36
+          ]
+        },
+        {
+          "pokemon": "Breloom",
+          "rate": 25,
+          "levels": [
+            36
+          ]
+        },
+        {
+          "pokemon": "Swalot",
+          "rate": 25,
+          "levels": [
+            36
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 210 - North",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Fearow",
+          "rate": 28,
+          "levels": [
+            37
+          ]
+        },
+        {
+          "pokemon": "Seviper",
+          "rate": 14,
+          "levels": [
+            37
+          ]
+        },
+        {
+          "pokemon": "Zangoose",
+          "rate": 14,
+          "levels": [
+            37
+          ]
+        },
+        {
+          "pokemon": "Drifblim",
+          "rate": 14,
+          "levels": [
+            37
+          ]
+        },
+        {
+          "pokemon": "Skarmory",
+          "rate": 14,
+          "levels": [
+            37
+          ]
+        },
+        {
+          "pokemon": "Shelgon",
+          "rate": 14,
+          "levels": [
+            37
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Route 221",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Sudowoodo",
+          "rate": 30,
+          "levels": [
+            39
+          ]
+        },
+        {
+          "pokemon": "Skuntank",
+          "rate": 30,
+          "levels": [
+            39
+          ]
+        },
+        {
+          "pokemon": "Girafarig",
+          "rate": 15,
+          "levels": [
+            39
+          ]
+        },
+        {
+          "pokemon": "Dodrio",
+          "rate": 15,
+          "levels": [
+            39
+          ]
+        },
+        {
+          "pokemon": "Farfetch'd",
+          "rate": 8,
+          "levels": [
+            39
+          ]
+        },
+        {
+          "pokemon": "Nidorino",
+          "rate": 1,
+          "levels": [
+            39
+          ]
+        },
+        {
+          "pokemon": "Nidorina",
+          "rate": 1,
+          "levels": [
+            39
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Fuego Ironworks",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Magneton",
+          "rate": 66,
+          "levels": [
+            40
+          ]
+        },
+        {
+          "pokemon": "Forretress",
+          "rate": 17,
+          "levels": [
+            40
+          ]
+        },
+        {
+          "pokemon": "Manectric",
+          "rate": 17,
+          "levels": [
+            40
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Iron Island - Inside - 1F, B1F",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Steelix",
+          "rate": 50,
+          "levels": [
+            43
+          ]
+        },
+        {
+          "pokemon": "Rhyhorn",
+          "rate": 50,
+          "levels": [
+            43
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Iron Island - Inside - B2F, B3F",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Steelix",
+          "rate": 50,
+          "levels": [
+            45
+          ]
+        },
+        {
+          "pokemon": "Rhyhorn",
+          "rate": 50,
+          "levels": [
+            45
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Snowpoint Temple",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Steelix",
+          "rate": "66/40",
+          "levels": [
+            50,
+            49
+          ]
+        },
+        {
+          "pokemon": "Weavile",
+          "rate": "33/20",
+          "levels": [
+            50,
+            49
+          ]
+        },
+        {
+          "pokemon": "Golbat",
+          "rate": "—/20",
+          "levels": [
+            50,
+            49
+          ]
+        },
+        {
+          "pokemon": "Froslass",
+          "rate": "—/20",
+          "levels": [
+            50,
+            49
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sendoff Spring",
+    "encounters": {
+      "repelManip": [
+        {
+          "pokemon": "Bibarel",
+          "rate": 43,
+          "levels": [
+            54
+          ]
+        },
+        {
+          "pokemon": "Chimecho",
+          "rate": 14,
+          "levels": [
+            54
+          ]
+        },
+        {
+          "pokemon": "Solrock",
+          "rate": 14,
+          "levels": [
+            54
+          ]
+        },
+        {
+          "pokemon": "Lunatone",
+          "rate": 14,
+          "levels": [
+            54
+          ]
+        },
+        {
+          "pokemon": "Dusclops",
+          "rate": 14,
+          "levels": [
+            54
+          ]
+        }
+      ]
+    }
+  }
+]

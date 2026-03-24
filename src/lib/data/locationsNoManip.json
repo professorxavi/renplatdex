@@ -227,36 +227,6 @@
             5
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Starly",
-          "rate": 33,
-          "levels": [
-            5
-          ]
-        },
-        {
-          "pokemon": "Bidoof",
-          "rate": 33,
-          "levels": [
-            5
-          ]
-        },
-        {
-          "pokemon": "Nidoran M",
-          "rate": 16,
-          "levels": [
-            5
-          ]
-        },
-        {
-          "pokemon": "Nidoran F",
-          "rate": 16,
-          "levels": [
-            5
-          ]
-        }
       ]
     }
   },
@@ -492,43 +462,6 @@
             50
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Azurill",
-          "rate": 22,
-          "levels": [
-            5
-          ]
-        },
-        {
-          "pokemon": "Starly",
-          "rate": 22,
-          "levels": [
-            5
-          ]
-        },
-        {
-          "pokemon": "Surskit",
-          "rate": 22,
-          "levels": [
-            5
-          ]
-        },
-        {
-          "pokemon": "Wingull",
-          "rate": 12,
-          "levels": [
-            5
-          ]
-        },
-        {
-          "pokemon": "Psyduck",
-          "rate": 22,
-          "levels": [
-            5
-          ]
-        }
       ]
     }
   },
@@ -700,22 +633,6 @@
           "rate": 22,
           "levels": [
             5,
-            6
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Poochyena",
-          "rate": 50,
-          "levels": [
-            6
-          ]
-        },
-        {
-          "pokemon": "Growlithe",
-          "rate": 50,
-          "levels": [
             6
           ]
         }
@@ -1155,22 +1072,6 @@
             50
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Ralts",
-          "rate": 50,
-          "levels": [
-            7
-          ]
-        },
-        {
-          "pokemon": "Bellsprout",
-          "rate": 50,
-          "levels": [
-            7
-          ]
-        }
       ]
     }
   },
@@ -1380,24 +1281,6 @@
             50
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Zubat",
-          "rate": 50,
-          "levels": [
-            7,
-            8
-          ]
-        },
-        {
-          "pokemon": "Geodude",
-          "rate": 50,
-          "levels": [
-            7,
-            8
-          ]
-        }
       ]
     }
   },
@@ -1590,22 +1473,6 @@
           "rate": 22,
           "levels": [
             11,
-            12
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Ralts",
-          "rate": 50,
-          "levels": [
-            12
-          ]
-        },
-        {
-          "pokemon": "Bellsprout",
-          "rate": 50,
-          "levels": [
             12
           ]
         }
@@ -1852,29 +1719,6 @@
             50
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Starly",
-          "rate": 33,
-          "levels": [
-            8
-          ]
-        },
-        {
-          "pokemon": "Spearow",
-          "rate": 33,
-          "levels": [
-            8
-          ]
-        },
-        {
-          "pokemon": "Abra",
-          "rate": 33,
-          "levels": [
-            8
-          ]
-        }
       ]
     }
   },
@@ -1975,36 +1819,6 @@
         {
           "pokemon": "Riolu",
           "rate": 10,
-          "levels": [
-            8
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Riolu",
-          "rate": 20,
-          "levels": [
-            8
-          ]
-        },
-        {
-          "pokemon": "Diglett",
-          "rate": 20,
-          "levels": [
-            8
-          ]
-        },
-        {
-          "pokemon": "Zubat",
-          "rate": 30,
-          "levels": [
-            8
-          ]
-        },
-        {
-          "pokemon": "Geodude",
-          "rate": 30,
           "levels": [
             8
           ]
@@ -2177,29 +1991,6 @@
           "rate": 45,
           "levels": [
             50
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Geodude",
-          "rate": 45,
-          "levels": [
-            9
-          ]
-        },
-        {
-          "pokemon": "Zubat",
-          "rate": 45,
-          "levels": [
-            9
-          ]
-        },
-        {
-          "pokemon": "Diglett",
-          "rate": 5,
-          "levels": [
-            9
           ]
         }
       ]
@@ -2383,36 +2174,6 @@
             9
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Onix",
-          "rate": 29,
-          "levels": [
-            10
-          ]
-        },
-        {
-          "pokemon": "Whismur",
-          "rate": 29,
-          "levels": [
-            10
-          ]
-        },
-        {
-          "pokemon": "Zubat",
-          "rate": 29,
-          "levels": [
-            10
-          ]
-        },
-        {
-          "pokemon": "Geodude",
-          "rate": 14,
-          "levels": [
-            10
-          ]
-        }
       ]
     }
   },
@@ -2555,36 +2316,6 @@
         {
           "pokemon": "Trapinch",
           "rate": 10,
-          "levels": [
-            11
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Onix",
-          "rate": 25,
-          "levels": [
-            11
-          ]
-        },
-        {
-          "pokemon": "Whismur",
-          "rate": 25,
-          "levels": [
-            11
-          ]
-        },
-        {
-          "pokemon": "Zubat",
-          "rate": 25,
-          "levels": [
-            11
-          ]
-        },
-        {
-          "pokemon": "Trapinch",
-          "rate": 25,
           "levels": [
             11
           ]
@@ -2759,29 +2490,6 @@
           "rate": 10,
           "levels": [
             21
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Ponyta",
-          "rate": 20,
-          "levels": [
-            10
-          ]
-        },
-        {
-          "pokemon": "Machop",
-          "rate": 40,
-          "levels": [
-            10
-          ]
-        },
-        {
-          "pokemon": "Rhyhorn",
-          "rate": 40,
-          "levels": [
-            10
           ]
         }
       ]
@@ -3005,15 +2713,6 @@
             21
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Gligar",
-          "rate": 100,
-          "levels": [
-            22
-          ]
-        }
       ]
     }
   },
@@ -3203,36 +2902,6 @@
           "rate": "-",
           "levels": [
             25
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Onix",
-          "rate": 45,
-          "levels": [
-            22
-          ]
-        },
-        {
-          "pokemon": "Sableye",
-          "rate": 23,
-          "levels": [
-            22
-          ]
-        },
-        {
-          "pokemon": "Mawile",
-          "rate": 23,
-          "levels": [
-            22
-          ]
-        },
-        {
-          "pokemon": "Gible",
-          "rate": 9,
-          "levels": [
-            22
           ]
         }
       ]
@@ -3540,22 +3209,6 @@
           "rate": 10,
           "levels": [
             12
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Drifloon",
-          "rate": 71,
-          "levels": [
-            13
-          ]
-        },
-        {
-          "pokemon": "Pachirisu",
-          "rate": 29,
-          "levels": [
-            13
           ]
         }
       ]
@@ -3914,36 +3567,6 @@
             12
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Pachirisu",
-          "rate": 8,
-          "levels": [
-            13
-          ]
-        },
-        {
-          "pokemon": "Mareep",
-          "rate": 20,
-          "levels": [
-            13
-          ]
-        },
-        {
-          "pokemon": "Hoppip/Venonat",
-          "rate": 36,
-          "levels": [
-            13
-          ]
-        },
-        {
-          "pokemon": "Shellos",
-          "rate": 36,
-          "levels": [
-            13
-          ]
-        }
       ]
     }
   },
@@ -4224,22 +3847,6 @@
             16
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Illumise",
-          "rate": 50,
-          "levels": [
-            17
-          ]
-        },
-        {
-          "pokemon": "Volbeat",
-          "rate": 50,
-          "levels": [
-            17
-          ]
-        }
       ]
     }
   },
@@ -4407,29 +4014,6 @@
           "rate": 11,
           "levels": [
             15,
-            16
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Paras/Misdreavus",
-          "rate": 83,
-          "levels": [
-            16
-          ]
-        },
-        {
-          "pokemon": "Buneary",
-          "rate": 8,
-          "levels": [
-            16
-          ]
-        },
-        {
-          "pokemon": "Taillow",
-          "rate": 8,
-          "levels": [
             16
           ]
         }
@@ -5848,22 +5432,6 @@
             18
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Swablu",
-          "rate": 50,
-          "levels": [
-            18
-          ]
-        },
-        {
-          "pokemon": "Meditite",
-          "rate": 50,
-          "levels": [
-            18
-          ]
-        }
       ]
     }
   },
@@ -6049,22 +5617,6 @@
           "rate": 10,
           "levels": [
             18
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Machop",
-          "rate": 50,
-          "levels": [
-            19
-          ]
-        },
-        {
-          "pokemon": "Meditite",
-          "rate": 50,
-          "levels": [
-            19
           ]
         }
       ]
@@ -6387,29 +5939,6 @@
             23
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Bibarel",
-          "rate": 66,
-          "levels": [
-            24
-          ]
-        },
-        {
-          "pokemon": "Seviper",
-          "rate": 16,
-          "levels": [
-            24
-          ]
-        },
-        {
-          "pokemon": "Zangoose",
-          "rate": 16,
-          "levels": [
-            24
-          ]
-        }
       ]
     }
   },
@@ -6711,22 +6240,6 @@
             30
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Chansey",
-          "rate": 33,
-          "levels": [
-            26
-          ]
-        },
-        {
-          "pokemon": "Staravia",
-          "rate": 66,
-          "levels": [
-            26
-          ]
-        }
       ]
     }
   },
@@ -6928,40 +6441,6 @@
           "levels": [
             28,
             30
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Banette",
-          "rate": "50/25",
-          "levels": [
-            29,
-            28
-          ]
-        },
-        {
-          "pokemon": "Dusclops",
-          "rate": "50/25",
-          "levels": [
-            29,
-            28
-          ]
-        },
-        {
-          "pokemon": "Golbat",
-          "rate": "—/25",
-          "levels": [
-            29,
-            28
-          ]
-        },
-        {
-          "pokemon": "Haunter",
-          "rate": "—/25",
-          "levels": [
-            29,
-            28
           ]
         }
       ]
@@ -7409,22 +6888,6 @@
             29
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Scyther",
-          "rate": 29,
-          "levels": [
-            30
-          ]
-        },
-        {
-          "pokemon": "Rapidash",
-          "rate": 71,
-          "levels": [
-            30
-          ]
-        }
       ]
     }
   },
@@ -7637,29 +7100,6 @@
           "rate": 10,
           "levels": [
             28
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Kadabra",
-          "rate": 14,
-          "levels": [
-            30
-          ]
-        },
-        {
-          "pokemon": "Lickitung",
-          "rate": 14,
-          "levels": [
-            30
-          ]
-        },
-        {
-          "pokemon": "Hypno",
-          "rate": 72,
-          "levels": [
-            30
           ]
         }
       ]
@@ -7921,24 +7361,6 @@
             30
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Graveler",
-          "rate": "100/66",
-          "levels": [
-            31,
-            29
-          ]
-        },
-        {
-          "pokemon": "Rhyhorn",
-          "rate": "—/33",
-          "levels": [
-            31,
-            29
-          ]
-        }
       ]
     }
   },
@@ -8074,36 +7496,6 @@
           "rate": 22,
           "levels": [
             31,
-            33
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Kricketune",
-          "rate": 45,
-          "levels": [
-            33
-          ]
-        },
-        {
-          "pokemon": "Girafarig",
-          "rate": 45,
-          "levels": [
-            33
-          ]
-        },
-        {
-          "pokemon": "Nidorino",
-          "rate": 5,
-          "levels": [
-            33
-          ]
-        },
-        {
-          "pokemon": "Nidorina",
-          "rate": 5,
-          "levels": [
             33
           ]
         }
@@ -8391,22 +7783,6 @@
           "rate": 10,
           "levels": [
             33
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Swellow",
-          "rate": 29,
-          "levels": [
-            34
-          ]
-        },
-        {
-          "pokemon": "Gastrodon",
-          "rate": 71,
-          "levels": [
-            34
           ]
         }
       ]
@@ -9210,29 +8586,6 @@
             50
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Drapion",
-          "rate": 50,
-          "levels": [
-            36
-          ]
-        },
-        {
-          "pokemon": "Breloom",
-          "rate": 25,
-          "levels": [
-            36
-          ]
-        },
-        {
-          "pokemon": "Swalot",
-          "rate": 25,
-          "levels": [
-            36
-          ]
-        }
       ]
     }
   },
@@ -9574,36 +8927,6 @@
             34
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Weepinbell",
-          "rate": 33,
-          "levels": [
-            36
-          ]
-        },
-        {
-          "pokemon": "Lombre",
-          "rate": 33,
-          "levels": [
-            36
-          ]
-        },
-        {
-          "pokemon": "Toxicroak",
-          "rate": 16,
-          "levels": [
-            36
-          ]
-        },
-        {
-          "pokemon": "Arbok",
-          "rate": 16,
-          "levels": [
-            36
-          ]
-        }
       ]
     }
   },
@@ -9881,56 +9204,6 @@
             25
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Staravia",
-          "rate": "20/38",
-          "levels": [
-            26,
-            25
-          ]
-        },
-        {
-          "pokemon": "Gloom",
-          "rate": "40/12",
-          "levels": [
-            26,
-            25
-          ]
-        },
-        {
-          "pokemon": "Weepinbell",
-          "rate": "40/12",
-          "levels": [
-            26,
-            25
-          ]
-        },
-        {
-          "pokemon": "Roselia",
-          "rate": "—/12",
-          "levels": [
-            26,
-            25
-          ]
-        },
-        {
-          "pokemon": "Kirlia",
-          "rate": "—/12",
-          "levels": [
-            26,
-            25
-          ]
-        },
-        {
-          "pokemon": "Smeargle",
-          "rate": "—/12",
-          "levels": [
-            26,
-            25
-          ]
-        }
       ]
     }
   },
@@ -10121,32 +9394,6 @@
           "levels": [
             24,
             26
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Pikachu",
-          "rate": "80/50",
-          "levels": [
-            26,
-            25
-          ]
-        },
-        {
-          "pokemon": "Eevee",
-          "rate": "20/25",
-          "levels": [
-            26,
-            25
-          ]
-        },
-        {
-          "pokemon": "Porygon",
-          "rate": "—/25",
-          "levels": [
-            26,
-            25
           ]
         }
       ]
@@ -10538,50 +9785,6 @@
             37
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Fearow",
-          "rate": 28,
-          "levels": [
-            37
-          ]
-        },
-        {
-          "pokemon": "Seviper",
-          "rate": 14,
-          "levels": [
-            37
-          ]
-        },
-        {
-          "pokemon": "Zangoose",
-          "rate": 14,
-          "levels": [
-            37
-          ]
-        },
-        {
-          "pokemon": "Drifblim",
-          "rate": 14,
-          "levels": [
-            37
-          ]
-        },
-        {
-          "pokemon": "Skarmory",
-          "rate": 14,
-          "levels": [
-            37
-          ]
-        },
-        {
-          "pokemon": "Shelgon",
-          "rate": 14,
-          "levels": [
-            37
-          ]
-        }
       ]
     }
   },
@@ -10923,15 +10126,6 @@
           "rate": 22,
           "levels": [
             19,
-            20
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Sneasel",
-          "rate": 100,
-          "levels": [
             20
           ]
         }
@@ -11664,40 +10858,6 @@
           "rate": 5,
           "levels": [
             50
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Steelix",
-          "rate": "66/40",
-          "levels": [
-            50,
-            49
-          ]
-        },
-        {
-          "pokemon": "Weavile",
-          "rate": "33/20",
-          "levels": [
-            50,
-            49
-          ]
-        },
-        {
-          "pokemon": "Golbat",
-          "rate": "—/20",
-          "levels": [
-            50,
-            49
-          ]
-        },
-        {
-          "pokemon": "Froslass",
-          "rate": "—/20",
-          "levels": [
-            50,
-            49
           ]
         }
       ]
@@ -13125,43 +12285,6 @@
           "rate": 100,
           "levels": [
             50
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Bibarel",
-          "rate": 43,
-          "levels": [
-            54
-          ]
-        },
-        {
-          "pokemon": "Chimecho",
-          "rate": 14,
-          "levels": [
-            54
-          ]
-        },
-        {
-          "pokemon": "Solrock",
-          "rate": 14,
-          "levels": [
-            54
-          ]
-        },
-        {
-          "pokemon": "Lunatone",
-          "rate": 14,
-          "levels": [
-            54
-          ]
-        },
-        {
-          "pokemon": "Dusclops",
-          "rate": 14,
-          "levels": [
-            54
           ]
         }
       ]
@@ -16076,22 +15199,6 @@
             43
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Steelix",
-          "rate": 50,
-          "levels": [
-            43
-          ]
-        },
-        {
-          "pokemon": "Rhyhorn",
-          "rate": 50,
-          "levels": [
-            43
-          ]
-        }
       ]
     }
   },
@@ -16273,22 +15380,6 @@
         {
           "pokemon": "Steelix",
           "rate": 5,
-          "levels": [
-            45
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Steelix",
-          "rate": 50,
-          "levels": [
-            45
-          ]
-        },
-        {
-          "pokemon": "Rhyhorn",
-          "rate": 50,
           "levels": [
             45
           ]
@@ -16824,57 +15915,6 @@
             39
           ]
         }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Sudowoodo",
-          "rate": 30,
-          "levels": [
-            39
-          ]
-        },
-        {
-          "pokemon": "Skuntank",
-          "rate": 30,
-          "levels": [
-            39
-          ]
-        },
-        {
-          "pokemon": "Girafarig",
-          "rate": 15,
-          "levels": [
-            39
-          ]
-        },
-        {
-          "pokemon": "Dodrio",
-          "rate": 15,
-          "levels": [
-            39
-          ]
-        },
-        {
-          "pokemon": "Farfetch'd",
-          "rate": 8,
-          "levels": [
-            39
-          ]
-        },
-        {
-          "pokemon": "Nidorino",
-          "rate": 1,
-          "levels": [
-            39
-          ]
-        },
-        {
-          "pokemon": "Nidorina",
-          "rate": 1,
-          "levels": [
-            39
-          ]
-        }
       ]
     }
   },
@@ -17146,29 +16186,6 @@
         {
           "pokemon": "Vespiquen",
           "rate": 10,
-          "levels": [
-            40
-          ]
-        }
-      ],
-      "repelManip": [
-        {
-          "pokemon": "Magneton",
-          "rate": 66,
-          "levels": [
-            40
-          ]
-        },
-        {
-          "pokemon": "Forretress",
-          "rate": 17,
-          "levels": [
-            40
-          ]
-        },
-        {
-          "pokemon": "Manectric",
-          "rate": 17,
           "levels": [
             40
           ]

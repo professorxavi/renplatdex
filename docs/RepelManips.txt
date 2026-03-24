@@ -1,0 +1,239 @@
+Gym 1
+ 
+Route 201 At level 5
+33% Starly
+33% Bidoof
+16% Nidoran M
+16% Nidoran F
+ 
+Verity Lakefront At level 5 
+22% Azurill
+22% Starly
+22% Surskit
+12% Wingull
+22% Psyduck
+ 
+Route 202 At level 6
+50% Poochyena
+50% Growlithe
+ 
+Route 203 At level 8
+33% Starly
+33% Spearow
+33% Abra
+ 
+Route 204 South At level 7 also works at level 10 in the north section
+50% Ralts
+50% Bellsprout
+ 
+Route 207 At level 10
+20% Ponyta
+40% Machop
+40% Rhyhorn
+ 
+Ravaged Path At level 7/8
+50% Zubat
+50% Geodude
+ 
+Oreburgh Gate At level 8 works at level 9 in the basement floor
+20% Riolu
+20% Diglett
+30% Zubat
+30% Geodude
+At lvl 9
+45% Geodude
+45% Zubat
+5% Diglett
+ 
+Oreburgh Mine works at level 11 in the basement floor
+25% Onix
+25% Whismur
+25% Zubat
+25% Trapinch
+
+At level 10 
+29% Onix
+29% Whismur
+29% Zubat
+14% Geodude
+ 
+Gym 2
+ 
+Route 205 South At level 13
+8% Pachirisu
+20% Mareep
+36% Hoppip/venonat
+36% Shellos
+ 
+Route 205 North At level 17
+50% Illumise
+50% Volbeat
+ 
+Route 211 West At level 18 
+50% Swablu
+50% Meditite 
+ 
+Route 211 East At level 19  
+50% Machop
+50% Meditite
+ 
+Route 216 At level 20 
+100% Sneasel!!!
+ 
+Eterna Forest At level 16
+83% Paras/Misdreavus
+8% Buneary
+8% Taillow
+ 
+ 
+Valley Windworks At level 13
+71% Drifloon
+29% Pachirisu
+ 
+Gym 3
+ 
+Route 206 At level 22
+100% Gligar
+ 
+Route 208 At level 24
+66% chance at Bibarel
+16% chance at Seviper
+16% chance at Zangoose
+
+
+Wayward Cave At level 22
+45% Onix
+23% Sableye
+23% Mawile
+9% Gible 
+ 
+Gym 4
+ 
+Route 212 North At level 26
+20% Staravia
+40% Gloom
+40% Weepinbell
+ 
+Route 212 North At level 25
+38% Staravia
+12% Roselia
+12% Weepinbell
+12% Gloom
+12% Kirlia
+12% Smeargle
+
+Route 209 at level 26
+33% Chansey
+66% Staravia
+ 
+Route 210 South At level 30
+29% Syther
+71% Rapidash 
+ 
+Route 215 At level 30
+14% Kadabra
+14% Lickitung
+72% Hypno
+ 
+Lost Tower first floors at level 29
+50% Banette
+50% Dusclops
+At 28 :
+25% Golbat
+25% Haunter
+25% Banette
+25% Dusclops
+
+Route 214 At level 31
+100% Graveler!
+ 
+Route 214 At level 29
+66% Graveler
+33% Rhyhorn 
+ 
+Maniac Tunnel
+At level 29
+Decreases odds of getting Diglett and Whismur 
+100% Dugtio at 32
+ 
+Trophy Garden At level 26
+80% Pikachu
+20% Eevee
+ 
+Trophy Garden At level 25
+50% Pikachu
+25% Eevee
+25% Porygon 
+ 
+Gym 5
+ 
+Route 213 At level 34
+29% Swellow
+71% Gastrodon 
+ 
+Route 212 South At level 36
+33% Weepinbell 
+33% Lombre
+16% Toxicroak
+16% Arbok
+ 
+Valor Lakefront At level 33
+45% Kricketune 
+45% Girafarig
+5% Nidorino
+5% Nidorina 
+
+Great Marsh Skorupi Are 5/6 At level 36
+50% Drapion
+25% Breloom
+25% Swalor
+ 
+Gym 6
+ 
+Route 210 North At level 37
+28% Fearow
+14% Seviper
+14% Zangoose
+14% Drifblim
+14% Skarmory
+14% Shelgon
+ 
+Route 221 At level 39
+30% Sudowoodo
+30% Skuntank
+15% Girafarig
+15% Dodrio
+8% Farfetch’d
+1% Nidorino
+1% Nidorina
+ 
+Fuego Ironworks At level 40 
+66% Magneton
+17% Fortress
+17% Manectric
+ 
+Iron Island
+At level 43 works at level 45 in Basement 2 and 3
+50% Steelix
+50% Rhyhorn 
+ 
+Gym 7
+ 
+Snowpoint Temple At level 50
+66% Steelix
+33% Chance Weavile
+ 
+Snowpoint Temple At level 49
+40% Steelix
+20% Golbat
+20% Weavile
+20% Froslass 
+ 
+Gym 8
+ 
+Sendoff Springs At level 54
+43% Bibarel
+14% Chimecho
+14% Solrock
+14% Lunatone
+14% Dusclops
