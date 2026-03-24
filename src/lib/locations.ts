@@ -3,7 +3,7 @@ import LOCATIONS_DATA from "./data/locations.json";
 export interface EncounterEntry {
   pokemon: string;
   rate: number | "-";
-  levels: [number, number];
+  levels: number[];
 }
 
 export interface Location {
@@ -53,7 +53,7 @@ export function getLocation(nameOrSlug: string): Location | undefined {
 export interface PokemonEncounter {
   location: string;
   method: string;
-  levels: [number, number];
+  levels: number[];
   rate: number | "-";
 }
 
