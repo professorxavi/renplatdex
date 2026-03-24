@@ -7913,7 +7913,7 @@
           "pokemon": "Bibarel",
           "rate": 30,
           "levels": [
-            33,
+            34,
             36
           ]
         },
@@ -7921,15 +7921,14 @@
           "pokemon": "Quagsire",
           "rate": 20,
           "levels": [
-            33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Tropius",
           "rate": 20,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -7938,15 +7937,14 @@
           "rate": 20,
           "levels": [
             33,
-            36
+            35
           ]
         },
         {
           "pokemon": "Carnivine",
           "rate": 10,
           "levels": [
-            33,
-            36
+            34
           ]
         }
       ],
@@ -7955,7 +7953,7 @@
           "pokemon": "Bibarel",
           "rate": 30,
           "levels": [
-            33,
+            34,
             36
           ]
         },
@@ -7963,15 +7961,14 @@
           "pokemon": "Quagsire",
           "rate": 20,
           "levels": [
-            33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Tropius",
           "rate": 20,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -7980,15 +7977,14 @@
           "rate": 20,
           "levels": [
             33,
-            36
+            35
           ]
         },
         {
           "pokemon": "Carnivine",
           "rate": 10,
           "levels": [
-            33,
-            36
+            34
           ]
         }
       ],
@@ -7997,7 +7993,7 @@
           "pokemon": "Bibarel",
           "rate": 30,
           "levels": [
-            33,
+            34,
             36
           ]
         },
@@ -8005,15 +8001,14 @@
           "pokemon": "Quagsire",
           "rate": 20,
           "levels": [
-            33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Tropius",
           "rate": 20,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8022,15 +8017,14 @@
           "rate": 20,
           "levels": [
             33,
-            36
+            35
           ]
         },
         {
           "pokemon": "Carnivine",
           "rate": 10,
           "levels": [
-            33,
-            36
+            34
           ]
         }
       ],
@@ -8040,7 +8034,7 @@
           "rate": 90,
           "levels": [
             20,
-            40
+            30
           ]
         },
         {
@@ -8131,7 +8125,7 @@
           "pokemon": "Parasect",
           "rate": 30,
           "levels": [
-            33,
+            34,
             36
           ]
         },
@@ -8139,8 +8133,7 @@
           "pokemon": "Exeggcute",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
@@ -8148,14 +8141,13 @@
           "rate": 20,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Toxicroak",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         },
@@ -8163,7 +8155,7 @@
           "pokemon": "Kangaskhan",
           "rate": 10,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8171,7 +8163,7 @@
           "pokemon": "Yanma",
           "rate": 10,
           "levels": [
-            33,
+            34,
             36
           ]
         }
@@ -8181,7 +8173,7 @@
           "pokemon": "Parasect",
           "rate": 30,
           "levels": [
-            33,
+            34,
             36
           ]
         },
@@ -8189,8 +8181,7 @@
           "pokemon": "Exeggcute",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
@@ -8198,14 +8189,13 @@
           "rate": 20,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Toxicroak",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         },
@@ -8213,7 +8203,7 @@
           "pokemon": "Kangaskhan",
           "rate": 10,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8221,7 +8211,7 @@
           "pokemon": "Yanma",
           "rate": 10,
           "levels": [
-            33,
+            34,
             36
           ]
         }
@@ -8231,7 +8221,7 @@
           "pokemon": "Parasect",
           "rate": 30,
           "levels": [
-            33,
+            34,
             36
           ]
         },
@@ -8239,8 +8229,7 @@
           "pokemon": "Exeggcute",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
@@ -8248,14 +8237,13 @@
           "rate": 20,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Toxicroak",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         },
@@ -8263,7 +8251,7 @@
           "pokemon": "Kangaskhan",
           "rate": 10,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8271,7 +8259,7 @@
           "pokemon": "Yanma",
           "rate": 10,
           "levels": [
-            33,
+            34,
             36
           ]
         }
@@ -8282,7 +8270,7 @@
           "rate": 90,
           "levels": [
             20,
-            40
+            30
           ]
         },
         {
@@ -8374,15 +8362,14 @@
           "rate": 30,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Gulpin",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
@@ -8390,14 +8377,14 @@
           "rate": 20,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Swalot",
           "rate": 10,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8405,7 +8392,7 @@
           "pokemon": "Breloom",
           "rate": 10,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8413,7 +8400,6 @@
           "pokemon": "Drapion",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         }
@@ -8424,15 +8410,14 @@
           "rate": 30,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Gulpin",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
@@ -8440,14 +8425,14 @@
           "rate": 20,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Swalot",
           "rate": 10,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8455,7 +8440,7 @@
           "pokemon": "Breloom",
           "rate": 10,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8463,8 +8448,7 @@
           "pokemon": "Drapion",
           "rate": 10,
           "levels": [
-            33,
-            36
+            35
           ]
         }
       ],
@@ -8474,15 +8458,14 @@
           "rate": 30,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Gulpin",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
@@ -8490,14 +8473,14 @@
           "rate": 20,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Swalot",
           "rate": 10,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8505,7 +8488,7 @@
           "pokemon": "Breloom",
           "rate": 10,
           "levels": [
-            33,
+            35,
             36
           ]
         },
@@ -8513,7 +8496,6 @@
           "pokemon": "Drapion",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         }
@@ -8524,7 +8506,7 @@
           "rate": 90,
           "levels": [
             20,
-            40
+            30
           ]
         },
         {
@@ -8615,16 +8597,14 @@
           "pokemon": "Croagunk",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
           "pokemon": "Grimer",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
@@ -8632,7 +8612,7 @@
           "rate": 15,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
@@ -8640,14 +8620,13 @@
           "rate": 15,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Weepinbell",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         },
@@ -8655,7 +8634,6 @@
           "pokemon": "Lombre",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         },
@@ -8663,7 +8641,6 @@
           "pokemon": "Arbok",
           "rate": 5,
           "levels": [
-            33,
             36
           ]
         },
@@ -8671,7 +8648,6 @@
           "pokemon": "Toxicroak",
           "rate": 5,
           "levels": [
-            33,
             36
           ]
         }
@@ -8681,16 +8657,14 @@
           "pokemon": "Croagunk",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
           "pokemon": "Grimer",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
@@ -8698,7 +8672,7 @@
           "rate": 15,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
@@ -8706,14 +8680,13 @@
           "rate": 15,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Weepinbell",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         },
@@ -8721,7 +8694,6 @@
           "pokemon": "Lombre",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         },
@@ -8729,7 +8701,6 @@
           "pokemon": "Arbok",
           "rate": 5,
           "levels": [
-            33,
             36
           ]
         },
@@ -8737,7 +8708,6 @@
           "pokemon": "Toxicroak",
           "rate": 5,
           "levels": [
-            33,
             36
           ]
         }
@@ -8747,16 +8717,14 @@
           "pokemon": "Croagunk",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
           "pokemon": "Grimer",
           "rate": 20,
           "levels": [
-            33,
-            36
+            33
           ]
         },
         {
@@ -8764,7 +8732,7 @@
           "rate": 15,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
@@ -8772,14 +8740,13 @@
           "rate": 15,
           "levels": [
             33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Weepinbell",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         },
@@ -8787,7 +8754,6 @@
           "pokemon": "Lombre",
           "rate": 10,
           "levels": [
-            33,
             36
           ]
         },
@@ -8795,7 +8761,6 @@
           "pokemon": "Arbok",
           "rate": 5,
           "levels": [
-            33,
             36
           ]
         },
@@ -8803,7 +8768,6 @@
           "pokemon": "Toxicroak",
           "rate": 5,
           "levels": [
-            33,
             36
           ]
         }
@@ -8813,7 +8777,6 @@
           "pokemon": "Muk",
           "rate": 11,
           "levels": [
-            33,
             36
           ]
         },
@@ -8821,7 +8784,6 @@
           "pokemon": "Weezing",
           "rate": 11,
           "levels": [
-            33,
             36
           ]
         }
@@ -8832,7 +8794,7 @@
           "rate": 60,
           "levels": [
             20,
-            40
+            30
           ]
         },
         {
@@ -8840,7 +8802,7 @@
           "rate": 30,
           "levels": [
             20,
-            40
+            30
           ]
         },
         {
@@ -8934,40 +8896,35 @@
           "pokemon": "Cherrim",
           "rate": 30,
           "levels": [
-            33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Shroomish",
           "rate": 20,
           "levels": [
-            33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Exeggcute",
           "rate": 20,
           "levels": [
-            33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Nuzleaf",
           "rate": 20,
           "levels": [
-            33,
-            36
+            34
           ]
         },
         {
           "pokemon": "Tangela",
           "rate": 10,
           "levels": [
-            33,
-            36
+            34
           ]
         }
       ]
@@ -8981,7 +8938,7 @@
           "pokemon": "Staravia",
           "rate": 30,
           "levels": [
-            24,
+            25,
             26
           ]
         },
@@ -8989,23 +8946,20 @@
           "pokemon": "Marill",
           "rate": 20,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Roselia",
           "rate": 10,
           "levels": [
-            24,
-            26
+            25
           ]
         },
         {
           "pokemon": "Weepinbell",
           "rate": 10,
           "levels": [
-            24,
             26
           ]
         },
@@ -9013,7 +8967,6 @@
           "pokemon": "Gloom",
           "rate": 10,
           "levels": [
-            24,
             26
           ]
         },
@@ -9021,8 +8974,7 @@
           "pokemon": "Kirlia",
           "rate": 10,
           "levels": [
-            24,
-            26
+            25
           ]
         },
         {
@@ -9030,7 +8982,7 @@
           "rate": 10,
           "levels": [
             24,
-            26
+            25
           ]
         }
       ],
@@ -9039,7 +8991,7 @@
           "pokemon": "Staravia",
           "rate": 30,
           "levels": [
-            24,
+            25,
             26
           ]
         },
@@ -9047,23 +8999,20 @@
           "pokemon": "Marill",
           "rate": 20,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Roselia",
           "rate": 10,
           "levels": [
-            24,
-            26
+            25
           ]
         },
         {
           "pokemon": "Weepinbell",
           "rate": 10,
           "levels": [
-            24,
             26
           ]
         },
@@ -9071,7 +9020,6 @@
           "pokemon": "Gloom",
           "rate": 10,
           "levels": [
-            24,
             26
           ]
         },
@@ -9079,8 +9027,7 @@
           "pokemon": "Kirlia",
           "rate": 10,
           "levels": [
-            24,
-            26
+            25
           ]
         },
         {
@@ -9088,7 +9035,7 @@
           "rate": 10,
           "levels": [
             24,
-            26
+            25
           ]
         }
       ],
@@ -9097,7 +9044,7 @@
           "pokemon": "Staravia",
           "rate": 30,
           "levels": [
-            24,
+            25,
             26
           ]
         },
@@ -9105,23 +9052,20 @@
           "pokemon": "Marill",
           "rate": 20,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Roselia",
           "rate": 10,
           "levels": [
-            24,
-            26
+            25
           ]
         },
         {
           "pokemon": "Weepinbell",
           "rate": 10,
           "levels": [
-            24,
             26
           ]
         },
@@ -9129,7 +9073,6 @@
           "pokemon": "Gloom",
           "rate": 10,
           "levels": [
-            24,
             26
           ]
         },
@@ -9137,8 +9080,7 @@
           "pokemon": "Kirlia",
           "rate": 10,
           "levels": [
-            24,
-            26
+            25
           ]
         },
         {
@@ -9146,7 +9088,7 @@
           "rate": 10,
           "levels": [
             24,
-            26
+            25
           ]
         }
       ],
@@ -9155,7 +9097,7 @@
           "pokemon": "Farfetch'd",
           "rate": 22,
           "levels": [
-            24,
+            25,
             26
           ]
         }
@@ -9166,7 +9108,7 @@
           "rate": 90,
           "levels": [
             20,
-            40
+            30
           ]
         },
         {
@@ -9273,15 +9215,13 @@
           "pokemon": "Pichu",
           "rate": 20,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Pikachu",
           "rate": 20,
           "levels": [
-            24,
             26
           ]
         },
@@ -9289,31 +9229,27 @@
           "pokemon": "Cleffa",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Igglybuff",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Togepi",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Porygon",
           "rate": 10,
           "levels": [
-            24,
             26
           ]
         },
@@ -9321,15 +9257,14 @@
           "pokemon": "Happiny",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Eevee",
           "rate": 10,
           "levels": [
-            24,
+            25,
             26
           ]
         }
@@ -9339,15 +9274,13 @@
           "pokemon": "Pichu",
           "rate": 20,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Pikachu",
           "rate": 20,
           "levels": [
-            24,
             26
           ]
         },
@@ -9355,31 +9288,27 @@
           "pokemon": "Cleffa",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Igglybuff",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Togepi",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Porygon",
           "rate": 10,
           "levels": [
-            24,
             26
           ]
         },
@@ -9387,15 +9316,14 @@
           "pokemon": "Happiny",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Eevee",
           "rate": 10,
           "levels": [
-            24,
+            25,
             26
           ]
         }
@@ -9405,15 +9333,13 @@
           "pokemon": "Pichu",
           "rate": 20,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Pikachu",
           "rate": 20,
           "levels": [
-            24,
             26
           ]
         },
@@ -9421,31 +9347,27 @@
           "pokemon": "Cleffa",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Igglybuff",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Togepi",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Porygon",
           "rate": 10,
           "levels": [
-            24,
             26
           ]
         },
@@ -9453,15 +9375,14 @@
           "pokemon": "Happiny",
           "rate": 10,
           "levels": [
-            24,
-            26
+            24
           ]
         },
         {
           "pokemon": "Eevee",
           "rate": 10,
           "levels": [
-            24,
+            25,
             26
           ]
         }
@@ -9487,7 +9408,7 @@
           "rate": 90,
           "levels": [
             20,
-            40
+            30
           ]
         },
         {
@@ -9557,31 +9478,27 @@
           "pokemon": "Swablu",
           "rate": 20,
           "levels": [
-            34,
-            38
+            34
           ]
         },
         {
           "pokemon": "Fearow",
           "rate": 20,
           "levels": [
-            34,
-            38
+            37
           ]
         },
         {
           "pokemon": "Machoke",
           "rate": 10,
           "levels": [
-            34,
-            38
+            36
           ]
         },
         {
           "pokemon": "Drifblim",
           "rate": 10,
           "levels": [
-            34,
             38
           ]
         },
@@ -9589,7 +9506,6 @@
           "pokemon": "Zangoose",
           "rate": 10,
           "levels": [
-            34,
             38
           ]
         },
@@ -9597,7 +9513,6 @@
           "pokemon": "Seviper",
           "rate": 10,
           "levels": [
-            34,
             38
           ]
         },
@@ -9605,7 +9520,7 @@
           "pokemon": "Skarmory",
           "rate": 10,
           "levels": [
-            34,
+            37,
             38
           ]
         },
@@ -9613,7 +9528,7 @@
           "pokemon": "Shelgon",
           "rate": 10,
           "levels": [
-            34,
+            37,
             38
           ]
         }
@@ -9623,31 +9538,27 @@
           "pokemon": "Swablu",
           "rate": 20,
           "levels": [
-            34,
-            38
+            34
           ]
         },
         {
           "pokemon": "Fearow",
           "rate": 20,
           "levels": [
-            34,
-            38
+            37
           ]
         },
         {
           "pokemon": "Machoke",
           "rate": 10,
           "levels": [
-            34,
-            38
+            36
           ]
         },
         {
           "pokemon": "Drifblim",
           "rate": 10,
           "levels": [
-            34,
             38
           ]
         },
@@ -9655,7 +9566,6 @@
           "pokemon": "Zangoose",
           "rate": 10,
           "levels": [
-            34,
             38
           ]
         },
@@ -9663,7 +9573,6 @@
           "pokemon": "Seviper",
           "rate": 10,
           "levels": [
-            34,
             38
           ]
         },
@@ -9671,7 +9580,7 @@
           "pokemon": "Skarmory",
           "rate": 10,
           "levels": [
-            34,
+            37,
             38
           ]
         },
@@ -9679,7 +9588,7 @@
           "pokemon": "Shelgon",
           "rate": 10,
           "levels": [
-            34,
+            37,
             38
           ]
         }
@@ -9689,31 +9598,27 @@
           "pokemon": "Swablu",
           "rate": 20,
           "levels": [
-            34,
-            38
+            34
           ]
         },
         {
           "pokemon": "Fearow",
           "rate": 20,
           "levels": [
-            34,
-            38
+            37
           ]
         },
         {
           "pokemon": "Machoke",
           "rate": 10,
           "levels": [
-            34,
-            38
+            36
           ]
         },
         {
           "pokemon": "Drifblim",
           "rate": 10,
           "levels": [
-            34,
             38
           ]
         },
@@ -9721,7 +9626,6 @@
           "pokemon": "Zangoose",
           "rate": 10,
           "levels": [
-            34,
             38
           ]
         },
@@ -9729,7 +9633,6 @@
           "pokemon": "Seviper",
           "rate": 10,
           "levels": [
-            34,
             38
           ]
         },
@@ -9737,7 +9640,7 @@
           "pokemon": "Skarmory",
           "rate": 10,
           "levels": [
-            34,
+            37,
             38
           ]
         },
@@ -9745,7 +9648,7 @@
           "pokemon": "Shelgon",
           "rate": 10,
           "levels": [
-            34,
+            37,
             38
           ]
         }
@@ -9755,7 +9658,6 @@
           "pokemon": "Altaria",
           "rate": 22,
           "levels": [
-            34,
             38
           ]
         }
@@ -9766,7 +9668,7 @@
           "rate": 90,
           "levels": [
             20,
-            40
+            30
           ]
         },
         {
@@ -9852,40 +9754,35 @@
           "pokemon": "Staravia",
           "rate": 30,
           "levels": [
-            34,
-            38
+            37
           ]
         },
         {
           "pokemon": "Pidgeotto",
           "rate": 20,
           "levels": [
-            34,
-            38
+            37
           ]
         },
         {
           "pokemon": "Noctowl",
           "rate": 20,
           "levels": [
-            34,
-            38
+            37
           ]
         },
         {
           "pokemon": "Swellow",
           "rate": 20,
           "levels": [
-            34,
-            38
+            37
           ]
         },
         {
           "pokemon": "Farfetch'd",
           "rate": 10,
           "levels": [
-            34,
-            38
+            37
           ]
         }
       ]
@@ -9899,32 +9796,28 @@
           "pokemon": "Geodude",
           "rate": 20,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Bronzor",
           "rate": 20,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
@@ -9939,23 +9832,20 @@
           "pokemon": "Zubat",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Beldum",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            18,
             19
           ]
         },
@@ -9963,7 +9853,6 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            18,
             19
           ]
         }
@@ -9973,32 +9862,28 @@
           "pokemon": "Geodude",
           "rate": 20,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Bronzor",
           "rate": 20,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
@@ -10013,23 +9898,20 @@
           "pokemon": "Zubat",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Beldum",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            18,
             19
           ]
         },
@@ -10037,7 +9919,6 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            18,
             19
           ]
         }
@@ -10047,32 +9928,28 @@
           "pokemon": "Geodude",
           "rate": 20,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Bronzor",
           "rate": 20,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
@@ -10087,23 +9964,20 @@
           "pokemon": "Zubat",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Beldum",
           "rate": 10,
           "levels": [
-            18,
-            19
+            18
           ]
         },
         {
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            18,
             19
           ]
         },
@@ -10111,7 +9985,6 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            18,
             19
           ]
         }
@@ -10127,7 +10000,7 @@
           "rate": 30,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10135,7 +10008,7 @@
           "rate": 25,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10143,7 +10016,7 @@
           "rate": 20,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10151,7 +10024,7 @@
           "rate": 15,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10169,7 +10042,7 @@
           "rate": 30,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10177,7 +10050,7 @@
           "rate": 25,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10185,7 +10058,7 @@
           "rate": 20,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10193,7 +10066,7 @@
           "rate": 15,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10211,7 +10084,7 @@
           "rate": 30,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10219,7 +10092,7 @@
           "rate": 25,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10227,7 +10100,7 @@
           "rate": 20,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10235,7 +10108,7 @@
           "rate": 15,
           "levels": [
             18,
-            20
+            19
           ]
         },
         {
@@ -10252,7 +10125,7 @@
           "pokemon": "Delibird",
           "rate": 22,
           "levels": [
-            18,
+            19,
             20
           ]
         }
@@ -10267,7 +10140,7 @@
           "pokemon": "Piloswine",
           "rate": 30,
           "levels": [
-            44,
+            46,
             48
           ]
         },
@@ -10275,15 +10148,14 @@
           "pokemon": "Snorunt",
           "rate": 20,
           "levels": [
-            44,
-            48
+            44
           ]
         },
         {
           "pokemon": "Sneasel",
           "rate": 10,
           "levels": [
-            44,
+            46,
             48
           ]
         },
@@ -10291,15 +10163,13 @@
           "pokemon": "Jynx",
           "rate": 10,
           "levels": [
-            44,
-            48
+            47
           ]
         },
         {
           "pokemon": "Abomasnow",
           "rate": 10,
           "levels": [
-            44,
             48
           ]
         },
@@ -10307,16 +10177,14 @@
           "pokemon": "Glalie",
           "rate": 10,
           "levels": [
-            44,
-            48
+            47
           ]
         },
         {
           "pokemon": "Delibird",
           "rate": 10,
           "levels": [
-            44,
-            48
+            47
           ]
         }
       ],
@@ -10325,7 +10193,7 @@
           "pokemon": "Piloswine",
           "rate": 30,
           "levels": [
-            44,
+            46,
             48
           ]
         },
@@ -10333,15 +10201,14 @@
           "pokemon": "Snorunt",
           "rate": 20,
           "levels": [
-            44,
-            48
+            44
           ]
         },
         {
           "pokemon": "Sneasel",
           "rate": 10,
           "levels": [
-            44,
+            46,
             48
           ]
         },
@@ -10349,15 +10216,13 @@
           "pokemon": "Jynx",
           "rate": 10,
           "levels": [
-            44,
-            48
+            47
           ]
         },
         {
           "pokemon": "Abomasnow",
           "rate": 10,
           "levels": [
-            44,
             48
           ]
         },
@@ -10365,16 +10230,14 @@
           "pokemon": "Glalie",
           "rate": 10,
           "levels": [
-            44,
-            48
+            47
           ]
         },
         {
           "pokemon": "Delibird",
           "rate": 10,
           "levels": [
-            44,
-            48
+            47
           ]
         }
       ],
@@ -10383,7 +10246,7 @@
           "pokemon": "Piloswine",
           "rate": 30,
           "levels": [
-            44,
+            46,
             48
           ]
         },
@@ -10391,15 +10254,14 @@
           "pokemon": "Snorunt",
           "rate": 20,
           "levels": [
-            44,
-            48
+            44
           ]
         },
         {
           "pokemon": "Sneasel",
           "rate": 10,
           "levels": [
-            44,
+            46,
             48
           ]
         },
@@ -10407,15 +10269,13 @@
           "pokemon": "Jynx",
           "rate": 10,
           "levels": [
-            44,
-            48
+            47
           ]
         },
         {
           "pokemon": "Abomasnow",
           "rate": 10,
           "levels": [
-            44,
             48
           ]
         },
@@ -10423,16 +10283,14 @@
           "pokemon": "Glalie",
           "rate": 10,
           "levels": [
-            44,
-            48
+            47
           ]
         },
         {
           "pokemon": "Delibird",
           "rate": 10,
           "levels": [
-            44,
-            48
+            47
           ]
         }
       ],
@@ -10441,7 +10299,7 @@
           "pokemon": "Froslass",
           "rate": 22,
           "levels": [
-            44,
+            47,
             48
           ]
         }
@@ -10456,7 +10314,7 @@
           "pokemon": "Piloswine",
           "rate": 30,
           "levels": [
-            45,
+            47,
             49
           ]
         },
@@ -10464,15 +10322,14 @@
           "pokemon": "Snorunt",
           "rate": 20,
           "levels": [
-            45,
-            49
+            45
           ]
         },
         {
           "pokemon": "Sneasel",
           "rate": 10,
           "levels": [
-            45,
+            47,
             49
           ]
         },
@@ -10480,15 +10337,13 @@
           "pokemon": "Jynx",
           "rate": 10,
           "levels": [
-            45,
-            49
+            48
           ]
         },
         {
           "pokemon": "Abomasnow",
           "rate": 10,
           "levels": [
-            45,
             49
           ]
         },
@@ -10496,16 +10351,14 @@
           "pokemon": "Glalie",
           "rate": 10,
           "levels": [
-            45,
-            49
+            48
           ]
         },
         {
           "pokemon": "Delibird",
           "rate": 10,
           "levels": [
-            45,
-            49
+            48
           ]
         }
       ],
@@ -10514,7 +10367,7 @@
           "pokemon": "Piloswine",
           "rate": 30,
           "levels": [
-            45,
+            47,
             49
           ]
         },
@@ -10522,15 +10375,14 @@
           "pokemon": "Snorunt",
           "rate": 20,
           "levels": [
-            45,
-            49
+            45
           ]
         },
         {
           "pokemon": "Sneasel",
           "rate": 10,
           "levels": [
-            45,
+            47,
             49
           ]
         },
@@ -10538,15 +10390,13 @@
           "pokemon": "Jynx",
           "rate": 10,
           "levels": [
-            45,
-            49
+            48
           ]
         },
         {
           "pokemon": "Abomasnow",
           "rate": 10,
           "levels": [
-            45,
             49
           ]
         },
@@ -10554,16 +10404,14 @@
           "pokemon": "Glalie",
           "rate": 10,
           "levels": [
-            45,
-            49
+            48
           ]
         },
         {
           "pokemon": "Delibird",
           "rate": 10,
           "levels": [
-            45,
-            49
+            48
           ]
         }
       ],
@@ -10572,7 +10420,7 @@
           "pokemon": "Piloswine",
           "rate": 30,
           "levels": [
-            45,
+            47,
             49
           ]
         },
@@ -10580,31 +10428,27 @@
           "pokemon": "Snorunt",
           "rate": 20,
           "levels": [
-            45,
-            49
+            45
           ]
         },
         {
           "pokemon": "Sneasel",
           "rate": 10,
           "levels": [
-            45,
-            49
+            47
           ]
         },
         {
           "pokemon": "Jynx",
           "rate": 10,
           "levels": [
-            45,
-            49
+            48
           ]
         },
         {
           "pokemon": "Abomasnow",
           "rate": 10,
           "levels": [
-            45,
             49
           ]
         },
@@ -10612,16 +10456,14 @@
           "pokemon": "Glalie",
           "rate": 10,
           "levels": [
-            45,
-            49
+            48
           ]
         },
         {
           "pokemon": "Delibird",
           "rate": 10,
           "levels": [
-            45,
-            49
+            48
           ]
         }
       ],
@@ -10630,8 +10472,8 @@
           "pokemon": "Froslass",
           "rate": 22,
           "levels": [
-            45,
-            49
+            47,
+            48
           ]
         }
       ]
@@ -10646,7 +10488,7 @@
           "rate": 30,
           "levels": [
             49,
-            51
+            50
           ]
         },
         {
@@ -10662,7 +10504,7 @@
           "rate": 20,
           "levels": [
             49,
-            51
+            50
           ]
         },
         {
@@ -10677,8 +10519,7 @@
           "pokemon": "Glalie",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         }
       ],
@@ -10688,7 +10529,7 @@
           "rate": 30,
           "levels": [
             49,
-            51
+            50
           ]
         },
         {
@@ -10704,7 +10545,7 @@
           "rate": 20,
           "levels": [
             49,
-            51
+            50
           ]
         },
         {
@@ -10719,8 +10560,7 @@
           "pokemon": "Glalie",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         }
       ],
@@ -10730,7 +10570,7 @@
           "rate": 30,
           "levels": [
             49,
-            51
+            50
           ]
         },
         {
@@ -10746,7 +10586,7 @@
           "rate": 20,
           "levels": [
             49,
-            51
+            50
           ]
         },
         {
@@ -10761,8 +10601,7 @@
           "pokemon": "Glalie",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         }
       ],
@@ -10771,8 +10610,7 @@
           "pokemon": "Wobbuffet",
           "rate": 22,
           "levels": [
-            49,
-            51
+            50
           ]
         }
       ],
@@ -10839,7 +10677,7 @@
           "pokemon": "Golbat",
           "rate": 25,
           "levels": [
-            47,
+            48,
             50
           ]
         },
@@ -10847,8 +10685,7 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            47,
-            50
+            48
           ]
         },
         {
@@ -10856,14 +10693,13 @@
           "rate": 20,
           "levels": [
             47,
-            50
+            48
           ]
         },
         {
           "pokemon": "Steelix",
           "rate": 10,
           "levels": [
-            47,
             50
           ]
         },
@@ -10871,7 +10707,7 @@
           "pokemon": "Jynx",
           "rate": 10,
           "levels": [
-            47,
+            49,
             50
           ]
         },
@@ -10879,7 +10715,7 @@
           "pokemon": "Glalie",
           "rate": 5,
           "levels": [
-            47,
+            49,
             50
           ]
         },
@@ -10887,7 +10723,7 @@
           "pokemon": "Froslass",
           "rate": 5,
           "levels": [
-            47,
+            49,
             50
           ]
         },
@@ -10895,7 +10731,6 @@
           "pokemon": "Weavile",
           "rate": 5,
           "levels": [
-            47,
             50
           ]
         }
@@ -10905,7 +10740,7 @@
           "pokemon": "Golbat",
           "rate": 25,
           "levels": [
-            47,
+            48,
             50
           ]
         },
@@ -10913,8 +10748,7 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            47,
-            50
+            48
           ]
         },
         {
@@ -10922,14 +10756,13 @@
           "rate": 20,
           "levels": [
             47,
-            50
+            48
           ]
         },
         {
           "pokemon": "Steelix",
           "rate": 10,
           "levels": [
-            47,
             50
           ]
         },
@@ -10937,7 +10770,7 @@
           "pokemon": "Jynx",
           "rate": 10,
           "levels": [
-            47,
+            49,
             50
           ]
         },
@@ -10945,7 +10778,7 @@
           "pokemon": "Glalie",
           "rate": 5,
           "levels": [
-            47,
+            49,
             50
           ]
         },
@@ -10953,7 +10786,7 @@
           "pokemon": "Froslass",
           "rate": 5,
           "levels": [
-            47,
+            49,
             50
           ]
         },
@@ -10961,7 +10794,6 @@
           "pokemon": "Weavile",
           "rate": 5,
           "levels": [
-            47,
             50
           ]
         }
@@ -10971,7 +10803,7 @@
           "pokemon": "Golbat",
           "rate": 25,
           "levels": [
-            47,
+            48,
             50
           ]
         },
@@ -10979,8 +10811,7 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            47,
-            50
+            48
           ]
         },
         {
@@ -10988,14 +10819,13 @@
           "rate": 20,
           "levels": [
             47,
-            50
+            48
           ]
         },
         {
           "pokemon": "Steelix",
           "rate": 10,
           "levels": [
-            47,
             50
           ]
         },
@@ -11003,7 +10833,7 @@
           "pokemon": "Jynx",
           "rate": 10,
           "levels": [
-            47,
+            49,
             50
           ]
         },
@@ -11011,7 +10841,7 @@
           "pokemon": "Glalie",
           "rate": 5,
           "levels": [
-            47,
+            40,
             50
           ]
         },
@@ -11019,7 +10849,7 @@
           "pokemon": "Froslass",
           "rate": 5,
           "levels": [
-            47,
+            40,
             50
           ]
         },
@@ -11027,7 +10857,6 @@
           "pokemon": "Weavile",
           "rate": 5,
           "levels": [
-            47,
             50
           ]
         }
@@ -11042,15 +10871,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            49,
             51
           ]
         },
@@ -11058,39 +10885,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11098,7 +10921,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11106,7 +10929,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         }
@@ -11116,15 +10939,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            49,
             51
           ]
         },
@@ -11132,39 +10953,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11172,7 +10989,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11180,7 +10997,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         }
@@ -11190,15 +11007,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            49,
             51
           ]
         },
@@ -11206,39 +11021,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11246,7 +11057,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11254,7 +11065,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         }
@@ -11269,15 +11080,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            49,
             51
           ]
         },
@@ -11285,39 +11094,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11325,7 +11130,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11333,7 +11138,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         }
@@ -11343,15 +11148,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            49,
             51
           ]
         },
@@ -11359,39 +11162,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11399,7 +11198,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11407,7 +11206,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         }
@@ -11417,15 +11216,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            49,
             51
           ]
         },
@@ -11433,39 +11230,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            49,
-            51
+            49
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            49,
-            51
+            50
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11473,7 +11266,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         },
@@ -11481,7 +11274,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            49,
+            50,
             51
           ]
         }
@@ -11496,15 +11289,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            50,
             52
           ]
         },
@@ -11512,39 +11303,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            50,
-            52
+            50
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            50,
-            52
+            50
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11552,7 +11339,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11560,7 +11347,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            50,
+            51,
             52
           ]
         }
@@ -11570,15 +11357,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            50,
             52
           ]
         },
@@ -11586,39 +11371,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            50,
-            52
+            50
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            50,
-            52
+            50
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11626,7 +11407,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11634,7 +11415,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            50,
+            51,
             52
           ]
         }
@@ -11644,15 +11425,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            50,
             52
           ]
         },
@@ -11660,39 +11439,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            50,
-            52
+            50
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            50,
-            52
+            50
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11700,7 +11475,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11708,7 +11483,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            50,
+            51,
             52
           ]
         }
@@ -11719,14 +11494,14 @@
           "rate": 90,
           "levels": [
             35,
-            55
+            45
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            35,
+            45,
             55
           ]
         }
@@ -11810,7 +11585,7 @@
           "pokemon": "Abomasnow",
           "rate": 30,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11818,7 +11593,6 @@
           "pokemon": "Medicham",
           "rate": 20,
           "levels": [
-            50,
             52
           ]
         },
@@ -11827,22 +11601,21 @@
           "rate": 20,
           "levels": [
             50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Absol",
           "rate": 10,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Donphan",
           "rate": 10,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11850,7 +11623,7 @@
           "pokemon": "Ursaring",
           "rate": 10,
           "levels": [
-            50,
+            51,
             52
           ]
         }
@@ -11860,7 +11633,7 @@
           "pokemon": "Abomasnow",
           "rate": 30,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11868,7 +11641,6 @@
           "pokemon": "Medicham",
           "rate": 20,
           "levels": [
-            50,
             52
           ]
         },
@@ -11877,22 +11649,21 @@
           "rate": 20,
           "levels": [
             50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Absol",
           "rate": 10,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Donphan",
           "rate": 10,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11900,7 +11671,7 @@
           "pokemon": "Ursaring",
           "rate": 10,
           "levels": [
-            50,
+            51,
             52
           ]
         }
@@ -11910,7 +11681,7 @@
           "pokemon": "Abomasnow",
           "rate": 30,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11918,7 +11689,6 @@
           "pokemon": "Medicham",
           "rate": 20,
           "levels": [
-            50,
             52
           ]
         },
@@ -11927,22 +11697,21 @@
           "rate": 20,
           "levels": [
             50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Absol",
           "rate": 10,
           "levels": [
-            50,
-            52
+            51
           ]
         },
         {
           "pokemon": "Donphan",
           "rate": 10,
           "levels": [
-            50,
+            51,
             52
           ]
         },
@@ -11950,7 +11719,7 @@
           "pokemon": "Ursaring",
           "rate": 10,
           "levels": [
-            50,
+            51,
             52
           ]
         }
@@ -11960,7 +11729,7 @@
           "pokemon": "Clefable",
           "rate": 22,
           "levels": [
-            50,
+            51,
             52
           ]
         }
@@ -11975,7 +11744,7 @@
           "pokemon": "Abomasnow",
           "rate": 30,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -11983,7 +11752,6 @@
           "pokemon": "Medicham",
           "rate": 20,
           "levels": [
-            51,
             53
           ]
         },
@@ -11992,22 +11760,21 @@
           "rate": 20,
           "levels": [
             51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Absol",
           "rate": 10,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Donphan",
           "rate": 10,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12015,7 +11782,7 @@
           "pokemon": "Ursaring",
           "rate": 10,
           "levels": [
-            51,
+            52,
             53
           ]
         }
@@ -12025,7 +11792,7 @@
           "pokemon": "Abomasnow",
           "rate": 30,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12033,7 +11800,6 @@
           "pokemon": "Medicham",
           "rate": 20,
           "levels": [
-            51,
             53
           ]
         },
@@ -12042,22 +11808,21 @@
           "rate": 20,
           "levels": [
             51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Absol",
           "rate": 10,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Donphan",
           "rate": 10,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12065,7 +11830,7 @@
           "pokemon": "Ursaring",
           "rate": 10,
           "levels": [
-            51,
+            52,
             53
           ]
         }
@@ -12075,7 +11840,7 @@
           "pokemon": "Abomasnow",
           "rate": 30,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12083,7 +11848,6 @@
           "pokemon": "Medicham",
           "rate": 20,
           "levels": [
-            51,
             53
           ]
         },
@@ -12092,22 +11856,21 @@
           "rate": 20,
           "levels": [
             51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Absol",
           "rate": 10,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Donphan",
           "rate": 10,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12115,7 +11878,7 @@
           "pokemon": "Ursaring",
           "rate": 10,
           "levels": [
-            51,
+            52,
             53
           ]
         }
@@ -12125,7 +11888,7 @@
           "pokemon": "Clefable",
           "rate": 22,
           "levels": [
-            51,
+            52,
             53
           ]
         }
@@ -12133,22 +11896,20 @@
     }
   },
   {
-    "name": "Mt. Coronet - 5F",
+    "name": "Mt. Coronet - 5F, 6F , 7F",
     "encounters": {
       "morning": [
         {
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            51,
             53
           ]
         },
@@ -12156,39 +11917,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            51,
-            53
+            51
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            51,
-            53
+            51
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12196,7 +11953,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12204,7 +11961,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            51,
+            52,
             53
           ]
         }
@@ -12214,15 +11971,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            51,
             53
           ]
         },
@@ -12230,39 +11985,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            51,
-            53
+            51
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            51,
-            53
+            51
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12270,7 +12021,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12278,7 +12029,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            51,
+            52,
             53
           ]
         }
@@ -12288,15 +12039,13 @@
           "pokemon": "Graveler",
           "rate": 20,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 20,
           "levels": [
-            51,
             53
           ]
         },
@@ -12304,39 +12053,35 @@
           "pokemon": "Clefairy",
           "rate": 10,
           "levels": [
-            51,
-            53
+            51
           ]
         },
         {
           "pokemon": "Nosepass",
           "rate": 10,
           "levels": [
-            51,
-            53
+            51
           ]
         },
         {
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Golbat",
           "rate": 10,
           "levels": [
-            51,
-            53
+            52
           ]
         },
         {
           "pokemon": "Metang",
           "rate": 10,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12344,7 +12089,7 @@
           "pokemon": "Solrock",
           "rate": 5,
           "levels": [
-            51,
+            52,
             53
           ]
         },
@@ -12352,461 +12097,7 @@
           "pokemon": "Lunatone",
           "rate": 5,
           "levels": [
-            51,
-            53
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "name": "Mt. Coronet - 6F",
-    "encounters": {
-      "morning": [
-        {
-          "pokemon": "Graveler",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Bronzong",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Clefairy",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Nosepass",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Chimecho",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Golbat",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Metang",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Solrock",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Lunatone",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        }
-      ],
-      "day": [
-        {
-          "pokemon": "Graveler",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Bronzong",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Clefairy",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Nosepass",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Chimecho",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Golbat",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Metang",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Solrock",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Lunatone",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        }
-      ],
-      "night": [
-        {
-          "pokemon": "Graveler",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Bronzong",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Clefairy",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Nosepass",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Chimecho",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Golbat",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Metang",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Solrock",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Lunatone",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "name": "Mt. Coronet - 7F",
-    "encounters": {
-      "morning": [
-        {
-          "pokemon": "Graveler",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Bronzong",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Clefairy",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Nosepass",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Chimecho",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Golbat",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Metang",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Solrock",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Lunatone",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        }
-      ],
-      "day": [
-        {
-          "pokemon": "Graveler",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Bronzong",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Clefairy",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Nosepass",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Chimecho",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Golbat",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Metang",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Solrock",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Lunatone",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        }
-      ],
-      "night": [
-        {
-          "pokemon": "Graveler",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Bronzong",
-          "rate": 20,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Clefairy",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Nosepass",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Chimecho",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Golbat",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Metang",
-          "rate": 10,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Solrock",
-          "rate": 5,
-          "levels": [
-            51,
-            53
-          ]
-        },
-        {
-          "pokemon": "Lunatone",
-          "rate": 5,
-          "levels": [
-            51,
+            52,
             53
           ]
         }
@@ -12821,15 +12112,13 @@
           "pokemon": "Staravia",
           "rate": 30,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
           "pokemon": "Bibarel",
           "rate": 20,
           "levels": [
-            53,
             54
           ]
         },
@@ -12845,7 +12134,6 @@
           "pokemon": "Solrock",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         },
@@ -12853,7 +12141,6 @@
           "pokemon": "Lunatone",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         },
@@ -12861,7 +12148,6 @@
           "pokemon": "Dusclops",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         }
@@ -12871,15 +12157,13 @@
           "pokemon": "Staravia",
           "rate": 30,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
           "pokemon": "Bibarel",
           "rate": 20,
           "levels": [
-            53,
             54
           ]
         },
@@ -12895,7 +12179,6 @@
           "pokemon": "Solrock",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         },
@@ -12903,7 +12186,6 @@
           "pokemon": "Lunatone",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         },
@@ -12911,7 +12193,6 @@
           "pokemon": "Dusclops",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         }
@@ -12921,15 +12202,13 @@
           "pokemon": "Staravia",
           "rate": 30,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
           "pokemon": "Bibarel",
           "rate": 20,
           "levels": [
-            53,
             54
           ]
         },
@@ -12945,7 +12224,6 @@
           "pokemon": "Solrock",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         },
@@ -12953,7 +12231,6 @@
           "pokemon": "Lunatone",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         },
@@ -12961,7 +12238,6 @@
           "pokemon": "Dusclops",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         }
@@ -12971,7 +12247,6 @@
           "pokemon": "Wobbuffet",
           "rate": 22,
           "levels": [
-            53,
             54
           ]
         }
@@ -13023,39 +12298,34 @@
           "pokemon": "Golbat",
           "rate": 20,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Haunter",
           "rate": 20,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Dusclops",
           "rate": 10,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Banette",
           "rate": 10,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 10,
           "levels": [
-            65,
             66
           ]
         },
@@ -13063,8 +12333,7 @@
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
@@ -13089,39 +12358,34 @@
           "pokemon": "Golbat",
           "rate": 20,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Haunter",
           "rate": 20,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Dusclops",
           "rate": 10,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Banette",
           "rate": 10,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 10,
           "levels": [
-            65,
             66
           ]
         },
@@ -13129,8 +12393,7 @@
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
@@ -13155,39 +12418,34 @@
           "pokemon": "Golbat",
           "rate": 20,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Haunter",
           "rate": 20,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Dusclops",
           "rate": 10,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Banette",
           "rate": 10,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
           "pokemon": "Bronzong",
           "rate": 10,
           "levels": [
-            65,
             66
           ]
         },
@@ -13195,8 +12453,7 @@
           "pokemon": "Chimecho",
           "rate": 10,
           "levels": [
-            65,
-            66
+            65
           ]
         },
         {
@@ -13250,15 +12507,13 @@
           "pokemon": "Lickitung",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
           "pokemon": "Golduck",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         }
@@ -13292,15 +12547,13 @@
           "pokemon": "Lickitung",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
           "pokemon": "Golduck",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         }
@@ -13334,15 +12587,13 @@
           "pokemon": "Lickitung",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
           "pokemon": "Golduck",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         }
@@ -13363,14 +12614,14 @@
           "rate": 90,
           "levels": [
             35,
-            55
+            45
           ]
         },
         {
           "pokemon": "Masquerain",
           "rate": 10,
           "levels": [
-            35,
+            45,
             55
           ]
         }
@@ -13412,15 +12663,13 @@
           "pokemon": "Electabuzz",
           "rate": 20,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
           "pokemon": "Floatzel",
           "rate": 20,
           "levels": [
-            53,
             54
           ]
         },
@@ -13428,8 +12677,7 @@
           "pokemon": "Luxio",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
@@ -13444,7 +12692,6 @@
           "pokemon": "Pelipper",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         },
@@ -13452,8 +12699,7 @@
           "pokemon": "Flaaffy",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
@@ -13468,8 +12714,7 @@
           "pokemon": "Chatot",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         }
       ],
@@ -13478,15 +12723,13 @@
           "pokemon": "Electabuzz",
           "rate": 20,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
           "pokemon": "Floatzel",
           "rate": 20,
           "levels": [
-            53,
             54
           ]
         },
@@ -13494,8 +12737,7 @@
           "pokemon": "Luxio",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
@@ -13510,7 +12752,6 @@
           "pokemon": "Pelipper",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         },
@@ -13518,8 +12759,7 @@
           "pokemon": "Flaaffy",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
@@ -13534,8 +12774,7 @@
           "pokemon": "Chatot",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         }
       ],
@@ -13544,15 +12783,13 @@
           "pokemon": "Electabuzz",
           "rate": 20,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
           "pokemon": "Floatzel",
           "rate": 20,
           "levels": [
-            53,
             54
           ]
         },
@@ -13560,8 +12797,7 @@
           "pokemon": "Luxio",
           "rate": 20,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
@@ -13576,7 +12812,6 @@
           "pokemon": "Pelipper",
           "rate": 10,
           "levels": [
-            53,
             54
           ]
         },
@@ -13584,8 +12819,7 @@
           "pokemon": "Flaaffy",
           "rate": 10,
           "levels": [
-            53,
-            54
+            53
           ]
         },
         {
@@ -13613,7 +12847,7 @@
           "rate": 60,
           "levels": [
             35,
-            55
+            45
           ]
         },
         {
@@ -13621,14 +12855,14 @@
           "rate": 30,
           "levels": [
             35,
-            55
+            45
           ]
         },
         {
           "pokemon": "Tentacruel",
           "rate": 5,
           "levels": [
-            35,
+            45,
             55
           ]
         },
@@ -13636,7 +12870,7 @@
           "pokemon": "Pelipper",
           "rate": 5,
           "levels": [
-            35,
+            45,
             55
           ]
         }
@@ -13957,7 +13191,7 @@
     }
   },
   {
-    "name": "Pokémon League",
+    "name": "Pokemon League",
     "encounters": {
       "surf": [
         {
