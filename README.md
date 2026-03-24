@@ -8,10 +8,11 @@ All data for Renegade Platinum was generated using Documentation provided with t
 
 ## Features
 
-- **Pokémon** — stats, types, abilities, evolution chains, forms, learnsets, and wild encounter locations
+- **Pokémon** — stats, types, type weaknesses, abilities, evolution chains, forms, learnsets, and wild encounter locations
 - **Moves** — full move data with learner list
 - **Abilities** — descriptions with Pokémon that have the ability
-- **Locations** — wild encounter tables by method (morning/day/night/surf/fishing/etc.)
+- **Locations** — wild encounter tables by method (morning/day/night/surf/fishing/honey tree/Poké Radar/repel manipulation)
+- **Trainers** — full trainer rosters with held items, abilities, and moves for all trainers including rivals with starter-variant data
 - **Search** — searches across Pokémon, moves, abilities, and locations
 - **Responsive** — split-panel layout on desktop, drawer navigation on mobile
 
