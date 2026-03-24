@@ -64,6 +64,7 @@ export function getPokemonLocations(pokemonName: string): PokemonEncounter[] {
 
   for (const loc of LOCATIONS) {
     for (const [type, entries] of Object.entries(loc.encounters)) {
+      if (type === "repelManip") continue;
       for (const entry of entries) {
         if (entry.pokemon.toLowerCase() === name) {
           results.push({

@@ -4,6 +4,7 @@ import STAT_CHANGES from "@/lib/data/statChanges.json";
 import type { EvoChainNode } from "@/lib/dex";
 import { getSpriteUrl } from "@/lib/sprites";
 import { getPokemonLocations, toLocationSlug } from "@/lib/locations";
+import { getTypeWeaknesses } from "@/lib/type-chart";
 import TypeBadge from "@/components/TypeBadge";
 import { TYPE_TEXT_COLORS } from "@/lib/type-colors";
 import StatBar from "@/components/StatBar";
@@ -27,6 +28,7 @@ export default async function PokemonPage({ params }: Props) {
   const pokemon = maybePokemon;
 
   const bst = Object.values(pokemon.stats).reduce((a, b) => a + b, 0);
+  const { fourX, twoX } = getTypeWeaknesses(pokemon.types);
   const learnset = await getLearnset(pokemon.name);
   const encounters = getPokemonLocations(pokemon.name);
   const evoChain = getEvolutionChain(pokemon.name);
@@ -238,6 +240,31 @@ export default async function PokemonPage({ params }: Props) {
           <span className="text-lg font-bold text-[var(--text-primary)] pr-5">{bst}</span>
         </div>
       </div>
+
+      {/* Type Weaknesses */}
+      {(fourX.length > 0 || twoX.length > 0) && (
+        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5">
+          <h2 className="mb-4 text-sm font-bold uppercase tracking-widest text-[var(--text-secondary)]">Type Weaknesses</h2>
+          <div className="flex flex-col gap-4">
+            {fourX.length > 0 && (
+              <div className="flex-1">
+                <p className="text-xs font-semibold text-[var(--text-secondary)] mb-2">4×</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {fourX.map(t => <TypeBadge key={t} type={t} />)}
+                </div>
+              </div>
+            )}
+            {twoX.length > 0 && (
+              <div className="flex-1">
+                <p className="text-xs font-semibold text-[var(--text-secondary)] mb-2">2×</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {twoX.map(t => <TypeBadge key={t} type={t} />)}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Abilities */}
       <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5">
