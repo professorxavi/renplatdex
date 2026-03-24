@@ -14267,7 +14267,7 @@
       {
         "species": "Pikachu",
         "speciesId": 25,
-        "lvl": 37,
+        "lvl": 29,
         "ivs": 12,
         "nature": "Brave",
         "ability": "Static",
@@ -14298,7 +14298,7 @@
       {
         "species": "Pikachu",
         "speciesId": 25,
-        "lvl": 37,
+        "lvl": 29,
         "ivs": 12,
         "nature": "Calm",
         "ability": "Static",
@@ -14329,7 +14329,7 @@
       {
         "species": "Raichu",
         "speciesId": 26,
-        "lvl": 38,
+        "lvl": 30,
         "ivs": 12,
         "nature": "Impish",
         "ability": "Static",
@@ -47267,7 +47267,7 @@
       {
         "species": "Flareon",
         "speciesId": 136,
-        "lvl": 73,
+        "lvl": 74,
         "ivs": 29,
         "nature": "Lonely",
         "ability": "Flash Fire",
@@ -47359,7 +47359,7 @@
       {
         "species": "Magmortar",
         "speciesId": 467,
-        "lvl": 74,
+        "lvl": 75,
         "nature": "Timid",
         "ability": "Flame Body",
         "item": "Life Orb",
@@ -47550,7 +47550,7 @@
       {
         "species": "Magmortar",
         "speciesId": 467,
-        "lvl": 74,
+        "lvl": 75,
         "nature": "Modest",
         "ability": "Flame Body",
         "item": "Life Orb",
@@ -47620,7 +47620,7 @@
       {
         "species": "Arcanine",
         "speciesId": 59,
-        "lvl": 73,
+        "lvl": 74,
         "nature": "Hasty",
         "ability": "Intimidate",
         "item": "Expert Belt",
@@ -47740,7 +47740,7 @@
       {
         "species": "Magmortar",
         "speciesId": 467,
-        "lvl": 74,
+        "lvl": 75,
         "nature": "Modest",
         "ability": "Flame Body",
         "item": "Life Orb",
@@ -47840,7 +47840,7 @@
       {
         "species": "Arcanine",
         "speciesId": 59,
-        "lvl": 73,
+        "lvl": 74,
         "ivs": 29,
         "nature": "Hasty",
         "ability": "Intimidate",
@@ -47931,7 +47931,7 @@
       {
         "species": "Magmortar",
         "speciesId": 467,
-        "lvl": 74,
+        "lvl": 75,
         "nature": "Rash",
         "ability": "Flame Body",
         "item": "Life Orb",
