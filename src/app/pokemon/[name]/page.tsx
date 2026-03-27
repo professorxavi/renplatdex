@@ -42,6 +42,7 @@ export default async function PokemonPage({ params }: Props) {
     }
   }
   if (!pokemon) return notFound();
+  const pokemon_ = pokemon;
 
   const bst = Object.values(pokemon.stats).reduce((a, b) => a + b, 0);
   const { fourX, twoX } = getTypeWeaknesses(pokemon.types);
@@ -103,7 +104,7 @@ export default async function PokemonPage({ params }: Props) {
   const methodSymbols = new Map(longMethods.map((m, i) => [m, SYMBOLS[i]]));
 
   function EvoNode({ node }: { node: EvoChainNode }) {
-    const isCurrent = node.name === pokemon.name;
+    const isCurrent = node.name === pokemon_.name;
 
     const nameLink = (
       <Link
