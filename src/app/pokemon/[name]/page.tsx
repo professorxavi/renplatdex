@@ -1,4 +1,4 @@
-import { getLearnset, getEvolutionChain, getPokemonPrevo, getAllPokemon } from "@/lib/dex";
+import { getLearnset, getEvolutionChain, getPokemonPrevo, getAllPokemon, getPokemon } from "@/lib/dex";
 import { toPokemonSlug } from "@/lib/slugs";
 import STAT_CHANGES from "@/lib/data/statChanges.json";
 import type { EvoChainNode } from "@/lib/dex";
@@ -14,7 +14,14 @@ import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 
 export async function generateStaticParams() {
-  return getAllPokemon().map((p) => ({ name: toPokemonSlug(p.name) }));
+  const allPokemon = getAllPokemon();
+  const params: { name: string }[] = allPokemon.map((p) => ({ name: toPokemonSlug(p.name) }));
+  for (const pokemon of allPokemon) {
+    for (const form of pokemon.forms) {
+      params.push({ name: toPokemonSlug(form.name) });
+    }
+  }
+  return params;
 }
 
 interface Props {
@@ -23,9 +30,18 @@ interface Props {
 
 export default async function PokemonPage({ params }: Props) {
   const { name: slug } = await params;
-  const maybePokemon = getAllPokemon().find((p) => toPokemonSlug(p.name) === slug);
-  if (!maybePokemon) return notFound();
-  const pokemon = maybePokemon;
+  let pokemon = getAllPokemon().find((p) => toPokemonSlug(p.name) === slug);
+  if (!pokemon) {
+    outer: for (const p of getAllPokemon()) {
+      for (const form of p.forms) {
+        if (toPokemonSlug(form.name) === slug) {
+          pokemon = getPokemon(form.name);
+          break outer;
+        }
+      }
+    }
+  }
+  if (!pokemon) return notFound();
 
   const bst = Object.values(pokemon.stats).reduce((a, b) => a + b, 0);
   const { fourX, twoX } = getTypeWeaknesses(pokemon.types);
